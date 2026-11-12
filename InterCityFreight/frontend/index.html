@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inter-City Freight Logistics &amp; Route Generator</title>
+
+  <!-- Leaflet (OpenStreetMap) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Design system -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">🚚</div>
+        <div class="brand-text">
+          <span class="brand-title">FreightRoute</span>
+          <span class="brand-sub">DAA Minor Project</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-section="dashboard">📊 <span>Dashboard</span></button>
+        <button class="nav-item" data-section="route">🧭 <span>Route Generator</span></button>
+        <button class="nav-item" data-section="compare">⚖️ <span>Route Comparison</span></button>
+        <button class="nav-item" data-section="map">🗺️ <span>Network Map</span></button>
+        <button class="nav-item" data-section="planner">🏭 <span>Multi-Hub Planner</span></button>
+        <button class="nav-item" data-section="analysis">📈 <span>Algorithm Analysis</span></button>
+        <button class="nav-item" data-section="visualizer">🌳 <span>Data Structures</span></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="engine-status" id="engine-status">
+          <span class="dot dot-warn"></span> Checking engine…
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="main">
+
+      <!-- ========== DASHBOARD ========== -->
+      <section class="section active" id="section-dashboard">
+        <header class="page-header">
+          <h1>Logistics Control Dashboard</h1>
+          <p>Network overview, recent calculations and engine performance.</p>
+        </header>
+
+        <div class="stat-grid">
+          <div class="stat-card"><div class="stat-value" id="stat-cities">–</div><div class="stat-label">Cities</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-roads">–</div><div class="stat-label">Highway Links</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-algos">4</div><div class="stat-label">Algorithms</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-negedge">–</div><div class="stat-label">Negative-Cost Edges</div></div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">Available Algorithms</div>
+            <div id="dash-algo-list" class="algo-list"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Performance Summary</div>
+            <div id="dash-summary" class="kv-list"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Recent Route Calculations</div>
+          <div class="table-wrap">
+            <table class="table" id="recent-table">
+              <thead>
+                <tr><th>Time</th><th>Route</th><th>Objective</th><th>Algorithm</th><th>Distance</th><th>Cost</th><th>Engine&nbsp;ms</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ROUTE GENERATOR ========== -->
+      <section class="section" id="section-route">
+        <header class="page-header">
+          <h1>Route Generator</h1>
+          <p>The decision controller automatically selects the optimal algorithm for your objective.</p>
+        </header>
+
+        <div class="card">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Source city</label>
+              <select id="route-source"></select>
+            </div>
+            <div class="form-field">
+              <label>Destination city</label>
+              <select id="route-dest"></select>
+            </div>
+            <div class="form-field">
+              <label>Objective</label>
+              <select id="route-objective">
+                <option value="fastest">Fastest transit (A*)</option>
+                <option value="cheapest">Minimum cost (Bellman-Ford)</option>
+                <option value="shortest">Shortest distance (Dijkstra)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Budget limit ₹ (0 = none)</label>
+              <input type="number" id="route-budget" value="0" min="0" />
+            </div>
+            <div class="form-field">
+              <label>Time limit hrs (0 = none)</label>
+              <input type="number" id="route-time" value="0" min="0" step="0.5" />
+            </div>
+            <button class="btn btn-primary" id="route-go">Generate Route</button>
+          </div>
+        </div>
+
+        <div id="route-result" class="hidden">
+          <div class="card highlight">
+            <div class="card-title">Selected Algorithm</div>
+            <div class="algo-badge" id="route-algo"></div>
+            <p class="muted" id="route-reason"></p>
+            <div class="limit-badges">
+              <span class="badge" id="route-budget-badge"></span>
+              <span class="badge" id="route-time-badge"></span>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card"><div class="stat-value" id="r-distance">–</div><div class="stat-label">Distance (km)</div></div>
+            <div class="stat-card"><div class="stat-value" id="r-time">–</div><div class="stat-label">Transit (hrs)</div></div>
+            <div class="stat-card"><div class="stat-value" id="r-toll">–</div><div class="stat-label">Toll (₹)</div></div>
+            <div class="stat-card"><div class="stat-value" id="r-fuel">–</div><div class="stat-label">Fuel (₹)</div></div>
+            <div class="stat-card"><div class="stat-value" id="r-subsidy">–</div><div class="stat-label">Subsidy (₹)</div></div>
+            <div class="stat-card"><div class="stat-value" id="r-cost">–</div><div class="stat-label">Total Cost (₹)</div></div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">Route Itinerary</div>
+              <ol id="route-path" class="path-list"></ol>
+              <div class="muted small" id="route-exec"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">Route Map <span class="tag">schematic</span></div>
+              <div id="route-map" class="map-box"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Edge-wise Financial Breakdown</div>
+            <div class="table-wrap">
+              <table class="table" id="route-edges">
+                <thead>
+                  <tr><th>Leg</th><th>Highway</th><th>km</th><th>hrs</th><th>Toll ₹</th><th>Fuel ₹</th><th>Subsidy ₹</th><th>Net ₹</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ROUTE COMPARISON ========== -->
+      <section class="section" id="section-compare">
+        <header class="page-header">
+          <h1>Route Comparison</h1>
+          <p>Compare the fastest, cheapest and shortest routes between two cities.</p>
+        </header>
+
+        <div class="card">
+          <div class="form-row">
+            <div class="form-field"><label>Source</label><select id="cmp-source"></select></div>
+            <div class="form-field"><label>Destination</label><select id="cmp-dest"></select></div>
+            <button class="btn btn-primary" id="cmp-go">Compare Routes</button>
+          </div>
+        </div>
+
+        <div id="cmp-result" class="hidden">
+          <div class="card">
+            <div class="card-title">Comparison Table</div>
+            <div class="table-wrap">
+              <table class="table" id="cmp-table">
+                <thead>
+                  <tr><th>Objective</th><th>Algorithm</th><th>Distance km</th><th>Time hrs</th><th>Cost ₹</th><th>Engine ms</th><th>Expanded</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="card"><div class="card-title">Cost vs Time vs Distance</div><canvas id="cmp-chart"></canvas></div>
+            <div class="card"><div class="card-title">Routes on Map <span class="tag">schematic</span></div><div id="cmp-map" class="map-box"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NETWORK MAP ========== -->
+      <section class="section" id="section-map">
+        <header class="page-header">
+          <h1>Network Map</h1>
+          <p>All demo cities and schematic highway connections (not verified road geometry).</p>
+        </header>
+        <div class="card">
+          <div class="map-toolbar">
+            <label class="check"><input type="checkbox" id="map-show-roads" checked /> Show highway links</label>
+            <label class="check"><input type="checkbox" id="map-show-labels" checked /> Show city labels</label>
+          </div>
+          <div id="network-map" class="map-box map-tall"></div>
+        </div>
+      </section>
+
+      <!-- ========== MULTI-HUB PLANNER ========== -->
+      <section class="section" id="section-planner">
+        <header class="page-header">
+          <h1>Multi-Hub Infrastructure Planner</h1>
+          <p>Select distribution hubs; Prim's MST finds the minimal highway backbone. This is network planning, not a delivery route.</p>
+        </header>
+
+        <div class="card">
+          <div class="hub-picker" id="hub-picker"></div>
+          <div class="form-row">
+            <button class="btn btn-primary" id="mst-go">Run Prim's MST</button>
+            <button class="btn btn-ghost" id="mst-clear">Clear</button>
+          </div>
+        </div>
+
+        <div id="mst-result" class="hidden">
+          <div class="stat-grid">
+            <div class="stat-card"><div class="stat-value" id="mst-hubs">–</div><div class="stat-label">Hubs</div></div>
+            <div class="stat-card"><div class="stat-value" id="mst-distance">–</div><div class="stat-label">Network km</div></div>
+            <div class="stat-card"><div class="stat-value" id="mst-cost">–</div><div class="stat-label">Est. Cost ₹</div></div>
+            <div class="stat-card"><div class="stat-value" id="mst-exec">–</div><div class="stat-label">Engine ms</div></div>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <div class="card-title">MST Connections</div>
+              <div class="table-wrap">
+                <table class="table" id="mst-edges">
+                  <thead><tr><th>Link</th><th>Corridor</th><th>km</th><th>Cost ₹</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card"><div class="card-title">Network Map</div><div id="mst-map" class="map-box"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ALGORITHM ANALYSIS ========== -->
+      <section class="section" id="section-analysis">
+        <header class="page-header">
+          <h1>Algorithm Analysis</h1>
+          <p>Theoretical complexity vs measured execution time. Academic DAA reference.</p>
+        </header>
+
+        <div class="grid-2" id="algo-cards"></div>
+
+        <div class="card">
+          <div class="card-title">Performance Benchmark</div>
+          <p class="muted small">Runs every algorithm on synthetic graphs of increasing size. Theoretical complexity is separate from these experimental measurements.</p>
+          <div class="form-row">
+            <button class="btn btn-primary" id="bench-go">Run Benchmark</button>
+            <span class="muted small" id="bench-status"></span>
+          </div>
+          <canvas id="bench-chart"></canvas>
+          <div class="table-wrap">
+            <table class="table" id="bench-table">
+              <thead><tr><th>V</th><th>E</th><th>Dijkstra ms</th><th>A* ms</th><th>Bellman-Ford ms</th><th>Prim ms</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DATA STRUCTURE VISUALIZER ========== -->
+      <section class="section" id="section-visualizer">
+        <header class="page-header">
+          <h1>Data Structure Visualizer</h1>
+          <p>Interactive AVL tree and B-Tree demonstrations backed by the C++ engine.</p>
+        </header>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="avl">AVL Tree</button>
+          <button class="tab" data-tab="btree">B-Tree</button>
+        </div>
+
+        <div class="tab-panel active" id="tab-avl">
+          <div class="card">
+            <div class="form-row">
+              <div class="form-field"><label>Insert (comma-separated ints)</label><input id="avl-insert" value="10,20,30,40,50,25" /></div>
+              <div class="form-field"><label>Delete (comma-separated ints)</label><input id="avl-delete" value="" /></div>
+              <button class="btn btn-primary" id="avl-go">Run</button>
+            </div>
+            <div class="kv-list" id="avl-stats"></div>
+          </div>
+          <div class="card"><div class="card-title">AVL Structure (after each step)</div><div class="tree-canvas" id="avl-canvas"></div></div>
+          <div class="card"><div class="card-title">In-order Traversal</div><div class="traversal" id="avl-inorder"></div></div>
+        </div>
+
+        <div class="tab-panel" id="tab-btree">
+          <div class="card">
+            <div class="form-row">
+              <div class="form-field"><label>Minimum degree t</label><input type="number" id="bt-degree" value="3" min="2" /></div>
+              <div class="form-field"><label>Insert (comma-separated ints)</label><input id="bt-insert" value="10,20,5,6,12,30,7,17,3,25,40,55,60,1,8" /></div>
+              <button class="btn btn-primary" id="bt-go">Run</button>
+            </div>
+            <div class="kv-list" id="bt-stats"></div>
+          </div>
+          <div class="card"><div class="card-title">B-Tree Structure (after each insertion)</div><div class="tree-canvas" id="bt-canvas"></div></div>
+          <div class="card"><div class="card-title">In-order Keys</div><div class="traversal" id="bt-inorder"></div></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Global alert toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Vendor libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Application modules -->
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/compare.js"></script>
+  <script src="js/planner.js"></script>
+  <script src="js/analysis.js"></script>
+  <script src="js/visualizer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
