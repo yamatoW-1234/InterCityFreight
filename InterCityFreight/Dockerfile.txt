@@ -1,0 +1,24 @@
+FROM python:3.11-slim
+
+# Install C++ toolchain + CMake so the engine can be compiled on Linux.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      g++ cmake make \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy the whole project.
+COPY . .
+
+# Build the C++ algorithm engine (binary lands at algorithm_engine/freight_engine).
+RUN cmake -S algorithm_engine -B algorithm_engine/build -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build algorithm_engine/build --parallel \
+    && test -x algorithm_engine/freight_engine && echo "Engine binary OK"
+
+# Python deps + gunicorn (production WSGI server).
+RUN pip install --no-cache-dir -r requirements.txt gunicorn
+
+EXPOSE 10000
+
+# Render injects $PORT. --chdir backend matches the app's import layout.
+CMD gunicorn --bind 0.0.0.0:${PORT:-10000} --chdir backend --workers 2 --timeout 120 app:app
