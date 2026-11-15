@@ -1,3 +1,0 @@
-# Architecture
-
-## Layered design
