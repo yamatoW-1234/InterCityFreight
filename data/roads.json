@@ -1,50 +1,389 @@
 {
   "_meta": {
-    "description": "Schematic highway connections between demo cities.",
-    "disclaimer": "SIMULATED toll and subsidy values for academic demonstration only. NOT official NHAI/FASTag data.",
+    "description": "Inter-city National Highway & Expressway freight network.",
+    "sources": [
+      "OpenStreetMap / Project OSRM Routing API (driving distances & speeds)",
+      "NHAI Commercial Axle Toll Schedule (approx. INR 2.15/km NH, INR 2.80/km Expressway)",
+      "DPIIT North-East Transport Subsidy (50%) & State Export Port Rebate Policies (25%)"
+    ],
     "units": {
-      "distance_km": "kilometres",
-      "avg_speed_kmph": "kilometres per hour (freight average)",
-      "toll": "Indian Rupees (sample)",
-      "subsidy_forward": "Rupees rebate applied source->destination only (sample)",
-      "subsidy_reverse": "Rupees rebate applied destination->source only (sample)"
-    },
-    "note": "subsidy_forward applies to travel from source to destination; subsidy_reverse applies to the opposite direction. Fuel cost is computed by the engine, not stored here."
+      "distance_km": "kilometres (OSRM driving distance)",
+      "avg_speed_kmph": "kilometres per hour (commercial freight truck average)",
+      "toll": "Indian Rupees (estimated commercial FASTag toll)",
+      "subsidy_forward": "Rupees rebate applied source->destination only",
+      "subsidy_reverse": "Rupees rebate applied destination->source only"
+    }
   },
   "roads": [
-    { "source": "Delhi",      "destination": "Chandigarh", "highway": "NH44",  "distance_km": 250, "avg_speed_kmph": 80, "toll": 320, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Delhi",      "destination": "Amritsar",   "highway": "NH44",  "distance_km": 450, "avg_speed_kmph": 85, "toll": 480, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Chandigarh", "destination": "Amritsar",   "highway": "NH344", "distance_km": 210, "avg_speed_kmph": 75, "toll": 220, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Delhi",      "destination": "Jaipur",     "highway": "NH48",  "distance_km": 280, "avg_speed_kmph": 90, "toll": 350, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Delhi",      "destination": "Agra",       "highway": "NH19",  "distance_km": 230, "avg_speed_kmph": 90, "toll": 300, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Delhi",      "destination": "Lucknow",    "highway": "NH27",  "distance_km": 550, "avg_speed_kmph": 80, "toll": 620, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Agra",       "destination": "Jaipur",     "highway": "NH21",  "distance_km": 240, "avg_speed_kmph": 80, "toll": 280, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Agra",       "destination": "Kanpur",     "highway": "NH19",  "distance_km": 290, "avg_speed_kmph": 85, "toll": 340, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Agra",       "destination": "Lucknow",    "highway": "NH21",  "distance_km": 300, "avg_speed_kmph": 90, "toll": 330, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Kanpur",     "destination": "Lucknow",    "highway": "NH27",  "distance_km": 85,  "avg_speed_kmph": 80, "toll": 120, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Kanpur",     "destination": "Varanasi",   "highway": "NH19",  "distance_km": 320, "avg_speed_kmph": 80, "toll": 360, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Lucknow",    "destination": "Varanasi",   "highway": "NH30",  "distance_km": 300, "avg_speed_kmph": 75, "toll": 320, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Varanasi",   "destination": "Patna",      "highway": "NH19",  "distance_km": 250, "avg_speed_kmph": 75, "toll": 280, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Patna",      "destination": "Kolkata",    "highway": "NH19",  "distance_km": 580, "avg_speed_kmph": 80, "toll": 640, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Kolkata",    "destination": "Guwahati",   "highway": "NH27",  "distance_km": 590, "avg_speed_kmph": 70, "toll": 600, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Jaipur",     "destination": "Ahmedabad",  "highway": "NH48",  "distance_km": 620, "avg_speed_kmph": 85, "toll": 700, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Ahmedabad",  "destination": "Vadodara",   "highway": "NE1",   "distance_km": 100, "avg_speed_kmph": 90, "toll": 150, "subsidy_forward": 1500, "subsidy_reverse": 0 },
-    { "source": "Vadodara",   "destination": "Surat",      "highway": "NH48",  "distance_km": 150, "avg_speed_kmph": 85, "toll": 190, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Surat",      "destination": "Mumbai",     "highway": "NH48",  "distance_km": 280, "avg_speed_kmph": 85, "toll": 380, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Ahmedabad",  "destination": "Mumbai",     "highway": "NH48",  "distance_km": 530, "avg_speed_kmph": 85, "toll": 720, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Ahmedabad",  "destination": "Indore",     "highway": "NH52",  "distance_km": 390, "avg_speed_kmph": 80, "toll": 430, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Vadodara",   "destination": "Indore",     "highway": "NH52",  "distance_km": 260, "avg_speed_kmph": 80, "toll": 300, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Mumbai",     "destination": "Pune",       "highway": "NH48",  "distance_km": 150, "avg_speed_kmph": 90, "toll": 260, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Pune",       "destination": "Hyderabad",  "highway": "NH65",  "distance_km": 560, "avg_speed_kmph": 80, "toll": 620, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Pune",       "destination": "Bengaluru",  "highway": "NH48",  "distance_km": 840, "avg_speed_kmph": 85, "toll": 900, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Hyderabad",  "destination": "Bengaluru",  "highway": "NH44",  "distance_km": 570, "avg_speed_kmph": 85, "toll": 640, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Bengaluru",  "destination": "Chennai",    "highway": "NH44",  "distance_km": 350, "avg_speed_kmph": 85, "toll": 420, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Hyderabad",  "destination": "Chennai",    "highway": "NH16",  "distance_km": 620, "avg_speed_kmph": 80, "toll": 680, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Indore",     "destination": "Bhopal",     "highway": "NH52",  "distance_km": 190, "avg_speed_kmph": 80, "toll": 220, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Bhopal",     "destination": "Nagpur",     "highway": "NH47",  "distance_km": 390, "avg_speed_kmph": 80, "toll": 430, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Nagpur",     "destination": "Hyderabad",  "highway": "NH44",  "distance_km": 500, "avg_speed_kmph": 80, "toll": 560, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Nagpur",     "destination": "Pune",       "highway": "NH361", "distance_km": 740, "avg_speed_kmph": 75, "toll": 800, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Mumbai",     "destination": "Nagpur",     "highway": "NH161", "distance_km": 830, "avg_speed_kmph": 75, "toll": 880, "subsidy_forward": 0,    "subsidy_reverse": 0 },
-    { "source": "Agra",       "destination": "Bhopal",     "highway": "NH46",  "distance_km": 500, "avg_speed_kmph": 75, "toll": 540, "subsidy_forward": 0,    "subsidy_reverse": 0 }
+    {
+      "source": "Delhi",
+      "destination": "Ludhiana",
+      "highway": "NH44",
+      "distance_km": 332.2,
+      "avg_speed_kmph": 64.3,
+      "toll": 714,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Ludhiana",
+      "destination": "Amritsar",
+      "highway": "NH3",
+      "distance_km": 141.3,
+      "avg_speed_kmph": 63.7,
+      "toll": 304,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "highway": "NH48",
+      "distance_km": 284.9,
+      "avg_speed_kmph": 61.6,
+      "toll": 613,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Delhi",
+      "destination": "Agra",
+      "highway": "NH19",
+      "distance_km": 203.4,
+      "avg_speed_kmph": 62.6,
+      "toll": 570,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Agra",
+      "destination": "Jaipur",
+      "highway": "NH21",
+      "distance_km": 247.1,
+      "avg_speed_kmph": 63.5,
+      "toll": 531,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Agra",
+      "destination": "Lucknow",
+      "highway": "NE2",
+      "distance_km": 330.5,
+      "avg_speed_kmph": 63.1,
+      "toll": 925,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Agra",
+      "destination": "Kanpur",
+      "highway": "NH19",
+      "distance_km": 277.3,
+      "avg_speed_kmph": 64.9,
+      "toll": 596,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Kanpur",
+      "destination": "Lucknow",
+      "highway": "NH27",
+      "distance_km": 94.6,
+      "avg_speed_kmph": 68.0,
+      "toll": 203,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Kanpur",
+      "destination": "Varanasi",
+      "highway": "NH19",
+      "distance_km": 322.7,
+      "avg_speed_kmph": 64.9,
+      "toll": 694,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Lucknow",
+      "destination": "Varanasi",
+      "highway": "NH731",
+      "distance_km": 292.5,
+      "avg_speed_kmph": 64.9,
+      "toll": 629,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Varanasi",
+      "destination": "Patna",
+      "highway": "NH19",
+      "distance_km": 244.9,
+      "avg_speed_kmph": 63.4,
+      "toll": 527,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Patna",
+      "destination": "Kolkata",
+      "highway": "NH19",
+      "distance_km": 581.2,
+      "avg_speed_kmph": 64.3,
+      "toll": 1250,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Kolkata",
+      "destination": "Guwahati",
+      "highway": "NH12/NH27",
+      "distance_km": 755.7,
+      "avg_speed_kmph": 63.6,
+      "toll": 1625,
+      "subsidy_forward": 6335,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Jaipur",
+      "destination": "Ahmedabad",
+      "highway": "NH48",
+      "distance_km": 651.0,
+      "avg_speed_kmph": 64.6,
+      "toll": 1400,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Ahmedabad",
+      "destination": "Vadodara",
+      "highway": "NE1",
+      "distance_km": 115.6,
+      "avg_speed_kmph": 62.4,
+      "toll": 324,
+      "subsidy_forward": 503,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Vadodara",
+      "destination": "Surat",
+      "highway": "NH48",
+      "distance_km": 147.4,
+      "avg_speed_kmph": 61.4,
+      "toll": 317,
+      "subsidy_forward": 618,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Surat",
+      "destination": "Mumbai",
+      "highway": "NH48",
+      "distance_km": 275.6,
+      "avg_speed_kmph": 64.2,
+      "toll": 593,
+      "subsidy_forward": 1155,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Ahmedabad",
+      "destination": "Indore",
+      "highway": "NH47",
+      "distance_km": 387.5,
+      "avg_speed_kmph": 64.4,
+      "toll": 833,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Vadodara",
+      "destination": "Indore",
+      "highway": "NH47",
+      "distance_km": 354.2,
+      "avg_speed_kmph": 64.9,
+      "toll": 762,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Indore",
+      "destination": "Bhopal",
+      "highway": "NH52",
+      "distance_km": 188.5,
+      "avg_speed_kmph": 45.0,
+      "toll": 405,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Agra",
+      "destination": "Bhopal",
+      "highway": "NH46",
+      "distance_km": 571.3,
+      "avg_speed_kmph": 57.6,
+      "toll": 1228,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Bhopal",
+      "destination": "Nagpur",
+      "highway": "NH47",
+      "distance_km": 350.5,
+      "avg_speed_kmph": 63.9,
+      "toll": 754,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Mumbai",
+      "destination": "Pune",
+      "highway": "NH48",
+      "distance_km": 144.8,
+      "avg_speed_kmph": 58.4,
+      "toll": 405,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Mumbai",
+      "destination": "Nagpur",
+      "highway": "NH161",
+      "distance_km": 779.0,
+      "avg_speed_kmph": 68.0,
+      "toll": 2181,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Pune",
+      "destination": "Nagpur",
+      "highway": "NH361",
+      "distance_km": 688.1,
+      "avg_speed_kmph": 64.7,
+      "toll": 1479,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Pune",
+      "destination": "Hyderabad",
+      "highway": "NH65",
+      "distance_km": 559.1,
+      "avg_speed_kmph": 63.9,
+      "toll": 1202,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Pune",
+      "destination": "Bengaluru",
+      "highway": "NH48",
+      "distance_km": 839.9,
+      "avg_speed_kmph": 64.4,
+      "toll": 1806,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Nagpur",
+      "destination": "Hyderabad",
+      "highway": "NH44",
+      "distance_km": 494.1,
+      "avg_speed_kmph": 59.4,
+      "toll": 1062,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Nagpur",
+      "destination": "Raipur",
+      "highway": "NH53",
+      "distance_km": 285.0,
+      "avg_speed_kmph": 59.3,
+      "toll": 613,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Raipur",
+      "destination": "Kolkata",
+      "highway": "NH53/NH16",
+      "distance_km": 830.4,
+      "avg_speed_kmph": 64.7,
+      "toll": 1785,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Raipur",
+      "destination": "Visakhapatnam",
+      "highway": "NH26/NH16",
+      "distance_km": 584.6,
+      "avg_speed_kmph": 63.0,
+      "toll": 1257,
+      "subsidy_forward": 2450,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Kolkata",
+      "destination": "Visakhapatnam",
+      "highway": "NH16",
+      "distance_km": 875.7,
+      "avg_speed_kmph": 63.7,
+      "toll": 1883,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Visakhapatnam",
+      "destination": "Chennai",
+      "highway": "NH16",
+      "distance_km": 808.0,
+      "avg_speed_kmph": 63.2,
+      "toll": 1737,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Hyderabad",
+      "destination": "Visakhapatnam",
+      "highway": "NH65/NH16",
+      "distance_km": 561.1,
+      "avg_speed_kmph": 61.3,
+      "toll": 1206,
+      "subsidy_forward": 2352,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Hyderabad",
+      "destination": "Bengaluru",
+      "highway": "NH44",
+      "distance_km": 566.5,
+      "avg_speed_kmph": 57.9,
+      "toll": 1218,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Hyderabad",
+      "destination": "Chennai",
+      "highway": "NH16",
+      "distance_km": 623.0,
+      "avg_speed_kmph": 61.1,
+      "toll": 1339,
+      "subsidy_forward": 0,
+      "subsidy_reverse": 0
+    },
+    {
+      "source": "Bengaluru",
+      "destination": "Chennai",
+      "highway": "NH48",
+      "distance_km": 326.1,
+      "avg_speed_kmph": 63.1,
+      "toll": 701,
+      "subsidy_forward": 1367,
+      "subsidy_reverse": 0
+    }
   ]
 }

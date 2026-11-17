@@ -1,10 +1,13 @@
 {
   "_meta": {
-    "description": "Configurable financial and heuristic assumptions.",
-    "disclaimer": "Sample assumptions for academic demonstration. Adjust freely."
+    "description": "Configurable freight vehicle and heuristic assumptions.",
+    "sources": [
+      "Indian retail diesel benchmark (~INR 95.0/L)",
+      "Heavy commercial freight truck average mileage (6.5 km/L)"
+    ]
   },
   "fuel_price_per_litre": 95.0,
-  "vehicle_mileage_kmpl": 8.0,
+  "vehicle_mileage_kmpl": 6.5,
   "currency": "INR",
-  "max_speed_override_kmph": null
+  "max_speed_override_kmph": 85.0
 }
