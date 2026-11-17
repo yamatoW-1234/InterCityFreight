@@ -1,8 +1,5 @@
 # Inter-City Freight Logistics & Route Generator
 
-**Subject:** Design and Analysis of Algorithms (DAA) — B.Tech CSE Minor Project
-**Development period:** 3–4 weeks · **Target OS:** macOS · **No paid API keys**
-
 An intelligent decision-support system that models major Indian cities and their
 highways as a weighted graph and automatically selects the correct graph
 algorithm for each freight objective:

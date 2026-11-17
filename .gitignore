@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# C Build Artifacts & Compiled Binaries
+*.o
+*.obj
+*.out
+*.exe
+*.dSYM/
+bin/
+engine/build/
+freight_engine
+
+# Optional Python Data Scripts (if used in scripts/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / Runtime Cache
+*.log
+server/recent_runs.json
