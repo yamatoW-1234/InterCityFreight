@@ -1,31 +1,32 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
-venv/
-env/
-instance/
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
 
-# C++ / CMake
-algorithm_engine/build/
+# C Build Artifacts & Compiled Binaries
 *.o
 *.obj
+*.out
+*.exe
 *.dSYM/
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-
-# Compiled engine binary
-algorithm_engine/freight_engine
+bin/
+engine/build/
 freight_engine
 
-# OS / editor
+# Optional Python Data Scripts (if used in scripts/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / Editor
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
 
-# Logs / temp
+# Logs / Runtime Cache
 *.log
-backend/recent_runs.json
+server/recent_runs.json
