@@ -12,7 +12,7 @@ yarn-error.log*
 *.exe
 *.dSYM/
 bin/
-engine/build/
+algorithm/build/
 freight_engine
 
 # Optional Python Data Scripts (if used in scripts/)
