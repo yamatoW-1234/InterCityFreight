@@ -111,7 +111,7 @@ const App = {
         try {
             const h = await API.health();
             el.innerHTML = h.engine_built
-                ? '<span class="dot dot-ok"></span> C++ engine ready'
+                ? '<span class="dot dot-ok"></span> Algorithm engine ready'
                 : '<span class="dot dot-err"></span> Engine not built';
         } catch (e) {
             el.innerHTML = '<span class="dot dot-err"></span> Backend offline';

@@ -52,5 +52,5 @@ const Fmt = {
     km(x)  { return (x === null || x === undefined || isNaN(x)) ? "–" : Number(x).toFixed(1); },
     inr(x) { return (x === null || x === undefined || isNaN(x)) ? "–" : "₹" + Math.round(x).toLocaleString("en-IN"); },
     hrs(x) { return (x === null || x === undefined || isNaN(x)) ? "–" : Number(x).toFixed(1); },
-    ms(x)  { return (x === null || x === undefined || isNaN(x)) ? "–" : Number(x).toFixed(2); },
+    ms(x)  { return (x === null || x === undefined || isNaN(x)) ? "–" : Number(x).toFixed(3); },
 };

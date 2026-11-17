@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inter-City Freight Logistics &amp; Route Generator</title>
+  <title>Inter-City Freight Logistics Engine</title>
+
+  <!-- Typography: Roboto Slab + Google Sans Flex -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,500;6..144,600&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Leaflet (OpenStreetMap) -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <!-- Design system -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -16,21 +21,45 @@
     <!-- ===================== SIDEBAR ===================== -->
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand-logo">🚚</div>
+        <div class="brand-mark">FR</div>
         <div class="brand-text">
-          <span class="brand-title">FreightRoute</span>
-          <span class="brand-sub">DAA Minor Project</span>
+          <span class="brand-title">FreightRouting</span>
         </div>
       </div>
 
       <nav class="nav">
-        <button class="nav-item active" data-section="dashboard">📊 <span>Dashboard</span></button>
-        <button class="nav-item" data-section="route">🧭 <span>Route Generator</span></button>
-        <button class="nav-item" data-section="compare">⚖️ <span>Route Comparison</span></button>
-        <button class="nav-item" data-section="map">🗺️ <span>Network Map</span></button>
-        <button class="nav-item" data-section="planner">🏭 <span>Multi-Hub Planner</span></button>
-        <button class="nav-item" data-section="analysis">📈 <span>Algorithm Analysis</span></button>
-        <button class="nav-item" data-section="visualizer">🌳 <span>Data Structures</span></button>
+        <button class="nav-item active" data-section="dashboard">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard</span>
+        </button>
+        <button class="nav-item" data-section="route">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+          <span>Route Generator</span>
+        </button>
+        <button class="nav-item" data-section="compare">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Route Comparison</span>
+        </button>
+        <button class="nav-item" data-section="map">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          <span>Network Map</span>
+        </button>
+        <button class="nav-item" data-section="planner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="12" y1="7" x2="5" y2="17"/><line x1="12" y1="7" x2="19" y2="17"/><line x1="7" y1="19" x2="17" y2="19"/></svg>
+          <span>Multi-Hub Planner</span>
+        </button>
+        <button class="nav-item" data-section="analysis">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span>Algorithm Analysis</span>
+        </button>
+        <button class="nav-item" data-section="visualizer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="3" y="18" width="6" height="4" rx="1"/><rect x="15" y="18" width="6" height="4" rx="1"/><path d="M12 6v6m0 0H6v6m6-6h6v6"/></svg>
+          <span>Data Structures</span>
+        </button>
+        <button class="nav-item" data-section="about">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>About Project</span>
+        </button>
       </nav>
 
       <div class="sidebar-footer">
@@ -47,7 +76,7 @@
       <section class="section active" id="section-dashboard">
         <header class="page-header">
           <h1>Logistics Control Dashboard</h1>
-          <p>Network overview, recent calculations and engine performance.</p>
+          <p>Network overview, recent calculations, and engine performance.</p>
         </header>
 
         <div class="stat-grid">
@@ -73,7 +102,7 @@
           <div class="table-wrap">
             <table class="table" id="recent-table">
               <thead>
-                <tr><th>Time</th><th>Route</th><th>Objective</th><th>Algorithm</th><th>Distance</th><th>Cost</th><th>Engine&nbsp;ms</th></tr>
+                <tr><th>Time</th><th>Route</th><th>Objective</th><th>Algorithm</th><th>Distance</th><th>Cost</th><th>Engine ms</th></tr>
               </thead>
               <tbody></tbody>
             </table>
@@ -85,7 +114,7 @@
       <section class="section" id="section-route">
         <header class="page-header">
           <h1>Route Generator</h1>
-          <p>The decision controller automatically selects the optimal algorithm for your objective.</p>
+          <p>Select endpoints and objective; the decision controller dispatches the optimal algorithm.</p>
         </header>
 
         <div class="card">
@@ -102,7 +131,7 @@
               <label>Objective</label>
               <select id="route-objective">
                 <option value="fastest">Fastest transit (A*)</option>
-                <option value="cheapest">Minimum cost (Bellman-Ford)</option>
+                <option value="cheapest">Minimum cost (Bellman-Ford / Dijkstra)</option>
                 <option value="shortest">Shortest distance (Dijkstra)</option>
               </select>
             </div>
@@ -120,9 +149,13 @@
 
         <div id="route-result" class="hidden">
           <div class="card highlight">
-            <div class="card-title">Selected Algorithm</div>
-            <div class="algo-badge" id="route-algo"></div>
-            <p class="muted" id="route-reason"></p>
+            <div class="card-header-inline">
+              <div>
+                <div class="card-title" style="margin-bottom:4px">Selected Algorithm</div>
+                <p class="muted small" id="route-reason" style="margin:0"></p>
+              </div>
+              <div class="algo-badge" id="route-algo"></div>
+            </div>
             <div class="limit-badges">
               <span class="badge" id="route-budget-badge"></span>
               <span class="badge" id="route-time-badge"></span>
@@ -142,10 +175,10 @@
             <div class="card">
               <div class="card-title">Route Itinerary</div>
               <ol id="route-path" class="path-list"></ol>
-              <div class="muted small" id="route-exec"></div>
+              <div class="muted small" id="route-exec" style="margin-top:12px"></div>
             </div>
             <div class="card">
-              <div class="card-title">Route Map <span class="tag">schematic</span></div>
+              <div class="card-title">Route Map</div>
               <div id="route-map" class="map-box"></div>
             </div>
           </div>
@@ -168,7 +201,7 @@
       <section class="section" id="section-compare">
         <header class="page-header">
           <h1>Route Comparison</h1>
-          <p>Compare the fastest, cheapest and shortest routes between two cities.</p>
+          <p>Evaluate fastest, cheapest, and shortest paths simultaneously.</p>
         </header>
 
         <div class="card">
@@ -202,7 +235,7 @@
       <section class="section" id="section-map">
         <header class="page-header">
           <h1>Network Map</h1>
-          <p>All demo cities and schematic highway connections (not verified road geometry).</p>
+          <p>Configured cities and schematic highway corridors.</p>
         </header>
         <div class="card">
           <div class="map-toolbar">
@@ -217,7 +250,7 @@
       <section class="section" id="section-planner">
         <header class="page-header">
           <h1>Multi-Hub Infrastructure Planner</h1>
-          <p>Select distribution hubs; Prim's MST finds the minimal highway backbone. This is network planning, not a delivery route.</p>
+          <p>Select distribution hubs to compute the minimal highway backbone via Prim's MST.</p>
         </header>
 
         <div class="card">
@@ -254,20 +287,20 @@
       <section class="section" id="section-analysis">
         <header class="page-header">
           <h1>Algorithm Analysis</h1>
-          <p>Theoretical complexity vs measured execution time. Academic DAA reference.</p>
+          <p>Theoretical complexity bounds and empirical synthetic benchmarks.</p>
         </header>
 
         <div class="grid-2" id="algo-cards"></div>
 
         <div class="card">
           <div class="card-title">Performance Benchmark</div>
-          <p class="muted small">Runs every algorithm on synthetic graphs of increasing size. Theoretical complexity is separate from these experimental measurements.</p>
-          <div class="form-row">
+          <p class="muted small">Measures execution time across synthetic graphs of increasing vertex count.</p>
+          <div class="form-row" style="margin-bottom:14px">
             <button class="btn btn-primary" id="bench-go">Run Benchmark</button>
             <span class="muted small" id="bench-status"></span>
           </div>
           <canvas id="bench-chart"></canvas>
-          <div class="table-wrap">
+          <div class="table-wrap" style="margin-top:16px">
             <table class="table" id="bench-table">
               <thead><tr><th>V</th><th>E</th><th>Dijkstra ms</th><th>A* ms</th><th>Bellman-Ford ms</th><th>Prim ms</th></tr></thead>
               <tbody></tbody>
@@ -280,7 +313,7 @@
       <section class="section" id="section-visualizer">
         <header class="page-header">
           <h1>Data Structure Visualizer</h1>
-          <p>Interactive AVL tree and B-Tree demonstrations backed by the C++ engine.</p>
+          <p>Step-by-step AVL tree and B-Tree state inspection backed by C-based engine.</p>
         </header>
 
         <div class="tabs">
@@ -295,7 +328,7 @@
               <div class="form-field"><label>Delete (comma-separated ints)</label><input id="avl-delete" value="" /></div>
               <button class="btn btn-primary" id="avl-go">Run</button>
             </div>
-            <div class="kv-list" id="avl-stats"></div>
+            <div class="kv-list" id="avl-stats" style="margin-top:14px"></div>
           </div>
           <div class="card"><div class="card-title">AVL Structure (after each step)</div><div class="tree-canvas" id="avl-canvas"></div></div>
           <div class="card"><div class="card-title">In-order Traversal</div><div class="traversal" id="avl-inorder"></div></div>
@@ -308,10 +341,80 @@
               <div class="form-field"><label>Insert (comma-separated ints)</label><input id="bt-insert" value="10,20,5,6,12,30,7,17,3,25,40,55,60,1,8" /></div>
               <button class="btn btn-primary" id="bt-go">Run</button>
             </div>
-            <div class="kv-list" id="bt-stats"></div>
+            <div class="kv-list" id="bt-stats" style="margin-top:14px"></div>
           </div>
           <div class="card"><div class="card-title">B-Tree Structure (after each insertion)</div><div class="tree-canvas" id="bt-canvas"></div></div>
           <div class="card"><div class="card-title">In-order Keys</div><div class="traversal" id="bt-inorder"></div></div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT PROJECT ========== -->
+      <section class="section" id="section-about">
+        <header class="page-header">
+          <h1>About Project</h1>
+        </header>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">Project Overview</div>
+            <p class="about-desc">
+              <strong>FreightRoute</strong> is an Inter-City Freight Logistics &amp; Infrastructure Network Planner built for the Design and Analysis of Algorithms (DAA) course. It models Indian highway corridors as a weighted directed graph and dispatches deterministic shortest-path and minimum-spanning-tree algorithms based on operational objectives.
+            </p>
+            <div class="kv-list" style="margin-top: 14px;">
+              <div class="kv"><span>Course</span><span>Design &amp; Analysis of Algorithms (DAA)</span></div>
+              <div class="kv"><span>Core Engine</span><span>Pure C11 (Zero external runtime dependencies)</span></div>
+              <div class="kv"><span>Backend Bridge</span><span>Node.js + Express REST API</span></div>
+              <div class="kv"><span>Frontend</span><span>Vanilla JS, Leaflet (OpenStreetMap), Chart.js</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Core Algorithmic Capabilities</div>
+            <div class="algo-list">
+              <div class="algo-item">
+                <b>A* Search (Fastest Transit)</b>
+                <span>Minimizes travel time using an admissible Haversine distance / max-speed heuristic.</span>
+              </div>
+              <div class="algo-item">
+                <b>Dijkstra's Algorithm (Shortest / Non-Negative Cost)</b>
+                <span>Backed by a custom AVL-tree indexed min-priority queue for O((V + E) log V) extraction.</span>
+              </div>
+              <div class="algo-item">
+                <b>Bellman-Ford (Subsidized Financial Routing)</b>
+                <span>Computes net cost (toll + fuel − subsidy) with negative edge weights and cycle detection.</span>
+              </div>
+              <div class="algo-item">
+                <b>Prim's MST &amp; B-Tree City Indexing</b>
+                <span>Builds multi-hub highway backbones over metric closures and resolves city lookups in O(log n).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Development Team</div>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-name">Kushagra K. Singh</div>
+              <div class="team-meta">Roll No. 251210056</div>
+              <div class="team-meta">Role: Front-End &amp; Back-End Runtime</div>
+            </div>
+            <div class="team-card">
+              <div class="team-name">Moulando Barman</div>
+              <div class="team-meta">Roll No. 251210069</div>
+              <div class="team-meta">Role: Algorithm Implementation</div>
+            </div>
+            <div class="team-card">
+              <div class="team-name">Kunga Tsewang</div>
+              <div class="team-meta">Roll No. 251210055</div>
+              <div class="team-meta">Role: Data Collection &amp; Test Generation</div>
+            </div>
+            <div class="team-card">
+              <div class="team-name">Krishna Gautam</div>
+              <div class="team-meta">Roll No. 251210054</div>
+              <div class="team-meta">Role: Algorithm Implementation</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -323,7 +426,7 @@
 
   <!-- Vendor libraries -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
   <!-- Application modules -->
   <script src="js/api.js"></script>

@@ -85,8 +85,7 @@ const Route = {
         Maps.ensure("route-map");
         Maps.clear("route-map");
         if (App.network) Maps.drawRoads("route-map", App.network);
-        const color = { fastest: "#22d3ee", cheapest: "#34d399", shortest: "#3b82f6" }[r.objective] || "#22d3ee";
-        Maps.drawRoute("route-map", r.path_coords, color);
+        Maps.drawRoute("route-map", r.path_coords, "#f4f4f6", r.path || []);
         Maps.invalidate("route-map");
     },
 };
