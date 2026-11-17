@@ -1,13 +1,17 @@
 {
   "name": "intercityfreight",
-  "version": "1.0.0",
-  "description": "**Subject:** Design and Analysis of Algorithms (DAA) — B.Tech CSE Minor Project\r **Development period:** 3–4 weeks · **Target OS:** macOS · **No paid API keys**",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Design and Analysis of Algorithms (DAA) — B.Tech CSE Minor Project",
+  "main": "server/server.js",
+  "type": "commonjs",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:engine": "make -C algorithm",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "node tests/smokeTest.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +20,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/yamatow-1234/intercityfreight/issues"
   },
