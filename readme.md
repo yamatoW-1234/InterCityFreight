@@ -82,7 +82,7 @@ InterCityFreight/
    *(Or run `npm start` / `node server/server.js`.)*
 
 3. **Open the dashboard:**
-   Navigate to `http://localhost:3000` in your browser to plan routes, inspect multi-hub MST backbones, and compare algorithm performance.
+   Navigate to `http://localhost:5000` in your browser to plan routes, inspect multi-hub MST backbones, and compare algorithm performance.
 
 ### Running Tests
 ```bash
