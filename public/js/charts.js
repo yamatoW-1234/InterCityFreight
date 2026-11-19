@@ -16,35 +16,40 @@ const Charts = {
         this.destroy(id);
         const el = document.getElementById(id);
         if (!el) return;
+        if (el.parentElement) {
+            el.parentElement.style.position = "relative";
+            el.parentElement.style.height = "280px";
+        }
         Chart.defaults.color = "#9e9ea9";
         Chart.defaults.borderColor = "#27272e";
         this._instances[id] = new Chart(el.getContext("2d"), config);
     },
 
-    renderComparison(routes) {
-        const labels = routes.map(r => `${r.objective} (${r.algorithm})`);
-        this.create("cmp-chart", {
+    renderComparison(id, routes) {
+        const list = Array.isArray(routes) ? routes : [];
+        const labels = list.map(r => `${r.objective} (${r.algorithm})`);
+        this.create(id, {
             type: "bar",
             data: {
                 labels,
                 datasets: [
                     {
                         label: "Distance (km)",
-                        data: routes.map(r => Math.round(r.total_distance_km)),
+                        data: list.map(r => Math.round(r.total_distance_km || 0)),
                         backgroundColor: "#f4f4f6",
                         borderRadius: 4,
                         yAxisID: "y",
                     },
                     {
                         label: "Time (hrs)",
-                        data: routes.map(r => +r.total_time_hrs.toFixed(1)),
+                        data: list.map(r => +(r.total_time_hours || 0).toFixed(1)),
                         backgroundColor: "#a1a1aa",
                         borderRadius: 4,
                         yAxisID: "y1",
                     },
                     {
                         label: "Cost (₹)",
-                        data: routes.map(r => Math.round(r.total_cost)),
+                        data: list.map(r => Math.round(r.total_cost || 0)),
                         backgroundColor: "#52525b",
                         borderRadius: 4,
                         yAxisID: "y2",
@@ -67,23 +72,24 @@ const Charts = {
         });
     },
 
-    renderBenchmark(rows) {
-        const labels = rows.map(r => `${r.cities} cities / ${r.edges} edges`);
-        this.create("bench-chart", {
+    renderBenchmark(id, rows) {
+        const list = Array.isArray(rows) ? rows : [];
+        const labels = list.map(r => `${r.vertices} vertices / ${r.edges} edges`);
+        this.create(id, {
             type: "line",
             data: {
                 labels,
                 datasets: [
                     {
                         label: "Dijkstra (ms)",
-                        data: rows.map(r => r.dijkstra_ms),
+                        data: list.map(r => r.dijkstra_ms),
                         borderColor: "#f4f4f6",
                         backgroundColor: "#f4f4f6",
                         tension: 0.25,
                     },
                     {
                         label: "A* Search (ms)",
-                        data: rows.map(r => r.astar_ms),
+                        data: list.map(r => r.astar_ms),
                         borderColor: "#a1a1aa",
                         backgroundColor: "#a1a1aa",
                         borderDash: [6, 4],

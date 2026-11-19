@@ -123,7 +123,8 @@ const Maps = {
         (mst.mst_edges || []).forEach(e => {
             const coords = e.corridor_coords || [];
             if (coords.length >= 2) {
-                const line = L.polyline(coords, { color: "#09090b", weight: 4.5, opacity: 0.95 });
+                g.addLayer(L.polyline(coords, { color: "#ffffff", weight: 8, opacity: 0.12 }));
+                const line = L.polyline(coords, { color: "#a1a1aa", weight: 4, opacity: 0.95 });
                 line.bindPopup("<b>" + e.from + " ↔ " + e.to + "</b><br>" +
                     Math.round(e.distance_km) + " km · " + Fmt.inr(e.cost));
                 g.addLayer(line);
@@ -134,7 +135,13 @@ const Maps = {
         (mst.hubs || []).forEach(name => {
             const c = idx[name];
             if (c) {
-                g.addLayer(L.circleMarker(c, { radius: 8.5, color: "#09090b", weight: 2.5, fillColor: "#f59e0b", fillOpacity: 1 }).bindPopup("Hub: " + name));
+                g.addLayer(L.circleMarker(c, {
+                    radius: 8,
+                    color: "#09090b",
+                    weight: 2.5,
+                    fillColor: "#ffffff",
+                    fillOpacity: 1
+                }).bindPopup("Hub: " + name));
                 boundsPts.push(c);
             }
         });

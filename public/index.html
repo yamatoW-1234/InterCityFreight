@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,16 @@
   <!-- Typography: Roboto Slab + Google Sans Flex -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,500;6..144,600&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400;6..144,500;6..144,600&family=Roboto+Slab:wght@500;600;700&display=swap"
+    rel="stylesheet" />
 
   <!-- Leaflet (OpenStreetMap) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <div class="app">
 
@@ -29,35 +33,61 @@
 
       <nav class="nav">
         <button class="nav-item active" data-section="dashboard">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
           <span>Dashboard</span>
         </button>
         <button class="nav-item" data-section="route">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="6" cy="19" r="3" />
+            <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+            <circle cx="18" cy="5" r="3" />
+          </svg>
           <span>Route Generator</span>
         </button>
         <button class="nav-item" data-section="compare">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
           <span>Route Comparison</span>
         </button>
         <button class="nav-item" data-section="map">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+            <line x1="8" y1="2" x2="8" y2="18" />
+            <line x1="16" y1="6" x2="16" y2="22" />
+          </svg>
           <span>Network Map</span>
         </button>
         <button class="nav-item" data-section="planner">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="12" y1="7" x2="5" y2="17"/><line x1="12" y1="7" x2="19" y2="17"/><line x1="7" y1="19" x2="17" y2="19"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="5" r="2" />
+            <circle cx="5" cy="19" r="2" />
+            <circle cx="19" cy="19" r="2" />
+            <line x1="12" y1="7" x2="5" y2="17" />
+            <line x1="12" y1="7" x2="19" y2="17" />
+            <line x1="7" y1="19" x2="17" y2="19" />
+          </svg>
           <span>Multi-Hub Planner</span>
         </button>
         <button class="nav-item" data-section="analysis">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+          </svg>
           <span>Algorithm Analysis</span>
         </button>
-        <button class="nav-item" data-section="visualizer">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="3" y="18" width="6" height="4" rx="1"/><rect x="15" y="18" width="6" height="4" rx="1"/><path d="M12 6v6m0 0H6v6m6-6h6v6"/></svg>
-          <span>Data Structures</span>
-        </button>
         <button class="nav-item" data-section="about">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+          </svg>
           <span>About Project</span>
         </button>
       </nav>
@@ -80,10 +110,22 @@
         </header>
 
         <div class="stat-grid">
-          <div class="stat-card"><div class="stat-value" id="stat-cities">–</div><div class="stat-label">Cities</div></div>
-          <div class="stat-card"><div class="stat-value" id="stat-roads">–</div><div class="stat-label">Highway Links</div></div>
-          <div class="stat-card"><div class="stat-value" id="stat-algos">4</div><div class="stat-label">Algorithms</div></div>
-          <div class="stat-card"><div class="stat-value" id="stat-negedge">–</div><div class="stat-label">Negative-Cost Edges</div></div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-cities">–</div>
+            <div class="stat-label">Cities</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-roads">–</div>
+            <div class="stat-label">Highway Links</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-algos">4</div>
+            <div class="stat-label">Algorithms</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="stat-negedge">–</div>
+            <div class="stat-label">Negative-Cost Edges</div>
+          </div>
         </div>
 
         <div class="grid-2">
@@ -102,7 +144,15 @@
           <div class="table-wrap">
             <table class="table" id="recent-table">
               <thead>
-                <tr><th>Time</th><th>Route</th><th>Objective</th><th>Algorithm</th><th>Distance</th><th>Cost</th><th>Engine ms</th></tr>
+                <tr>
+                  <th>Time</th>
+                  <th>Route</th>
+                  <th>Objective</th>
+                  <th>Algorithm</th>
+                  <th>Distance</th>
+                  <th>Cost</th>
+                  <th>Engine ms</th>
+                </tr>
               </thead>
               <tbody></tbody>
             </table>
@@ -163,12 +213,30 @@
           </div>
 
           <div class="stat-grid">
-            <div class="stat-card"><div class="stat-value" id="r-distance">–</div><div class="stat-label">Distance (km)</div></div>
-            <div class="stat-card"><div class="stat-value" id="r-time">–</div><div class="stat-label">Transit (hrs)</div></div>
-            <div class="stat-card"><div class="stat-value" id="r-toll">–</div><div class="stat-label">Toll (₹)</div></div>
-            <div class="stat-card"><div class="stat-value" id="r-fuel">–</div><div class="stat-label">Fuel (₹)</div></div>
-            <div class="stat-card"><div class="stat-value" id="r-subsidy">–</div><div class="stat-label">Subsidy (₹)</div></div>
-            <div class="stat-card"><div class="stat-value" id="r-cost">–</div><div class="stat-label">Total Cost (₹)</div></div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-distance">–</div>
+              <div class="stat-label">Distance (km)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-time">–</div>
+              <div class="stat-label">Transit (hrs)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-toll">–</div>
+              <div class="stat-label">Toll (₹)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-fuel">–</div>
+              <div class="stat-label">Fuel (₹)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-subsidy">–</div>
+              <div class="stat-label">Subsidy (₹)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="r-cost">–</div>
+              <div class="stat-label">Total Cost (₹)</div>
+            </div>
           </div>
 
           <div class="grid-2">
@@ -188,7 +256,16 @@
             <div class="table-wrap">
               <table class="table" id="route-edges">
                 <thead>
-                  <tr><th>Leg</th><th>Highway</th><th>km</th><th>hrs</th><th>Toll ₹</th><th>Fuel ₹</th><th>Subsidy ₹</th><th>Net ₹</th></tr>
+                  <tr>
+                    <th>Leg</th>
+                    <th>Highway</th>
+                    <th>km</th>
+                    <th>hrs</th>
+                    <th>Toll ₹</th>
+                    <th>Fuel ₹</th>
+                    <th>Subsidy ₹</th>
+                    <th>Net ₹</th>
+                  </tr>
                 </thead>
                 <tbody></tbody>
               </table>
@@ -218,15 +295,31 @@
             <div class="table-wrap">
               <table class="table" id="cmp-table">
                 <thead>
-                  <tr><th>Objective</th><th>Algorithm</th><th>Distance km</th><th>Time hrs</th><th>Cost ₹</th><th>Engine ms</th><th>Expanded</th></tr>
+                  <tr>
+                    <th>Objective</th>
+                    <th>Algorithm</th>
+                    <th>Distance km</th>
+                    <th>Time hrs</th>
+                    <th>Cost ₹</th>
+                    <th>Engine ms</th>
+                    <th>Expanded</th>
+                  </tr>
                 </thead>
                 <tbody></tbody>
               </table>
             </div>
           </div>
           <div class="grid-2">
-            <div class="card"><div class="card-title">Cost vs Time vs Distance</div><canvas id="cmp-chart"></canvas></div>
-            <div class="card"><div class="card-title">Routes on Map <span class="tag">schematic</span></div><div id="cmp-map" class="map-box"></div></div>
+            <div class="card">
+              <div class="card-title">Cost vs Time vs Distance</div>
+              <div class="chart-wrap" style="position:relative; height:280px; width:100%;">
+                <canvas id="cmp-chart"></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">Routes on Map <span class="tag">schematic</span></div>
+              <div id="cmp-map" class="map-box"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -263,22 +356,44 @@
 
         <div id="mst-result" class="hidden">
           <div class="stat-grid">
-            <div class="stat-card"><div class="stat-value" id="mst-hubs">–</div><div class="stat-label">Hubs</div></div>
-            <div class="stat-card"><div class="stat-value" id="mst-distance">–</div><div class="stat-label">Network km</div></div>
-            <div class="stat-card"><div class="stat-value" id="mst-cost">–</div><div class="stat-label">Est. Cost ₹</div></div>
-            <div class="stat-card"><div class="stat-value" id="mst-exec">–</div><div class="stat-label">Engine ms</div></div>
+            <div class="stat-card">
+              <div class="stat-value" id="mst-hubs">–</div>
+              <div class="stat-label">Hubs</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="mst-distance">–</div>
+              <div class="stat-label">Network km</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="mst-cost">–</div>
+              <div class="stat-label">Est. Cost ₹</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" id="mst-exec">–</div>
+              <div class="stat-label">Engine ms</div>
+            </div>
           </div>
           <div class="grid-2">
             <div class="card">
               <div class="card-title">MST Connections</div>
               <div class="table-wrap">
                 <table class="table" id="mst-edges">
-                  <thead><tr><th>Link</th><th>Corridor</th><th>km</th><th>Cost ₹</th></tr></thead>
+                  <thead>
+                    <tr>
+                      <th>Link</th>
+                      <th>Corridor</th>
+                      <th>km</th>
+                      <th>Cost ₹</th>
+                    </tr>
+                  </thead>
                   <tbody></tbody>
                 </table>
               </div>
             </div>
-            <div class="card"><div class="card-title">Network Map</div><div id="mst-map" class="map-box"></div></div>
+            <div class="card">
+              <div class="card-title">Network Map</div>
+              <div id="mst-map" class="map-box"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -299,52 +414,24 @@
             <button class="btn btn-primary" id="bench-go">Run Benchmark</button>
             <span class="muted small" id="bench-status"></span>
           </div>
-          <canvas id="bench-chart"></canvas>
+          <div class="chart-wrap" style="position:relative; height:280px; width:100%;">
+            <canvas id="bench-chart"></canvas>
+          </div>
           <div class="table-wrap" style="margin-top:16px">
             <table class="table" id="bench-table">
-              <thead><tr><th>V</th><th>E</th><th>Dijkstra ms</th><th>A* ms</th><th>Bellman-Ford ms</th><th>Prim ms</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>V</th>
+                  <th>E</th>
+                  <th>Dijkstra ms</th>
+                  <th>A* ms</th>
+                  <th>Bellman-Ford ms</th>
+                  <th>Prim ms</th>
+                </tr>
+              </thead>
               <tbody></tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      <!-- ========== DATA STRUCTURE VISUALIZER ========== -->
-      <section class="section" id="section-visualizer">
-        <header class="page-header">
-          <h1>Data Structure Visualizer</h1>
-          <p>Step-by-step AVL tree and B-Tree state inspection backed by C-based engine.</p>
-        </header>
-
-        <div class="tabs">
-          <button class="tab active" data-tab="avl">AVL Tree</button>
-          <button class="tab" data-tab="btree">B-Tree</button>
-        </div>
-
-        <div class="tab-panel active" id="tab-avl">
-          <div class="card">
-            <div class="form-row">
-              <div class="form-field"><label>Insert (comma-separated ints)</label><input id="avl-insert" value="10,20,30,40,50,25" /></div>
-              <div class="form-field"><label>Delete (comma-separated ints)</label><input id="avl-delete" value="" /></div>
-              <button class="btn btn-primary" id="avl-go">Run</button>
-            </div>
-            <div class="kv-list" id="avl-stats" style="margin-top:14px"></div>
-          </div>
-          <div class="card"><div class="card-title">AVL Structure (after each step)</div><div class="tree-canvas" id="avl-canvas"></div></div>
-          <div class="card"><div class="card-title">In-order Traversal</div><div class="traversal" id="avl-inorder"></div></div>
-        </div>
-
-        <div class="tab-panel" id="tab-btree">
-          <div class="card">
-            <div class="form-row">
-              <div class="form-field"><label>Minimum degree t</label><input type="number" id="bt-degree" value="3" min="2" /></div>
-              <div class="form-field"><label>Insert (comma-separated ints)</label><input id="bt-insert" value="10,20,5,6,12,30,7,17,3,25,40,55,60,1,8" /></div>
-              <button class="btn btn-primary" id="bt-go">Run</button>
-            </div>
-            <div class="kv-list" id="bt-stats" style="margin-top:14px"></div>
-          </div>
-          <div class="card"><div class="card-title">B-Tree Structure (after each insertion)</div><div class="tree-canvas" id="bt-canvas"></div></div>
-          <div class="card"><div class="card-title">In-order Keys</div><div class="traversal" id="bt-inorder"></div></div>
         </div>
       </section>
 
@@ -358,7 +445,10 @@
           <div class="card">
             <div class="card-title">Project Overview</div>
             <p class="about-desc">
-              <strong>FreightRoute</strong> is an Inter-City Freight Logistics &amp; Infrastructure Network Planner built for the Design and Analysis of Algorithms (DAA) course. It models Indian highway corridors as a weighted directed graph and dispatches deterministic shortest-path and minimum-spanning-tree algorithms based on operational objectives.
+              <strong>FreightRoute</strong> is an Inter-City Freight Logistics &amp; Infrastructure Network Planner
+              built for the Design and Analysis of Algorithms (DAA) course. It models Indian highway corridors as a
+              weighted directed graph and dispatches deterministic shortest-path and minimum-spanning-tree algorithms
+              based on operational objectives.
             </p>
             <div class="kv-list" style="margin-top: 14px;">
               <div class="kv"><span>Course</span><span>Design &amp; Analysis of Algorithms (DAA)</span></div>
@@ -385,7 +475,8 @@
               </div>
               <div class="algo-item">
                 <b>Prim's MST &amp; B-Tree City Indexing</b>
-                <span>Builds multi-hub highway backbones over metric closures and resolves city lookups in O(log n).</span>
+                <span>Builds multi-hub highway backbones over metric closures and resolves city lookups in O(log
+                  n).</span>
               </div>
             </div>
           </div>
@@ -437,7 +528,7 @@
   <script src="js/compare.js"></script>
   <script src="js/planner.js"></script>
   <script src="js/analysis.js"></script>
-  <script src="js/visualizer.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
