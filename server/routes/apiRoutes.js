@@ -37,6 +37,13 @@ router.get("/health", (req, res) => {
   });
 });
 
+router.get("/config", (req, res) => {
+  res.json({
+    status: "ok",
+    carto_api_key: process.env.CARTO_API_KEY || "",
+  });
+});
+
 // ---- Routing --------------------------------------------------------------
 router.post("/route", (req, res) => {
   const body = req.body || {};

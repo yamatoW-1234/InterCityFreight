@@ -30,3 +30,7 @@ Thumbs.db
 # Logs / Runtime Cache
 *.log
 server/recent_runs.json
+
+# Environment variables
+.env
+.env.*

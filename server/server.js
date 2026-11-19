@@ -1,8 +1,20 @@
+const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const { HOST, PORT, PUBLIC_DIR } = require("./config");
 const apiRoutes = require("./routes/apiRoutes");
+
+// Load .env if present (zero extra dependencies)
+const envPath = path.join(__dirname, "..", ".env");
+if (fs.existsSync(envPath)) {
+  fs.readFileSync(envPath, "utf8").split(/\r?\n/).forEach(line => {
+    const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)?\s*$/);
+    if (match && !process.env[match[1]]) {
+      process.env[match[1]] = (match[2] || "").replace(/^['"]|['"]$/g, "");
+    }
+  });
+}
 
 function createApp() {
   const app = express();

@@ -26,10 +26,21 @@ const App = {
         this.bindNav();
         this.bindTabs();
         this.bindMapToggles();
+        await this.loadConfig();
         await this.loadNetwork();
         await this.loadMeta();
         await this.checkEngine();
         Dashboard.load();
+    },
+
+    async loadConfig() {
+        try {
+            const cfg = await API.config();
+            if (cfg && cfg.carto_api_key) {
+                Maps.tileUrl = `https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=${encodeURIComponent(cfg.carto_api_key)}`;
+                Maps.attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>';
+            }
+        } catch (e) { /* falls back to default OpenStreetMap tiles */ }
     },
 
     bindNav() {

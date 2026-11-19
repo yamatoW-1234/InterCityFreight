@@ -27,6 +27,7 @@ const API = {
     },
 
     // ---- named endpoints ----
+    config()     { return this.get("/config"); },
     network()    { return this.get("/network"); },
     meta()       { return this.get("/meta"); },
     health()     { return this.get("/health"); },
