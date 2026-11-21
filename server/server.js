@@ -1,3 +1,4 @@
+try { process.loadEnvFile(); } catch (_) {}
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -29,7 +30,7 @@ app.use('/api/vehicles', vehicleApi);
 app.use('/api/cargo', cargoApi);
 
 // Fallback to index.html for root/SPA navigation
-app.get('*', (_req, res) => {
+app.use((_req, res) => {
   res.sendFile(path.join(publicDir, 'index.html'));
 });
 
