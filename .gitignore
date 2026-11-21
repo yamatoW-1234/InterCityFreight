@@ -10,9 +10,10 @@ bin/
 *.out
 *.exe
 
-# Local data-fetcher script (contains API keys)
+# Local-only data
 data/fetch_data.py
 tree.txt
+*.zip
 
 # OS & Editor files
 .DS_Store
