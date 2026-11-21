@@ -1,0 +1,214 @@
+{
+  "cities": [
+    {
+      "id": 0,
+      "name": "Delhi",
+      "state": "Delhi",
+      "lat": 28.6665,
+      "lon": 77.217
+    },
+    {
+      "id": 1,
+      "name": "Ludhiana",
+      "state": "Punjab",
+      "lat": 30.909,
+      "lon": 75.8516
+    },
+    {
+      "id": 2,
+      "name": "Amritsar",
+      "state": "Punjab",
+      "lat": 31.6357,
+      "lon": 74.8787
+    },
+    {
+      "id": 3,
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "lat": 26.9155,
+      "lon": 75.819
+    },
+    {
+      "id": 4,
+      "name": "Agra",
+      "state": "Uttar Pradesh",
+      "lat": 27.1753,
+      "lon": 78.0098
+    },
+    {
+      "id": 5,
+      "name": "Lucknow",
+      "state": "Uttar Pradesh",
+      "lat": 26.8381,
+      "lon": 80.9346
+    },
+    {
+      "id": 6,
+      "name": "Kanpur",
+      "state": "Uttar Pradesh",
+      "lat": 26.4609,
+      "lon": 80.3218
+    },
+    {
+      "id": 7,
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "lat": 25.3356,
+      "lon": 83.0076
+    },
+    {
+      "id": 8,
+      "name": "Patna",
+      "state": "Bihar",
+      "lat": 25.6093,
+      "lon": 85.1235
+    },
+    {
+      "id": 9,
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "lat": 22.5726,
+      "lon": 88.3639
+    },
+    {
+      "id": 10,
+      "name": "Guwahati",
+      "state": "Assam",
+      "lat": 26.1806,
+      "lon": 91.7539
+    },
+    {
+      "id": 11,
+      "name": "Ahmedabad",
+      "state": "Gujarat",
+      "lat": 23.0215,
+      "lon": 72.5801
+    },
+    {
+      "id": 12,
+      "name": "Vadodara",
+      "state": "Gujarat",
+      "lat": 22.2973,
+      "lon": 73.1943
+    },
+    {
+      "id": 13,
+      "name": "Surat",
+      "state": "Gujarat",
+      "lat": 21.2095,
+      "lon": 72.8317
+    },
+    {
+      "id": 14,
+      "name": "Mumbai",
+      "state": "Maharashtra",
+      "lat": 19.055,
+      "lon": 72.8692
+    },
+    {
+      "id": 15,
+      "name": "Pune",
+      "state": "Maharashtra",
+      "lat": 18.5214,
+      "lon": 73.8545
+    },
+    {
+      "id": 16,
+      "name": "Indore",
+      "state": "Madhya Pradesh",
+      "lat": 22.7204,
+      "lon": 75.8682
+    },
+    {
+      "id": 17,
+      "name": "Bhopal",
+      "state": "Madhya Pradesh",
+      "lat": 23.2585,
+      "lon": 77.402
+    },
+    {
+      "id": 18,
+      "name": "Nagpur",
+      "state": "Maharashtra",
+      "lat": 21.1498,
+      "lon": 79.0821
+    },
+    {
+      "id": 19,
+      "name": "Raipur",
+      "state": "Chhattisgarh",
+      "lat": 21.2381,
+      "lon": 81.6337
+    },
+    {
+      "id": 20,
+      "name": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.3606,
+      "lon": 78.4741
+    },
+    {
+      "id": 21,
+      "name": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "lat": 17.6936,
+      "lon": 83.2921
+    },
+    {
+      "id": 22,
+      "name": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.9768,
+      "lon": 77.5901
+    },
+    {
+      "id": 23,
+      "name": "Chennai",
+      "state": "Tamil Nadu",
+      "lat": 13.0801,
+      "lon": 80.2808
+    },
+    {
+      "id": 24,
+      "name": "Chandigarh",
+      "state": "Chandigarh",
+      "lat": 30.7334,
+      "lon": 76.7797
+    },
+    {
+      "id": 25,
+      "name": "Bhubaneswar",
+      "state": "Odisha",
+      "lat": 20.2603,
+      "lon": 85.8395
+    },
+    {
+      "id": 26,
+      "name": "Ranchi",
+      "state": "Jharkhand",
+      "lat": 23.3701,
+      "lon": 85.325
+    },
+    {
+      "id": 27,
+      "name": "Kochi",
+      "state": "Kerala",
+      "lat": 9.9679,
+      "lon": 76.2444
+    },
+    {
+      "id": 28,
+      "name": "Coimbatore",
+      "state": "Tamil Nadu",
+      "lat": 11.0018,
+      "lon": 76.9628
+    },
+    {
+      "id": 29,
+      "name": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "lat": 16.5192,
+      "lon": 80.6238
+    }
+  ]
+}
