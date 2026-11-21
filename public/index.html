@@ -13,8 +13,8 @@
     <div class="brand">
       <span class="brand-dot"></span>
       <div>
-        <h1>Cargo-Compass</h1>
-        <p class="subtitle">Inter-City Freight Routing Engine</p>
+        <h1>Cargo Compass</h1>
+        <p class="subtitle">Inter-City Routing Engine</p>
       </div>
     </div>
 
@@ -72,6 +72,10 @@
           <label class="checkbox-row">
             <input type="checkbox" id="dynamicCargoToggle" />
             Enable Dynamic Cargo Pickup &amp; Reroute (Partial Knapsack + DP)
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="includeStoppages" checked />
+            Include Driver Rest, Food, Sleep &amp; Repair Stops
           </label>
         </div>
 
@@ -215,7 +219,7 @@
   <script src="js/stopManager.js"></script>
   <script src="js/vehiclePlanner.js"></script>
   <script src="js/cargoPanel.js"></script>
-  <script src="js/intineraryPlanner.js"></script>
+  <script src="js/itineraryPlanner.js"></script>
   <script src="js/historyMenu.js"></script>
   <script src="js/app.js"></script>
 </body>

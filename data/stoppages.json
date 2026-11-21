@@ -1,0 +1,4549 @@
+{
+  "by_city": {
+    "0": {
+      "city_id": 0,
+      "city_name": "Delhi",
+      "parking": [
+        {
+          "name": "MCD Bus Truck Parking",
+          "lat": 28.66692,
+          "lon": 77.22779
+        },
+        {
+          "name": "Dda Truck Parking",
+          "lat": 28.707,
+          "lon": 77.22175
+        },
+        {
+          "name": "D. D. A Truck Parking-Timarpur",
+          "lat": 28.70813,
+          "lon": 77.22458
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Junction Dhaba",
+          "lat": 28.5314,
+          "lon": 77.20923
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "1": {
+      "city_id": 1,
+      "city_name": "Ludhiana",
+      "parking": [
+        {
+          "name": "Truck Parking Area",
+          "lat": 31.12086,
+          "lon": 76.118
+        },
+        {
+          "name": "Truck Parking-Class",
+          "lat": 30.77314,
+          "lon": 76.51381
+        },
+        {
+          "name": "KFC Truck Parking",
+          "lat": 31.26779,
+          "lon": 76.44152
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "New Highway Vaishno Dhaba",
+          "lat": 31.00541,
+          "lon": 75.78551
+        },
+        {
+          "name": "Highway Vaishno Dhaba",
+          "lat": 31.65417,
+          "lon": 76.11663
+        },
+        {
+          "name": "Highway Vaishno Dhaba",
+          "lat": 30.4279,
+          "lon": 76.73156
+        }
+      ],
+      "repair": [
+        {
+          "name": "Repair & Service",
+          "lat": 30.90194,
+          "lon": 75.83422
+        }
+      ]
+    },
+    "2": {
+      "city_id": 2,
+      "city_name": "Amritsar",
+      "parking": [
+        {
+          "name": "Piddi Truck Parking",
+          "lat": 31.40631,
+          "lon": 74.94591
+        },
+        {
+          "name": "Guru Ram Prasad Truck Parking",
+          "lat": 30.92975,
+          "lon": 74.62632
+        },
+        {
+          "name": "Truck Loading Goods Parking",
+          "lat": 32.71587,
+          "lon": 74.85777
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 31.83529,
+          "lon": 75.18228
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 32.13931,
+          "lon": 75.60901
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 31.49268,
+          "lon": 75.82605
+        }
+      ],
+      "repair": [
+        {
+          "name": "Jaeco Diesels (Friends Diesel Services)",
+          "lat": 31.63246,
+          "lon": 74.87974
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "3": {
+      "city_id": 3,
+      "city_name": "Jaipur",
+      "parking": [
+        {
+          "name": "Shri Balaji Truck Parking",
+          "lat": 26.59781,
+          "lon": 74.84839
+        },
+        {
+          "name": "Choundary Truck Parking",
+          "lat": 26.5972,
+          "lon": 74.8466
+        },
+        {
+          "name": "Kishangarh Truck Parking",
+          "lat": 26.59494,
+          "lon": 74.84428
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Royal Punjabi Dhaba (Dhaba Restaurant)",
+          "lat": 26.89851,
+          "lon": 75.83368
+        }
+      ],
+      "repair": [
+        {
+          "name": "Bharat Diesels (Bharat Auto Repair And Service)",
+          "lat": 26.92202,
+          "lon": 75.80569
+        }
+      ]
+    },
+    "4": {
+      "city_id": 4,
+      "city_name": "Agra",
+      "parking": [
+        {
+          "name": "Bablu Truck Parking",
+          "lat": 27.21221,
+          "lon": 78.06972
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.22305,
+          "lon": 78.19747
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.23013,
+          "lon": 78.20245
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Bar",
+          "lat": 27.17954,
+          "lon": 78.00611
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "5": {
+      "city_id": 5,
+      "city_name": "Lucknow",
+      "parking": [
+        {
+          "name": "R P Auto Service Center",
+          "lat": 26.83259,
+          "lon": 80.87144
+        },
+        {
+          "name": "Maruti Air Couriers & Cargo Parking",
+          "lat": 26.47747,
+          "lon": 80.33658
+        },
+        {
+          "name": "Track Unloading",
+          "lat": 26.46002,
+          "lon": 80.22645
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba Rahimabad",
+          "lat": 26.85476,
+          "lon": 80.92151
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.68943,
+          "lon": 80.99189
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "6": {
+      "city_id": 6,
+      "city_name": "Kanpur",
+      "parking": [
+        {
+          "name": "Maruti Air Couriers & Cargo Parking",
+          "lat": 26.47747,
+          "lon": 80.33658
+        },
+        {
+          "name": "Track Unloading",
+          "lat": 26.46002,
+          "lon": 80.22645
+        },
+        {
+          "name": "Vivek Nagar Truck Parking Area",
+          "lat": 25.95688,
+          "lon": 80.14788
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "7": {
+      "city_id": 7,
+      "city_name": "Varanasi",
+      "parking": [
+        {
+          "name": "Welcome Truck Parking",
+          "lat": 25.58524,
+          "lon": 83.59528
+        },
+        {
+          "name": "Chaudhary Truck Parking",
+          "lat": 26.6447,
+          "lon": 83.58701
+        },
+        {
+          "name": "Indian Oil-Only Tanker Parking",
+          "lat": 25.5784,
+          "lon": 85.12329
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Family Restaurant and Dhaba",
+          "lat": 25.24839,
+          "lon": 82.96207
+        },
+        {
+          "name": "Highway Restaurant and Dhaba",
+          "lat": 25.54024,
+          "lon": 83.19661
+        },
+        {
+          "name": "Highway Tadka Restaurant and Dhaba",
+          "lat": 25.24693,
+          "lon": 82.97402
+        }
+      ],
+      "repair": [
+        {
+          "name": "BM Sales",
+          "lat": 25.33657,
+          "lon": 83.00714
+        },
+        {
+          "name": "Kashi Diesels",
+          "lat": 25.33544,
+          "lon": 83.00432
+        },
+        {
+          "name": "Raket Battery",
+          "lat": 25.33661,
+          "lon": 83.00722
+        }
+      ]
+    },
+    "8": {
+      "city_id": 8,
+      "city_name": "Patna",
+      "parking": [
+        {
+          "name": "Indian Oil-Only Tanker Parking",
+          "lat": 25.5784,
+          "lon": 85.12329
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Manvihar Restaurant di Dhaba",
+          "lat": 25.61104,
+          "lon": 85.13995
+        }
+      ],
+      "repair": [
+        {
+          "name": "Service Centre Patna",
+          "lat": 25.59797,
+          "lon": 85.15475
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        }
+      ]
+    },
+    "9": {
+      "city_id": 9,
+      "city_name": "Kolkata",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 22.58206,
+          "lon": 88.35198
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 22.59147,
+          "lon": 88.34334
+        },
+        {
+          "name": "Kantapukur Truck Parking Area",
+          "lat": 22.52265,
+          "lon": 88.31911
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 22.47609,
+          "lon": 88.08968
+        },
+        {
+          "name": "Punjab Highway Dhaba",
+          "lat": 22.67519,
+          "lon": 88.44529
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Intex Technologies",
+          "lat": 22.56258,
+          "lon": 88.36068
+        },
+        {
+          "name": "South Truck Service",
+          "lat": 22.5723,
+          "lon": 88.35803
+        },
+        {
+          "name": "Airconditioner Repair and Service O",
+          "lat": 22.58356,
+          "lon": 88.35596
+        }
+      ]
+    },
+    "10": {
+      "city_id": 10,
+      "city_name": "Guwahati",
+      "parking": [
+        {
+          "name": "Purobi Parking",
+          "lat": 26.11276,
+          "lon": 91.73655
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 26.11148,
+          "lon": 91.74344
+        },
+        {
+          "name": "NN Parking",
+          "lat": 26.1109,
+          "lon": 91.77333
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "National Highway Dhaba",
+          "lat": 26.28048,
+          "lon": 91.70967
+        },
+        {
+          "name": "Highway City Dhaba",
+          "lat": 26.11798,
+          "lon": 91.89464
+        },
+        {
+          "name": "Highway-15 Dhaba and Restaurant",
+          "lat": 26.40845,
+          "lon": 91.93354
+        }
+      ],
+      "repair": [
+        {
+          "name": "Indian Oil",
+          "lat": 26.18543,
+          "lon": 91.7539
+        },
+        {
+          "name": "Climax",
+          "lat": 26.17707,
+          "lon": 91.75009
+        },
+        {
+          "name": "Service Road, Manipuri Rajbari, Ulubari, Guwahati 781008, India",
+          "lat": 26.17566,
+          "lon": 91.75632
+        }
+      ]
+    },
+    "11": {
+      "city_id": 11,
+      "city_name": "Ahmedabad",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 23.3009,
+          "lon": 72.76938
+        },
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 22.8465,
+          "lon": 70.85174
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 23.05563,
+          "lon": 72.57234
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 23.78747,
+          "lon": 72.63175
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 24.15731,
+          "lon": 72.43858
+        }
+      ],
+      "repair": [
+        {
+          "name": "Pooja Service",
+          "lat": 23.0286,
+          "lon": 72.58081
+        },
+        {
+          "name": "Jayapur Truck Repair Service",
+          "lat": 25.43699,
+          "lon": 74.6027
+        },
+        {
+          "name": "Om Auto Repair & Service",
+          "lat": 23.0505,
+          "lon": 72.54633
+        }
+      ]
+    },
+    "12": {
+      "city_id": 12,
+      "city_name": "Vadodara",
+      "parking": [
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 23.3009,
+          "lon": 72.76938
+        },
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "D Dhaba (The Dhaba Restaurant)",
+          "lat": 22.30506,
+          "lon": 73.16521
+        }
+      ],
+      "repair": [
+        {
+          "name": "Laxmi Works",
+          "lat": 22.3044,
+          "lon": 73.20107
+        },
+        {
+          "name": "Om Mobile",
+          "lat": 22.29767,
+          "lon": 73.20385
+        },
+        {
+          "name": "Vedant Electricals",
+          "lat": 22.3005,
+          "lon": 73.19915
+        }
+      ]
+    },
+    "13": {
+      "city_id": 13,
+      "city_name": "Surat",
+      "parking": [
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        },
+        {
+          "name": "Mahadev Pay & Parking",
+          "lat": 20.35882,
+          "lon": 72.9213
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Punjab Ka Dhaba",
+          "lat": 21.15617,
+          "lon": 72.80897
+        },
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Aryan Electricals",
+          "lat": 21.20866,
+          "lon": 72.83334
+        },
+        {
+          "name": "I. S. Electrical",
+          "lat": 21.20627,
+          "lon": 72.82606
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "14": {
+      "city_id": 14,
+      "city_name": "Mumbai",
+      "parking": [
+        {
+          "name": "Khadi Machin Truck Parking",
+          "lat": 19.03228,
+          "lon": 72.90162
+        },
+        {
+          "name": "Tunga Truck Parking",
+          "lat": 19.06773,
+          "lon": 72.99769
+        },
+        {
+          "name": "NMMC Truck Parking",
+          "lat": 19.08953,
+          "lon": 73.02158
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant",
+          "lat": 19.07269,
+          "lon": 72.91056
+        },
+        {
+          "name": "Highway Restaurant",
+          "lat": 19.11575,
+          "lon": 72.85623
+        },
+        {
+          "name": "National Restaurant (National Dhaba)",
+          "lat": 19.05633,
+          "lon": 72.83902
+        }
+      ],
+      "repair": [
+        {
+          "name": "Ansari Service",
+          "lat": 19.05552,
+          "lon": 72.86893
+        }
+      ]
+    },
+    "15": {
+      "city_id": 15,
+      "city_name": "Pune",
+      "parking": [
+        {
+          "name": "Niwant",
+          "lat": 18.50442,
+          "lon": 73.85552
+        },
+        {
+          "name": "VW Axis Truck Parking",
+          "lat": 18.74123,
+          "lon": 73.83207
+        },
+        {
+          "name": "DGFC Truck Parking",
+          "lat": 18.73941,
+          "lon": 73.79317
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 18.79525,
+          "lon": 74.312
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.70851,
+          "lon": 75.10004
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.88747,
+          "lon": 75.31209
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "16": {
+      "city_id": 16,
+      "city_name": "Indore",
+      "parking": [
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Indore Junction Railway Station-Gate 1 (Indore Dhaba)",
+          "lat": 22.71679,
+          "lon": 75.86879
+        },
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Pioneer Enternational",
+          "lat": 22.71942,
+          "lon": 75.86662
+        }
+      ]
+    },
+    "17": {
+      "city_id": 17,
+      "city_name": "Bhopal",
+      "parking": [
+        {
+          "name": "Truck Stand",
+          "lat": 23.2496,
+          "lon": 77.4254
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant",
+          "lat": 23.31451,
+          "lon": 77.32265
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 23.51289,
+          "lon": 77.79245
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.09722,
+          "lon": 76.46982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "18": {
+      "city_id": 18,
+      "city_name": "Nagpur",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 21.10416,
+          "lon": 78.99048
+        },
+        {
+          "name": "Inland World Logistics Parking",
+          "lat": 20.55054,
+          "lon": 78.84154
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Star Restaurant and Dhaba",
+          "lat": 21.09786,
+          "lon": 78.95732
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "19": {
+      "city_id": 19,
+      "city_name": "Raipur",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 21.27548,
+          "lon": 81.60562
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 21.26611,
+          "lon": 81.57859
+        },
+        {
+          "name": "JBL Truck Parkings",
+          "lat": 21.26451,
+          "lon": 81.56943
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Dhaba",
+          "lat": 21.25494,
+          "lon": 81.64881
+        }
+      ],
+      "repair": [
+        {
+          "name": "Swagat Sales",
+          "lat": 21.24285,
+          "lon": 81.6349
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "20": {
+      "city_id": 20,
+      "city_name": "Hyderabad",
+      "parking": [
+        {
+          "name": "Nampally Good Shed Truck Parking",
+          "lat": 17.3917,
+          "lon": 78.4668
+        },
+        {
+          "name": "Bharat Lorry Parking-Sivarampalli",
+          "lat": 17.32595,
+          "lon": 78.43407
+        },
+        {
+          "name": "Shri Vinayaka Lorry Parking",
+          "lat": 17.32517,
+          "lon": 78.43365
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba Restaurant",
+          "lat": 17.31001,
+          "lon": 78.2248
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.57823,
+          "lon": 78.12705
+        },
+        {
+          "name": "Highway 7 Family Dhaba",
+          "lat": 17.27172,
+          "lon": 78.39737
+        }
+      ],
+      "repair": [
+        {
+          "name": "Indian Oil",
+          "lat": 17.35714,
+          "lon": 78.47348
+        },
+        {
+          "name": "K. R. Automobiles",
+          "lat": 17.37688,
+          "lon": 78.47322
+        },
+        {
+          "name": "Indian Oil",
+          "lat": 17.3602,
+          "lon": 78.4798
+        }
+      ]
+    },
+    "21": {
+      "city_id": 21,
+      "city_name": "Visakhapatnam",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 17.67894,
+          "lon": 83.19444
+        },
+        {
+          "name": "Left Side Truck Parking",
+          "lat": 18.3223,
+          "lon": 83.93624
+        },
+        {
+          "name": "Right Side Truck Parking",
+          "lat": 18.32343,
+          "lon": 83.93885
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant & Dhaba",
+          "lat": 17.67639,
+          "lon": 82.99555
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "22": {
+      "city_id": 22,
+      "city_name": "Bengaluru",
+      "parking": [
+        {
+          "name": "Re Park",
+          "lat": 12.9633,
+          "lon": 77.58146
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 12.89592,
+          "lon": 77.66437
+        },
+        {
+          "name": "Rajeev Gandhi Tempo Stand",
+          "lat": 12.99185,
+          "lon": 77.7153
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Punjabi Dhaba",
+          "lat": 13.05596,
+          "lon": 77.76749
+        },
+        {
+          "name": "Highway Dhaba Hotel Family Restaurant",
+          "lat": 13.25501,
+          "lon": 77.21511
+        },
+        {
+          "name": "Hotel Highway (Hotel Highway Dhaba)",
+          "lat": 13.08162,
+          "lon": 77.81667
+        }
+      ],
+      "repair": [
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        },
+        {
+          "name": "Road N Track Repair & Service",
+          "lat": 13.02889,
+          "lon": 77.63482
+        }
+      ]
+    },
+    "23": {
+      "city_id": 23,
+      "city_name": "Chennai",
+      "parking": [
+        {
+          "name": "Lorry Park",
+          "lat": 13.14502,
+          "lon": 80.22072
+        },
+        {
+          "name": "GDK Lorry Parking",
+          "lat": 13.16742,
+          "lon": 80.23092
+        },
+        {
+          "name": "Sabiya Lorry and Container Parking",
+          "lat": 13.15837,
+          "lon": 80.19662
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 13.09187,
+          "lon": 80.19716
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 13.14846,
+          "lon": 80.2221
+        },
+        {
+          "name": "Dhaba",
+          "lat": 13.21675,
+          "lon": 80.16966
+        }
+      ],
+      "repair": [
+        {
+          "name": "TMT Lorry Service",
+          "lat": 13.09373,
+          "lon": 80.28555
+        },
+        {
+          "name": "Dr Bike Service & Repair",
+          "lat": 13.03624,
+          "lon": 80.27262
+        }
+      ]
+    },
+    "24": {
+      "city_id": 24,
+      "city_name": "Chandigarh",
+      "parking": [
+        {
+          "name": "Truck Parking-Sec 26",
+          "lat": 30.72278,
+          "lon": 76.81167
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 30.71051,
+          "lon": 76.84099
+        },
+        {
+          "name": "Truck Parking Area",
+          "lat": 30.71975,
+          "lon": 76.71276
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Punjabi Dhaba",
+          "lat": 30.73312,
+          "lon": 76.77098
+        },
+        {
+          "name": "Dhaba",
+          "lat": 30.92943,
+          "lon": 76.79669
+        },
+        {
+          "name": "Punjabi Dhaba",
+          "lat": 30.85898,
+          "lon": 76.56269
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "25": {
+      "city_id": 25,
+      "city_name": "Bhubaneswar",
+      "parking": [
+        {
+          "name": "Truck Area Parking",
+          "lat": 20.34935,
+          "lon": 85.81176
+        },
+        {
+          "name": "Centuriol Truck Parking",
+          "lat": 20.17324,
+          "lon": 85.70144
+        },
+        {
+          "name": "Aradi Truck Parking Area",
+          "lat": 21.07986,
+          "lon": 86.51266
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Sisir Dhaba",
+          "lat": 20.2729,
+          "lon": 85.87092
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 20.46187,
+          "lon": 85.90189
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Service Point",
+          "lat": 20.25927,
+          "lon": 85.83631
+        },
+        {
+          "name": "Master",
+          "lat": 20.26027,
+          "lon": 85.83786
+        },
+        {
+          "name": "Sairam Service Centre",
+          "lat": 20.25981,
+          "lon": 85.83656
+        }
+      ]
+    },
+    "26": {
+      "city_id": 26,
+      "city_name": "Ranchi",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 23.37856,
+          "lon": 85.32053
+        },
+        {
+          "name": "Poweganj Truck Parking Area",
+          "lat": 23.44049,
+          "lon": 84.68688
+        },
+        {
+          "name": "Bajrang Parking",
+          "lat": 22.82542,
+          "lon": 86.26674
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Apana Punjabi Dhaba",
+          "lat": 23.26592,
+          "lon": 85.43258
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Motorola Service Center",
+          "lat": 23.37121,
+          "lon": 85.33235
+        },
+        {
+          "name": "Pappu Solar",
+          "lat": 23.3662,
+          "lon": 85.32467
+        },
+        {
+          "name": "Universal",
+          "lat": 23.36467,
+          "lon": 85.32692
+        }
+      ]
+    },
+    "27": {
+      "city_id": 27,
+      "city_name": "Kochi",
+      "parking": [
+        {
+          "name": "Pay and Park Lorry Parking Area",
+          "lat": 10.07093,
+          "lon": 76.33293
+        },
+        {
+          "name": "Truck Parking Area",
+          "lat": 9.59357,
+          "lon": 76.52735
+        },
+        {
+          "name": "Goods Vehicle Stand Parking",
+          "lat": 9.52259,
+          "lon": 76.57247
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Balaji Sweets and Restaurant (Balaji Gujarathi Dhaba)",
+          "lat": 9.9571,
+          "lon": 76.25537
+        },
+        {
+          "name": "Highway Hut Dhaba",
+          "lat": 9.69051,
+          "lon": 76.63815
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Fan Service Shop",
+          "lat": 9.9639,
+          "lon": 76.24827
+        },
+        {
+          "name": "CSM Electrical Service",
+          "lat": 9.9615,
+          "lon": 76.24123
+        },
+        {
+          "name": "Puncher Service Shop",
+          "lat": 9.96458,
+          "lon": 76.24583
+        }
+      ]
+    },
+    "28": {
+      "city_id": 28,
+      "city_name": "Coimbatore",
+      "parking": [
+        {
+          "name": "Lorry Parking Lot in Eb",
+          "lat": 11.01932,
+          "lon": 76.9579
+        },
+        {
+          "name": "Preethi Lorry Stand",
+          "lat": 11.08049,
+          "lon": 77.12
+        },
+        {
+          "name": "Tanker Truck Parking Area",
+          "lat": 10.79806,
+          "lon": 76.76973
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Karimeen Restaurant",
+          "lat": 11.01412,
+          "lon": 76.9491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Indian Electricals",
+          "lat": 10.99862,
+          "lon": 76.96
+        },
+        {
+          "name": "Vijai Centre",
+          "lat": 10.9987,
+          "lon": 76.9588
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        }
+      ]
+    },
+    "29": {
+      "city_id": 29,
+      "city_name": "Vijayawada",
+      "parking": [
+        {
+          "name": "Lorry Stand",
+          "lat": 16.52322,
+          "lon": 80.5982
+        },
+        {
+          "name": "Lorry Stand",
+          "lat": 16.60396,
+          "lon": 80.53275
+        },
+        {
+          "name": "HPCL Truck Parking Garage",
+          "lat": 16.64746,
+          "lon": 80.56008
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba & Family Restaurant",
+          "lat": 16.55797,
+          "lon": 80.83751
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    }
+  },
+  "by_corridor": {
+    "0-4": {
+      "from": 0,
+      "to": 4,
+      "highway": "NH44/NH 19/NH19",
+      "parking": [
+        {
+          "name": "Zaidi Truck Parking",
+          "lat": 27.91547,
+          "lon": 78.07649
+        },
+        {
+          "name": "Indian Oil Truck Parking",
+          "lat": 28.25846,
+          "lon": 77.31634
+        },
+        {
+          "name": "Truck Parking Place",
+          "lat": 27.48583,
+          "lon": 77.65574
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Sukhdev Dhaba (Highway King Sukhdev Dhaba)",
+          "lat": 27.85168,
+          "lon": 77.40597
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.28579,
+          "lon": 76.85798
+        },
+        {
+          "name": "Kanha Family Restaurant & Dhaba",
+          "lat": 28.02754,
+          "lon": 77.62904
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "0-24": {
+      "from": 0,
+      "to": 24,
+      "highway": "NH709B/NE-2/NH44",
+      "parking": [
+        {
+          "name": "Truck Parking Zone",
+          "lat": 29.66434,
+          "lon": 76.99245
+        },
+        {
+          "name": "Open Truck Parking Zone",
+          "lat": 29.65675,
+          "lon": 76.98435
+        },
+        {
+          "name": "Happy Truck Parking",
+          "lat": 29.49188,
+          "lon": 76.88893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.73771,
+          "lon": 76.42067
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.39882,
+          "lon": 77.29482
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.88778,
+          "lon": 77.52087
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "0-3": {
+      "from": 0,
+      "to": 3,
+      "highway": "NH44/NH148NA/NE4",
+      "parking": [
+        {
+          "name": "Kala Truck Parking",
+          "lat": 27.58656,
+          "lon": 76.64259
+        },
+        {
+          "name": "Parking Lot-Solanki Truck Parking",
+          "lat": 27.52913,
+          "lon": 76.66757
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 28.11254,
+          "lon": 76.78934
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.28579,
+          "lon": 76.85798
+        },
+        {
+          "name": "Shri Ram Highway Dhaba",
+          "lat": 27.64148,
+          "lon": 76.12788
+        },
+        {
+          "name": "Highway King Dhaba",
+          "lat": 27.48784,
+          "lon": 76.05135
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "0-1": {
+      "from": 0,
+      "to": 1,
+      "highway": "NH709B/NE-2/NH44",
+      "parking": [
+        {
+          "name": "Open Truck Parking Zone",
+          "lat": 29.65675,
+          "lon": 76.98435
+        },
+        {
+          "name": "Truck Parking Zone",
+          "lat": 29.66434,
+          "lon": 76.99245
+        },
+        {
+          "name": "Happy Truck Parking",
+          "lat": 29.49188,
+          "lon": 76.88893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.73771,
+          "lon": 76.42067
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.39882,
+          "lon": 77.29482
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 30.38481,
+          "lon": 77.81381
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "0-6": {
+      "from": 0,
+      "to": 6,
+      "highway": "NH44/NH709B/NH24",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 27.23013,
+          "lon": 78.20245
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.22305,
+          "lon": 78.19747
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.02827,
+          "lon": 78.29891
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Iqbal Truck Repair Service",
+          "lat": 29.1009,
+          "lon": 77.91319
+        }
+      ]
+    },
+    "1-24": {
+      "from": 1,
+      "to": 24,
+      "highway": "NH5",
+      "parking": [
+        {
+          "name": "Truck Parking-Class",
+          "lat": 30.77314,
+          "lon": 76.51381
+        },
+        {
+          "name": "Truck Parking Area",
+          "lat": 31.12086,
+          "lon": 76.118
+        },
+        {
+          "name": "Truck Parking Area",
+          "lat": 30.71975,
+          "lon": 76.71276
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 30.81702,
+          "lon": 76.58849
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 30.90135,
+          "lon": 77.01522
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 31.49268,
+          "lon": 75.82605
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "1-2": {
+      "from": 1,
+      "to": 2,
+      "highway": "NH44/NH3",
+      "parking": [
+        {
+          "name": "Piddi Truck Parking",
+          "lat": 31.40631,
+          "lon": 74.94591
+        },
+        {
+          "name": "Truck Parking Area",
+          "lat": 31.12086,
+          "lon": 76.118
+        },
+        {
+          "name": "Guru Ram Prasad Truck Parking",
+          "lat": 30.92975,
+          "lon": 74.62632
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 31.49268,
+          "lon": 75.82605
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 31.83529,
+          "lon": 75.18228
+        },
+        {
+          "name": "New Highway Vaishno Dhaba",
+          "lat": 31.00541,
+          "lon": 75.78551
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "1-3": {
+      "from": 1,
+      "to": 3,
+      "highway": "SH11/NH152A/NH152D",
+      "parking": [
+        {
+          "name": "Ankit Support & Services",
+          "lat": 28.43331,
+          "lon": 76.87189
+        },
+        {
+          "name": "Roshan Garden Private Truck Parking Area",
+          "lat": 28.5979,
+          "lon": 76.98968
+        },
+        {
+          "name": "Private Truck Parking Area",
+          "lat": 28.61701,
+          "lon": 77.00437
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.1485,
+          "lon": 75.22444
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.60808,
+          "lon": 76.68309
+        },
+        {
+          "name": "Chandigarh Highway Dhaba",
+          "lat": 28.67116,
+          "lon": 76.17882
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "2-3": {
+      "from": 2,
+      "to": 3,
+      "highway": "NH54/NH703A/NH703B",
+      "parking": [
+        {
+          "name": "Truck & Bus Parking",
+          "lat": 30.00231,
+          "lon": 75.40386
+        },
+        {
+          "name": "Truck TT Parking",
+          "lat": 29.4782,
+          "lon": 76.89109
+        },
+        {
+          "name": "Happy Truck Parking",
+          "lat": 29.49188,
+          "lon": 76.88893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.1485,
+          "lon": 75.22444
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 29.58292,
+          "lon": 75.0346
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.05305,
+          "lon": 74.64593
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "3-4": {
+      "from": 3,
+      "to": 4,
+      "highway": "NH21/NH44",
+      "parking": [
+        {
+          "name": "Parking Lot-Solanki Truck Parking",
+          "lat": 27.52913,
+          "lon": 76.66757
+        },
+        {
+          "name": "Kala Truck Parking",
+          "lat": 27.58656,
+          "lon": 76.64259
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.39738,
+          "lon": 77.67766
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Tadka Family Restaurant",
+          "lat": 26.54745,
+          "lon": 75.94857
+        },
+        {
+          "name": "Highway King Dhaba",
+          "lat": 27.48784,
+          "lon": 76.05135
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.28579,
+          "lon": 76.85798
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "3-24": {
+      "from": 3,
+      "to": 24,
+      "highway": "NH248/NH48/NH148B",
+      "parking": [
+        {
+          "name": "Ankit Support & Services",
+          "lat": 28.43331,
+          "lon": 76.87189
+        },
+        {
+          "name": "Roshan Garden Private Truck Parking Area",
+          "lat": 28.5979,
+          "lon": 76.98968
+        },
+        {
+          "name": "Sree Ram Truck Parking",
+          "lat": 28.67564,
+          "lon": 77.02305
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 28.60808,
+          "lon": 76.68309
+        },
+        {
+          "name": "NH 10 Dhaba (NH-10 Highway Dhaba)",
+          "lat": 28.92036,
+          "lon": 76.45976
+        },
+        {
+          "name": "Chandigarh Highway Dhaba",
+          "lat": 28.67116,
+          "lon": 76.17882
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "3-17": {
+      "from": 3,
+      "to": 17,
+      "highway": "NH52/NH23/NE-4",
+      "parking": [
+        {
+          "name": "Shri Ram Factory Truck Parking",
+          "lat": 25.13794,
+          "lon": 75.89274
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 25.66721,
+          "lon": 76.18937
+        },
+        {
+          "name": "Truck Union",
+          "lat": 25.11777,
+          "lon": 75.84443
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.09722,
+          "lon": 76.46982
+        },
+        {
+          "name": "Highway Tadka Family Restaurant",
+          "lat": 26.54745,
+          "lon": 75.94857
+        },
+        {
+          "name": "Highway Restaurant",
+          "lat": 23.31451,
+          "lon": 77.32265
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "4-6": {
+      "from": 4,
+      "to": 6,
+      "highway": "NH44/SH62/NH19",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 26.63901,
+          "lon": 79.47468
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 26.64587,
+          "lon": 79.4811
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.02827,
+          "lon": 78.29891
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "4-5": {
+      "from": 4,
+      "to": 5,
+      "highway": "NH44/SH62/SH40",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 26.64587,
+          "lon": 79.4811
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 26.63901,
+          "lon": 79.47468
+        },
+        {
+          "name": "Track Unloading",
+          "lat": 26.46002,
+          "lon": 80.22645
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.90387,
+          "lon": 80.01332
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.96933,
+          "lon": 80.60779
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "5-6": {
+      "from": 5,
+      "to": 6,
+      "highway": "NH230/NE6/NH27",
+      "parking": [
+        {
+          "name": "R P Auto Service Center",
+          "lat": 26.83259,
+          "lon": 80.87144
+        },
+        {
+          "name": "Maruti Air Couriers & Cargo Parking",
+          "lat": 26.47747,
+          "lon": 80.33658
+        },
+        {
+          "name": "Track Unloading",
+          "lat": 26.46002,
+          "lon": 80.22645
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.68943,
+          "lon": 80.99189
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.96933,
+          "lon": 80.60779
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "5-7": {
+      "from": 5,
+      "to": 7,
+      "highway": "NH731/NH230/NH128",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 27.12487,
+          "lon": 81.97716
+        },
+        {
+          "name": "R P Auto Service Center",
+          "lat": 26.83259,
+          "lon": 80.87144
+        },
+        {
+          "name": "Maruti Air Couriers & Cargo Parking",
+          "lat": 26.47747,
+          "lon": 80.33658
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.82781,
+          "lon": 82.01531
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.77725,
+          "lon": 81.10707
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        }
+      ]
+    },
+    "0-5": {
+      "from": 0,
+      "to": 5,
+      "highway": "NH230/SH40/NEX",
+      "parking": [
+        {
+          "name": "Zaidi Truck Parking",
+          "lat": 27.91547,
+          "lon": 78.07649
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.23013,
+          "lon": 78.20245
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.22305,
+          "lon": 78.19747
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "New Highway Dhaba",
+          "lat": 28.14927,
+          "lon": 79.24437
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Iqbal Truck Repair Service",
+          "lat": 29.1009,
+          "lon": 77.91319
+        }
+      ]
+    },
+    "5-8": {
+      "from": 5,
+      "to": 8,
+      "highway": "NH31/NH922/NH319",
+      "parking": [
+        {
+          "name": "Chaudhary Truck Parking",
+          "lat": 26.6447,
+          "lon": 83.58701
+        },
+        {
+          "name": "Welcome Truck Parking",
+          "lat": 25.58524,
+          "lon": 83.59528
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.12487,
+          "lon": 81.97716
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Family Restaurant and Dhaba",
+          "lat": 26.20349,
+          "lon": 83.51725
+        },
+        {
+          "name": "Highway King Dhaba",
+          "lat": 26.43296,
+          "lon": 82.79693
+        },
+        {
+          "name": "Highway Restaurant and Dhaba",
+          "lat": 25.54024,
+          "lon": 83.19661
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        }
+      ]
+    },
+    "6-7": {
+      "from": 6,
+      "to": 7,
+      "highway": "NH34/NH19/NH27",
+      "parking": [
+        {
+          "name": "R P Auto Service Center",
+          "lat": 26.83259,
+          "lon": 80.87144
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 27.12487,
+          "lon": 81.97716
+        },
+        {
+          "name": "Maruti Air Couriers & Cargo Parking",
+          "lat": 26.47747,
+          "lon": 80.33658
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.82781,
+          "lon": 82.01531
+        },
+        {
+          "name": "National Highway Dhaba",
+          "lat": 25.72551,
+          "lon": 81.49994
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.77725,
+          "lon": 81.10707
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        }
+      ]
+    },
+    "7-8": {
+      "from": 7,
+      "to": 8,
+      "highway": "NH19/NH30/NH319",
+      "parking": [
+        {
+          "name": "Welcome Truck Parking",
+          "lat": 25.58524,
+          "lon": 83.59528
+        },
+        {
+          "name": "Indian Oil-Only Tanker Parking",
+          "lat": 25.5784,
+          "lon": 85.12329
+        },
+        {
+          "name": "Chaudhary Truck Parking",
+          "lat": 26.6447,
+          "lon": 83.58701
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant and Dhaba",
+          "lat": 25.54024,
+          "lon": 83.19661
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "New Highway Restaurant & Dhaba",
+          "lat": 27.59621,
+          "lon": 81.63055
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        }
+      ]
+    },
+    "7-26": {
+      "from": 7,
+      "to": 26,
+      "highway": "NH19/NH20",
+      "parking": [
+        {
+          "name": "Poweganj Truck Parking Area",
+          "lat": 23.44049,
+          "lon": 84.68688
+        },
+        {
+          "name": "Welcome Truck Parking",
+          "lat": 25.58524,
+          "lon": 83.59528
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 23.37856,
+          "lon": 85.32053
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "7-19": {
+      "from": 7,
+      "to": 19,
+      "highway": "NH35/SH5A/NH39",
+      "parking": [
+        {
+          "name": "Monnet Truck Parking",
+          "lat": 21.99341,
+          "lon": 83.23001
+        },
+        {
+          "name": "JSPL Raigarh Truck Parking",
+          "lat": 21.92358,
+          "lon": 83.36081
+        },
+        {
+          "name": "Truck Parking Yard",
+          "lat": 24.04978,
+          "lon": 80.5973
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Hotel",
+          "lat": 23.22664,
+          "lon": 82.21625
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "Highway Restaurant and Dhaba",
+          "lat": 25.54024,
+          "lon": 83.19661
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "8-26": {
+      "from": 8,
+      "to": 26,
+      "highway": "NH922/NH139/NH22",
+      "parking": [
+        {
+          "name": "Indian Oil-Only Tanker Parking",
+          "lat": 25.5784,
+          "lon": 85.12329
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 23.37856,
+          "lon": 85.32053
+        },
+        {
+          "name": "Poweganj Truck Parking Area",
+          "lat": 23.44049,
+          "lon": 84.68688
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Dana Pani Highway Dhaba and Family Restaurant",
+          "lat": 24.36971,
+          "lon": 85.28996
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Highway Service Station-TATA",
+          "lat": 24.39193,
+          "lon": 85.25173
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Nadim Truck Repair Service",
+          "lat": 24.49424,
+          "lon": 86.67486
+        }
+      ]
+    },
+    "8-9": {
+      "from": 8,
+      "to": 9,
+      "highway": "NH922/NH139/NH22",
+      "parking": [
+        {
+          "name": "Acc Truck Parking",
+          "lat": 23.66696,
+          "lon": 86.49959
+        },
+        {
+          "name": "Old Court Truck Parking",
+          "lat": 23.55297,
+          "lon": 87.26286
+        },
+        {
+          "name": "SRL Durgapur Trunk Stand",
+          "lat": 23.5119,
+          "lon": 87.31135
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Nadim Truck Repair Service",
+          "lat": 24.49424,
+          "lon": 86.67486
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "9-26": {
+      "from": 9,
+      "to": 26,
+      "highway": "SH6/SH15/NH12",
+      "parking": [
+        {
+          "name": "Bajrang Parking",
+          "lat": 22.82542,
+          "lon": 86.26674
+        },
+        {
+          "name": "TMC Terminus Office Trunk Stand",
+          "lat": 23.50763,
+          "lon": 87.31131
+        },
+        {
+          "name": "Zonal Central Truck Stand",
+          "lat": 23.49758,
+          "lon": 87.33006
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Nadim Truck Repair Service",
+          "lat": 24.49424,
+          "lon": 86.67486
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "9-25": {
+      "from": 9,
+      "to": 25,
+      "highway": "SH6/SH15/NH12",
+      "parking": [
+        {
+          "name": "Aradi Truck Parking Area",
+          "lat": 21.07986,
+          "lon": 86.51266
+        },
+        {
+          "name": "Hda Truck Parking",
+          "lat": 22.31992,
+          "lon": 87.319
+        },
+        {
+          "name": "Santoshimata Truck Parking",
+          "lat": 22.4757,
+          "lon": 88.08518
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 21.70322,
+          "lon": 86.87323
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 22.47609,
+          "lon": 88.08968
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "9-10": {
+      "from": 9,
+      "to": 10,
+      "highway": "NH12/NH112/NH206",
+      "parking": [
+        {
+          "name": "Gazipur Jela Truck O Karyalaya",
+          "lat": 23.90427,
+          "lon": 90.39898
+        },
+        {
+          "name": "RFL Industrial Park Truck Stand",
+          "lat": 23.9284,
+          "lon": 90.60304
+        },
+        {
+          "name": "Narsinhwadi Zila Truck Terminal",
+          "lat": 23.91272,
+          "lon": 90.68914
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "7-9": {
+      "from": 7,
+      "to": 9,
+      "highway": "SH6/NH12/NH16",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 23.37856,
+          "lon": 85.32053
+        },
+        {
+          "name": "Acc Truck Parking",
+          "lat": 23.66696,
+          "lon": 86.49959
+        },
+        {
+          "name": "Poweganj Truck Parking Area",
+          "lat": 23.44049,
+          "lon": 84.68688
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Nadim Truck Repair Service",
+          "lat": 24.49424,
+          "lon": 86.67486
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "8-10": {
+      "from": 8,
+      "to": 10,
+      "highway": "NH27/NH427/NH 31 (C)",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 25.89783,
+          "lon": 87.82692
+        },
+        {
+          "name": "Balurghat Truck Parking",
+          "lat": 25.2735,
+          "lon": 88.97577
+        },
+        {
+          "name": "North East Gateway Truck Parking",
+          "lat": 26.44447,
+          "lon": 89.91098
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 26.33187,
+          "lon": 88.28671
+        },
+        {
+          "name": "New Highway Dhaba",
+          "lat": 26.58997,
+          "lon": 88.50402
+        },
+        {
+          "name": "Hotel Highway (Highway Dhaba)",
+          "lat": 26.70902,
+          "lon": 88.36424
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "10-26": {
+      "from": 10,
+      "to": 26,
+      "highway": "NH27/NH427/SH2",
+      "parking": [
+        {
+          "name": "Truck Stand Falakata Parking",
+          "lat": 24.4591,
+          "lon": 88.04165
+        },
+        {
+          "name": "Balurghat Truck Parking",
+          "lat": 25.2735,
+          "lon": 88.97577
+        },
+        {
+          "name": "Tara Maa Parking Center",
+          "lat": 24.15671,
+          "lon": 87.77878
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway 34 Restaurant Cum Dhaba",
+          "lat": 24.98831,
+          "lon": 88.16267
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Nadim Truck Repair Service",
+          "lat": 24.49424,
+          "lon": 86.67486
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "7-10": {
+      "from": 7,
+      "to": 10,
+      "highway": "NH27/NH427/NH 31 (C)",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 25.89783,
+          "lon": 87.82692
+        },
+        {
+          "name": "Truck Stand Falakata Parking",
+          "lat": 24.4591,
+          "lon": 88.04165
+        },
+        {
+          "name": "Balurghat Truck Parking",
+          "lat": 25.2735,
+          "lon": 88.97577
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.78488,
+          "lon": 87.5416
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 25.78092,
+          "lon": 87.54498
+        },
+        {
+          "name": "Sardar Ji Highway Dhaba",
+          "lat": 25.82633,
+          "lon": 87.66007
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "11-12": {
+      "from": 11,
+      "to": 12,
+      "highway": "NH8/NH48/NH64",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 23.3009,
+          "lon": 72.76938
+        },
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Jay Gopal Lodge & Restaurant (Dhaba)",
+          "lat": 22.82574,
+          "lon": 72.77205
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "11-16": {
+      "from": 11,
+      "to": 16,
+      "highway": "NH8/SH2/NH47",
+      "parking": [
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 23.3009,
+          "lon": 72.76938
+        },
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "12-13": {
+      "from": 12,
+      "to": 13,
+      "highway": "NH48/NH64/SH13",
+      "parking": [
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        },
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Mahadev Pay & Parking",
+          "lat": 20.35882,
+          "lon": 72.9213
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 23.05563,
+          "lon": 72.57234
+        },
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 22.08224,
+          "lon": 71.15895
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "12-16": {
+      "from": 12,
+      "to": 16,
+      "highway": "NH48/NE1/NE4",
+      "parking": [
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 23.3009,
+          "lon": 72.76938
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "13-14": {
+      "from": 13,
+      "to": 14,
+      "highway": "NH64/SH6/SH168",
+      "parking": [
+        {
+          "name": "Mahadev Pay & Parking",
+          "lat": 20.35882,
+          "lon": 72.9213
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 19.79286,
+          "lon": 72.76089
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 20.00246,
+          "lon": 73.7142
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.70851,
+          "lon": 75.10004
+        },
+        {
+          "name": "Highway Darbar Dhaba",
+          "lat": 19.44725,
+          "lon": 72.8825
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 18.79525,
+          "lon": 74.312
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Jayapur Truck Repair Service",
+          "lat": 25.43699,
+          "lon": 74.6027
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "13-16": {
+      "from": 13,
+      "to": 16,
+      "highway": "NH64/SH187/SH165",
+      "parking": [
+        {
+          "name": "Ahmad Truck Parking",
+          "lat": 22.74443,
+          "lon": 73.59765
+        },
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        },
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "14-15": {
+      "from": 14,
+      "to": 15,
+      "highway": "NH48/NH60/NH65",
+      "parking": [
+        {
+          "name": "JSW Bus Truck Parking",
+          "lat": 18.70525,
+          "lon": 73.03631
+        },
+        {
+          "name": "Reliance Industries Truck Parking Space",
+          "lat": 18.54895,
+          "lon": 73.10986
+        },
+        {
+          "name": "Jasai Truck Parking",
+          "lat": 18.96005,
+          "lon": 73.04081
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 18.79525,
+          "lon": 74.312
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.70851,
+          "lon": 75.10004
+        },
+        {
+          "name": "Highway Darbar Dhaba",
+          "lat": 19.44725,
+          "lon": 72.8825
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "14-16": {
+      "from": 14,
+      "to": 16,
+      "highway": "NH48/NH160/NH848",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 20.00246,
+          "lon": 73.7142
+        },
+        {
+          "name": "Gokul Truck Parking",
+          "lat": 21.17681,
+          "lon": 72.96268
+        },
+        {
+          "name": "Mahadev Pay & Parking",
+          "lat": 20.35882,
+          "lon": 72.9213
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.70851,
+          "lon": 75.10004
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.88747,
+          "lon": 75.31209
+        },
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "15-20": {
+      "from": 15,
+      "to": 20,
+      "highway": "NH60/NH65/NH765",
+      "parking": [
+        {
+          "name": "Trucks Parking Area",
+          "lat": 17.16756,
+          "lon": 75.9563
+        },
+        {
+          "name": "Hundekar Fuels Truck Parking",
+          "lat": 16.85852,
+          "lon": 75.72961
+        },
+        {
+          "name": "Nanded Truck Parking Yard",
+          "lat": 19.11874,
+          "lon": 77.34377
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.57823,
+          "lon": 78.12705
+        }
+      ],
+      "repair": [
+        {
+          "name": "Ravindra Auto Service Truck Repair",
+          "lat": 17.53328,
+          "lon": 76.18982
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "15-16": {
+      "from": 15,
+      "to": 16,
+      "highway": "NH60/NH65/NH753F",
+      "parking": [
+        {
+          "name": "Jay Bhavani Truck Parking",
+          "lat": 19.84805,
+          "lon": 75.86779
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 20.00246,
+          "lon": 73.7142
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 19.04057,
+          "lon": 74.66204
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.70851,
+          "lon": 75.10004
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 19.88747,
+          "lon": 75.31209
+        },
+        {
+          "name": "New Highway Dhaba",
+          "lat": 19.90575,
+          "lon": 75.25085
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "16-17": {
+      "from": 16,
+      "to": 17,
+      "highway": "NH52/SH28",
+      "parking": [
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        },
+        {
+          "name": "Truck Stand",
+          "lat": 23.2496,
+          "lon": 77.4254
+        },
+        {
+          "name": "Mandi Truck Stand",
+          "lat": 23.84535,
+          "lon": 78.74371
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Sharma Restaurant and Dhaba",
+          "lat": 23.00433,
+          "lon": 76.72288
+        },
+        {
+          "name": "Lita Patel Shri Krishna Dhaba and Restaurant (Kalota Patel Shri Krishna Restaurant & Dhaba)",
+          "lat": 23.01876,
+          "lon": 76.67142
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "16-18": {
+      "from": 16,
+      "to": 18,
+      "highway": "NH47/NH53",
+      "parking": [
+        {
+          "name": "Truck Stand",
+          "lat": 23.2496,
+          "lon": 77.4254
+        },
+        {
+          "name": "Shri Ji Truck Parking",
+          "lat": 22.67502,
+          "lon": 75.91893
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 21.10416,
+          "lon": 78.99048
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant",
+          "lat": 23.31451,
+          "lon": 77.32265
+        },
+        {
+          "name": "Highway Dhaba and Restaurant Rau Circle",
+          "lat": 22.62991,
+          "lon": 75.80982
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 23.51289,
+          "lon": 77.79245
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "17-18": {
+      "from": 17,
+      "to": 18,
+      "highway": "NH46/NH47/NH53",
+      "parking": [
+        {
+          "name": "Truck Stand",
+          "lat": 23.2496,
+          "lon": 77.4254
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 21.10416,
+          "lon": 78.99048
+        },
+        {
+          "name": "Mandi Truck Stand",
+          "lat": 23.84535,
+          "lon": 78.74371
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Indian Dhaba and Family Restaurant",
+          "lat": 21.79001,
+          "lon": 78.23786
+        },
+        {
+          "name": "Super Highway Dhaba",
+          "lat": 21.83224,
+          "lon": 78.0968
+        },
+        {
+          "name": "Shiv Shakti Dhaba and Restaurant",
+          "lat": 22.1098,
+          "lon": 78.19132
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "4-17": {
+      "from": 4,
+      "to": 17,
+      "highway": "SH18/SH28/NH146",
+      "parking": [
+        {
+          "name": "Eicher",
+          "lat": 26.24976,
+          "lon": 78.213
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 25.66721,
+          "lon": 76.18937
+        },
+        {
+          "name": "Shri Ram Factory Truck Parking",
+          "lat": 25.13794,
+          "lon": 75.89274
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 24.5755,
+          "lon": 77.7389
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Engine Mistri (Truck Repair Service)",
+          "lat": 28.9898,
+          "lon": 79.41805
+        }
+      ]
+    },
+    "18-19": {
+      "from": 18,
+      "to": 19,
+      "highway": "NH53/NH47/SH260",
+      "parking": [
+        {
+          "name": "Sai Truck Parking",
+          "lat": 21.44713,
+          "lon": 80.20152
+        },
+        {
+          "name": "JBL Truck Parkings",
+          "lat": 21.26451,
+          "lon": 81.56943
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 21.26611,
+          "lon": 81.57859
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 21.07213,
+          "lon": 80.35743
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 21.14901,
+          "lon": 81.20137
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 25.68974,
+          "lon": 82.40921
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "18-20": {
+      "from": 18,
+      "to": 20,
+      "highway": "NH53/NH47/NH44",
+      "parking": [
+        {
+          "name": "Truck Parking",
+          "lat": 19.94168,
+          "lon": 79.1173
+        },
+        {
+          "name": "Truck Parking Yard",
+          "lat": 19.82782,
+          "lon": 79.37901
+        },
+        {
+          "name": "Padma Nagar Lorry Parking",
+          "lat": 18.44179,
+          "lon": 79.10247
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "18-29": {
+      "from": 18,
+      "to": 29,
+      "highway": "NH53/NH47/NH44",
+      "parking": [
+        {
+          "name": "Padma Nagar Lorry Parking",
+          "lat": 18.44179,
+          "lon": 79.10247
+        },
+        {
+          "name": "Lorry Parking Area",
+          "lat": 17.99585,
+          "lon": 79.61767
+        },
+        {
+          "name": "Truck Parking Yard",
+          "lat": 19.82782,
+          "lon": 79.37901
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Ravindra Auto Service Truck Repair",
+          "lat": 17.53328,
+          "lon": 76.18982
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "19-21": {
+      "from": 19,
+      "to": 21,
+      "highway": "NH30/NH130C/SH",
+      "parking": [
+        {
+          "name": "Bilt Truck Parking",
+          "lat": 18.88549,
+          "lon": 82.53966
+        },
+        {
+          "name": "Mini Truck Parking Place",
+          "lat": 18.86679,
+          "lon": 82.5633
+        },
+        {
+          "name": "Belgaon Truck Parking",
+          "lat": 20.31232,
+          "lon": 83.31436
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "19-26": {
+      "from": 19,
+      "to": 26,
+      "highway": "NH30/NH130/NH130A",
+      "parking": [
+        {
+          "name": "Monnet Truck Parking",
+          "lat": 21.99341,
+          "lon": 83.23001
+        },
+        {
+          "name": "JSPL Raigarh Truck Parking",
+          "lat": 21.92358,
+          "lon": 83.36081
+        },
+        {
+          "name": "Vedant Truck Parking",
+          "lat": 21.82514,
+          "lon": 84.01131
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "19-25": {
+      "from": 19,
+      "to": 25,
+      "highway": "NH53/NH126/NH26",
+      "parking": [
+        {
+          "name": "Belgaon Truck Parking",
+          "lat": 20.31232,
+          "lon": 83.31436
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 21.78627,
+          "lon": 84.00884
+        },
+        {
+          "name": "Brundamal Road Truck Parking",
+          "lat": 21.80843,
+          "lon": 84.01014
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "20-29": {
+      "from": 20,
+      "to": 29,
+      "highway": "NH765/NH65",
+      "parking": [
+        {
+          "name": "Susheela Truck Parking",
+          "lat": 17.14437,
+          "lon": 79.60443
+        },
+        {
+          "name": "Truck Repairs",
+          "lat": 16.89697,
+          "lon": 79.8733
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.57823,
+          "lon": 78.12705
+        },
+        {
+          "name": "Highway Dhaba Restaurant",
+          "lat": 17.31001,
+          "lon": 78.2248
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "MS Car Decors (Car Repair-Service)",
+          "lat": 16.86294,
+          "lon": 79.55461
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Ravindra Auto Service Truck Repair",
+          "lat": 17.53328,
+          "lon": 76.18982
+        }
+      ]
+    },
+    "20-22": {
+      "from": 20,
+      "to": 22,
+      "highway": "NH44/NH42/SH467",
+      "parking": [
+        {
+          "name": "Lorry Parking Area",
+          "lat": 14.64069,
+          "lon": 78.53144
+        },
+        {
+          "name": "Highway Truck Parking",
+          "lat": 14.47586,
+          "lon": 77.62899
+        },
+        {
+          "name": "Lorry Parking",
+          "lat": 15.61141,
+          "lon": 77.26539
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Shri Balaji Highway Dhaba",
+          "lat": 15.40744,
+          "lon": 77.8667
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 16.25004,
+          "lon": 77.95917
+        },
+        {
+          "name": "Highway Dhaba Restaurant",
+          "lat": 17.31001,
+          "lon": 78.2248
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "20-21": {
+      "from": 20,
+      "to": 21,
+      "highway": "NH765/NH65/NH365BB",
+      "parking": [
+        {
+          "name": "Itc Truck Parking",
+          "lat": 17.66762,
+          "lon": 80.90028
+        },
+        {
+          "name": "Osman Gunj Truck Stand Parking",
+          "lat": 17.55188,
+          "lon": 80.61475
+        },
+        {
+          "name": "Truck Parking J Shekh",
+          "lat": 16.8905,
+          "lon": 81.3285
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Dhaba Restaurant",
+          "lat": 17.05859,
+          "lon": 80.98336
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.03873,
+          "lon": 81.57929
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "21-29": {
+      "from": 21,
+      "to": 29,
+      "highway": "SH/NH16",
+      "parking": [
+        {
+          "name": "Truck Parking Lot",
+          "lat": 16.58218,
+          "lon": 81.99605
+        },
+        {
+          "name": "Truck Parking Eluru Bypass",
+          "lat": 16.8909,
+          "lon": 81.32959
+        },
+        {
+          "name": "Truck Parking J Shekh",
+          "lat": 16.8905,
+          "lon": 81.3285
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.02694,
+          "lon": 82.2254
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 17.03873,
+          "lon": 81.57929
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 16.82596,
+          "lon": 81.55388
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "21-25": {
+      "from": 21,
+      "to": 25,
+      "highway": "NH16",
+      "parking": [
+        {
+          "name": "Right Side Truck Parking",
+          "lat": 18.32343,
+          "lon": 83.93885
+        },
+        {
+          "name": "Left Side Truck Parking",
+          "lat": 18.3223,
+          "lon": 83.93624
+        },
+        {
+          "name": "Centuriol Truck Parking",
+          "lat": 20.17324,
+          "lon": 85.70144
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Bharathi Highway Dhaba",
+          "lat": 18.98603,
+          "lon": 84.58931
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "18-21": {
+      "from": 18,
+      "to": 21,
+      "highway": "NH16/NH26/NH63",
+      "parking": [
+        {
+          "name": "Natraj Tractors-Kubota",
+          "lat": 20.70035,
+          "lon": 81.53478
+        },
+        {
+          "name": "Bilt Truck Parking",
+          "lat": 18.88549,
+          "lon": 82.53966
+        },
+        {
+          "name": "Mini Truck Parking Place",
+          "lat": 18.86679,
+          "lon": 82.5633
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "22-28": {
+      "from": 22,
+      "to": 28,
+      "highway": "NH44/NH844/NH544H",
+      "parking": [
+        {
+          "name": "Tvs Truck Parking",
+          "lat": 12.19491,
+          "lon": 76.6419
+        },
+        {
+          "name": "TVS Factory Truck Parking Area-Sindhuvalli",
+          "lat": 12.195,
+          "lon": 76.64064
+        },
+        {
+          "name": "Lorry Parking Depot",
+          "lat": 12.29303,
+          "lon": 76.6611
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 12.3261,
+          "lon": 76.85166
+        },
+        {
+          "name": "Highway Family Restaurant",
+          "lat": 11.20649,
+          "lon": 77.37812
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 13.15816,
+          "lon": 78.36257
+        }
+      ],
+      "repair": [
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        }
+      ]
+    },
+    "22-23": {
+      "from": 22,
+      "to": 23,
+      "highway": "NH44/NH48/NH75",
+      "parking": [
+        {
+          "name": "Haji Auto Stand",
+          "lat": 13.36103,
+          "lon": 78.56886
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 12.24826,
+          "lon": 79.07245
+        },
+        {
+          "name": "Swathi Shri Truck Car Parking",
+          "lat": 12.2107,
+          "lon": 79.07866
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "High Way Punjabi Dhaba",
+          "lat": 12.70491,
+          "lon": 78.64771
+        },
+        {
+          "name": "Highway Dhabha",
+          "lat": 13.03468,
+          "lon": 79.20588
+        }
+      ],
+      "repair": [
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        },
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "22-29": {
+      "from": 22,
+      "to": 29,
+      "highway": "NH44/NH48/NH75",
+      "parking": [
+        {
+          "name": "Lorry Parking Area",
+          "lat": 14.64069,
+          "lon": 78.53144
+        },
+        {
+          "name": "Acc Area Parking",
+          "lat": 14.52769,
+          "lon": 79.99107
+        },
+        {
+          "name": "Truck Parking Area V Kandrika",
+          "lat": 14.03477,
+          "lon": 79.89534
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 14.09319,
+          "lon": 78.75577
+        },
+        {
+          "name": "Highway Dhaba Restaurant",
+          "lat": 17.31001,
+          "lon": 78.2248
+        },
+        {
+          "name": "Highway Sona Dhaba",
+          "lat": 14.94748,
+          "lon": 78.59981
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "23-29": {
+      "from": 23,
+      "to": 29,
+      "highway": "SHU88/SHU86/SHU87",
+      "parking": [
+        {
+          "name": "Acc Area Parking",
+          "lat": 14.52769,
+          "lon": 79.99107
+        },
+        {
+          "name": "Truck Parking Area V Kandrika",
+          "lat": 14.03477,
+          "lon": 79.89534
+        },
+        {
+          "name": "Trucks Rest Bay",
+          "lat": 13.85777,
+          "lon": 79.93023
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "B.R. Highway Dhaba Hotel",
+          "lat": 14.53212,
+          "lon": 79.99076
+        },
+        {
+          "name": "Dhaba",
+          "lat": 15.79323,
+          "lon": 80.03862
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "23-28": {
+      "from": 23,
+      "to": 28,
+      "highway": "SHU88/SHU86/NH48",
+      "parking": [
+        {
+          "name": "Bus Truck Parking Area",
+          "lat": 11.65719,
+          "lon": 78.39383
+        },
+        {
+          "name": "Swathi Shri Truck Car Parking",
+          "lat": 12.2107,
+          "lon": 79.07866
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 12.24826,
+          "lon": 79.07245
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "High Way Punjabi Dhaba",
+          "lat": 12.70491,
+          "lon": 78.64771
+        }
+      ],
+      "repair": [
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        },
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        }
+      ]
+    },
+    "20-23": {
+      "from": 20,
+      "to": 23,
+      "highway": "SHU88/SHU86/SHU87",
+      "parking": [
+        {
+          "name": "Acc Area Parking",
+          "lat": 14.52769,
+          "lon": 79.99107
+        },
+        {
+          "name": "Lorry Parking Area",
+          "lat": 14.64069,
+          "lon": 78.53144
+        },
+        {
+          "name": "Truck Parking Area V Kandrika",
+          "lat": 14.03477,
+          "lon": 79.89534
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Shri Durga Family Restaurant and Dhaba",
+          "lat": 15.10686,
+          "lon": 79.4149
+        },
+        {
+          "name": "Gaja Lakshmi Automobiles (Shri Lakshmi Dhaba Restaurant)",
+          "lat": 15.08915,
+          "lon": 79.41015
+        },
+        {
+          "name": "Highway Dhaba Restaurant",
+          "lat": 17.31001,
+          "lon": 78.2248
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        }
+      ]
+    },
+    "25-26": {
+      "from": 25,
+      "to": 26,
+      "highway": "NH16/NH53/NH720",
+      "parking": [
+        {
+          "name": "Koira Iron Mines Truck Parking",
+          "lat": 21.89706,
+          "lon": 85.22169
+        },
+        {
+          "name": "Truck Parking",
+          "lat": 22.42046,
+          "lon": 85.75561
+        },
+        {
+          "name": "Aradi Truck Parking Area",
+          "lat": 21.07986,
+          "lon": 86.51266
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "27-28": {
+      "from": 27,
+      "to": 28,
+      "highway": "SH63/SH51/SH61",
+      "parking": [
+        {
+          "name": "Tanker Truck Parking Area",
+          "lat": 10.79806,
+          "lon": 76.76973
+        },
+        {
+          "name": "Pollachi Lorry Stand",
+          "lat": 10.65617,
+          "lon": 77.00331
+        },
+        {
+          "name": "Pay and Park Lorry Parking Area",
+          "lat": 10.07093,
+          "lon": 76.33293
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Family Restaurant",
+          "lat": 11.20649,
+          "lon": 77.37812
+        },
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        },
+        {
+          "name": "Highway Hut Dhaba",
+          "lat": 9.69051,
+          "lon": 76.63815
+        }
+      ],
+      "repair": [
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        }
+      ]
+    },
+    "20-27": {
+      "from": 20,
+      "to": 27,
+      "highway": "SH63/NH66/SH50",
+      "parking": [
+        {
+          "name": "Forroc Truck Parking",
+          "lat": 13.178,
+          "lon": 77.29502
+        },
+        {
+          "name": "Friends Lorry Parking",
+          "lat": 13.09545,
+          "lon": 77.38081
+        },
+        {
+          "name": "Shri Balaji Parking",
+          "lat": 13.0735,
+          "lon": 77.43886
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba Hotel Family Restaurant",
+          "lat": 13.25501,
+          "lon": 77.21511
+        }
+      ],
+      "repair": [
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        },
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        }
+      ]
+    },
+    "28-29": {
+      "from": 28,
+      "to": 29,
+      "highway": "NH948/SHU52/SH162",
+      "parking": [
+        {
+          "name": "Haji Auto Stand",
+          "lat": 13.36103,
+          "lon": 78.56886
+        },
+        {
+          "name": "Lorry Parking Area",
+          "lat": 14.64069,
+          "lon": 78.53144
+        },
+        {
+          "name": "Truck Parking Area V Kandrika",
+          "lat": 14.03477,
+          "lon": 79.89534
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Dhaba",
+          "lat": 14.09319,
+          "lon": 78.75577
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 13.15816,
+          "lon": 78.36257
+        },
+        {
+          "name": "Highway Dhaba",
+          "lat": 13.14846,
+          "lon": 80.2221
+        }
+      ],
+      "repair": [
+        {
+          "name": "Hand Pallet Truck Repair Service",
+          "lat": 13.08017,
+          "lon": 77.42272
+        },
+        {
+          "name": "Om Truck Repair Service",
+          "lat": 10.15967,
+          "lon": 78.50101
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    },
+    "19-29": {
+      "from": 19,
+      "to": 29,
+      "highway": "SH32/SH242/NH30",
+      "parking": [
+        {
+          "name": "Itc Truck Parking",
+          "lat": 17.66762,
+          "lon": 80.90028
+        },
+        {
+          "name": "Bilt Truck Parking",
+          "lat": 18.88549,
+          "lon": 82.53966
+        },
+        {
+          "name": "Mini Truck Parking Place",
+          "lat": 18.86679,
+          "lon": 82.5633
+        }
+      ],
+      "rest_food": [
+        {
+          "name": "Highway Restaurant Dhaba",
+          "lat": 21.58509,
+          "lon": 83.10491
+        }
+      ],
+      "repair": [
+        {
+          "name": "Truck Repair Service",
+          "lat": 28.9898,
+          "lon": 79.41808
+        },
+        {
+          "name": "Truck Repair",
+          "lat": 25.39358,
+          "lon": 80.00991
+        }
+      ]
+    }
+  }
+}

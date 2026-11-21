@@ -1,0 +1,2704 @@
+{
+  "cargo_items": [
+    {
+      "id": "c1",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 0,
+      "dest_city_id": 21,
+      "weight_kg": 4000,
+      "value_inr": 412754
+    },
+    {
+      "id": "c2",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 0,
+      "dest_city_id": 4,
+      "weight_kg": 2500,
+      "value_inr": 247801
+    },
+    {
+      "id": "c3",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 0,
+      "dest_city_id": 1,
+      "weight_kg": 8000,
+      "value_inr": 490393
+    },
+    {
+      "id": "c4",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 0,
+      "dest_city_id": 24,
+      "weight_kg": 2000,
+      "value_inr": 90257
+    },
+    {
+      "id": "c5",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 0,
+      "dest_city_id": 9,
+      "weight_kg": 14500,
+      "value_inr": 299278
+    },
+    {
+      "id": "c6",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 0,
+      "dest_city_id": 8,
+      "weight_kg": 10000,
+      "value_inr": 328656
+    },
+    {
+      "id": "c7",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 0,
+      "dest_city_id": 26,
+      "weight_kg": 1500,
+      "value_inr": 34605
+    },
+    {
+      "id": "c8",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 0,
+      "dest_city_id": 5,
+      "weight_kg": 6500,
+      "value_inr": 256905
+    },
+    {
+      "id": "c9",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 0,
+      "dest_city_id": 28,
+      "weight_kg": 12000,
+      "value_inr": 173006
+    },
+    {
+      "id": "c10",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 0,
+      "dest_city_id": 18,
+      "weight_kg": 8000,
+      "value_inr": 295892
+    },
+    {
+      "id": "c11",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 1,
+      "dest_city_id": 11,
+      "weight_kg": 16000,
+      "value_inr": 1958663
+    },
+    {
+      "id": "c12",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 1,
+      "dest_city_id": 4,
+      "weight_kg": 13500,
+      "value_inr": 773533
+    },
+    {
+      "id": "c13",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 1,
+      "dest_city_id": 3,
+      "weight_kg": 10500,
+      "value_inr": 521156
+    },
+    {
+      "id": "c14",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 1,
+      "dest_city_id": 13,
+      "weight_kg": 13000,
+      "value_inr": 309149
+    },
+    {
+      "id": "c15",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 1,
+      "dest_city_id": 28,
+      "weight_kg": 3500,
+      "value_inr": 85096
+    },
+    {
+      "id": "c16",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 1,
+      "dest_city_id": 12,
+      "weight_kg": 8500,
+      "value_inr": 197068
+    },
+    {
+      "id": "c17",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 1,
+      "dest_city_id": 24,
+      "weight_kg": 4000,
+      "value_inr": 166897
+    },
+    {
+      "id": "c18",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 1,
+      "dest_city_id": 20,
+      "weight_kg": 4500,
+      "value_inr": 67638
+    },
+    {
+      "id": "c19",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 1,
+      "dest_city_id": 9,
+      "weight_kg": 16000,
+      "value_inr": 530051
+    },
+    {
+      "id": "c20",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 1,
+      "dest_city_id": 2,
+      "weight_kg": 13000,
+      "value_inr": 1130101
+    },
+    {
+      "id": "c21",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 2,
+      "dest_city_id": 12,
+      "weight_kg": 9000,
+      "value_inr": 535486
+    },
+    {
+      "id": "c22",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 2,
+      "dest_city_id": 7,
+      "weight_kg": 13500,
+      "value_inr": 543174
+    },
+    {
+      "id": "c23",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 2,
+      "dest_city_id": 22,
+      "weight_kg": 8500,
+      "value_inr": 210159
+    },
+    {
+      "id": "c24",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 2,
+      "dest_city_id": 9,
+      "weight_kg": 3000,
+      "value_inr": 79096
+    },
+    {
+      "id": "c25",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 2,
+      "dest_city_id": 23,
+      "weight_kg": 2500,
+      "value_inr": 58600
+    },
+    {
+      "id": "c26",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 2,
+      "dest_city_id": 27,
+      "weight_kg": 14000,
+      "value_inr": 468977
+    },
+    {
+      "id": "c27",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 2,
+      "dest_city_id": 21,
+      "weight_kg": 8000,
+      "value_inr": 145830
+    },
+    {
+      "id": "c28",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 2,
+      "dest_city_id": 3,
+      "weight_kg": 11500,
+      "value_inr": 322592
+    },
+    {
+      "id": "c29",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 2,
+      "dest_city_id": 20,
+      "weight_kg": 17000,
+      "value_inr": 1628328
+    },
+    {
+      "id": "c30",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 2,
+      "dest_city_id": 6,
+      "weight_kg": 16000,
+      "value_inr": 1669153
+    },
+    {
+      "id": "c31",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 3,
+      "dest_city_id": 5,
+      "weight_kg": 13000,
+      "value_inr": 511999
+    },
+    {
+      "id": "c32",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 3,
+      "dest_city_id": 8,
+      "weight_kg": 5500,
+      "value_inr": 127511
+    },
+    {
+      "id": "c33",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 3,
+      "dest_city_id": 24,
+      "weight_kg": 4000,
+      "value_inr": 129059
+    },
+    {
+      "id": "c34",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 3,
+      "dest_city_id": 18,
+      "weight_kg": 5000,
+      "value_inr": 91113
+    },
+    {
+      "id": "c35",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 3,
+      "dest_city_id": 26,
+      "weight_kg": 6500,
+      "value_inr": 265454
+    },
+    {
+      "id": "c36",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 3,
+      "dest_city_id": 9,
+      "weight_kg": 15000,
+      "value_inr": 244926
+    },
+    {
+      "id": "c37",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 3,
+      "dest_city_id": 19,
+      "weight_kg": 13500,
+      "value_inr": 406072
+    },
+    {
+      "id": "c38",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 3,
+      "dest_city_id": 14,
+      "weight_kg": 16000,
+      "value_inr": 1613701
+    },
+    {
+      "id": "c39",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 3,
+      "dest_city_id": 23,
+      "weight_kg": 1500,
+      "value_inr": 193564
+    },
+    {
+      "id": "c40",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 3,
+      "dest_city_id": 13,
+      "weight_kg": 5000,
+      "value_inr": 364872
+    },
+    {
+      "id": "c41",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 4,
+      "dest_city_id": 18,
+      "weight_kg": 16000,
+      "value_inr": 299656
+    },
+    {
+      "id": "c42",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 4,
+      "dest_city_id": 25,
+      "weight_kg": 9500,
+      "value_inr": 329508
+    },
+    {
+      "id": "c43",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 4,
+      "dest_city_id": 9,
+      "weight_kg": 7000,
+      "value_inr": 147430
+    },
+    {
+      "id": "c44",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 4,
+      "dest_city_id": 28,
+      "weight_kg": 4500,
+      "value_inr": 188717
+    },
+    {
+      "id": "c45",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 4,
+      "dest_city_id": 21,
+      "weight_kg": 11000,
+      "value_inr": 195800
+    },
+    {
+      "id": "c46",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 4,
+      "dest_city_id": 11,
+      "weight_kg": 17500,
+      "value_inr": 574133
+    },
+    {
+      "id": "c47",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 4,
+      "dest_city_id": 3,
+      "weight_kg": 6000,
+      "value_inr": 569752
+    },
+    {
+      "id": "c48",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 4,
+      "dest_city_id": 10,
+      "weight_kg": 6500,
+      "value_inr": 796649
+    },
+    {
+      "id": "c49",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 4,
+      "dest_city_id": 14,
+      "weight_kg": 18000,
+      "value_inr": 1424354
+    },
+    {
+      "id": "c50",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 4,
+      "dest_city_id": 6,
+      "weight_kg": 11500,
+      "value_inr": 504948
+    },
+    {
+      "id": "c51",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 5,
+      "dest_city_id": 3,
+      "weight_kg": 4000,
+      "value_inr": 127989
+    },
+    {
+      "id": "c52",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 5,
+      "dest_city_id": 12,
+      "weight_kg": 3500,
+      "value_inr": 86883
+    },
+    {
+      "id": "c53",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 5,
+      "dest_city_id": 27,
+      "weight_kg": 5500,
+      "value_inr": 173511
+    },
+    {
+      "id": "c54",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 5,
+      "dest_city_id": 26,
+      "weight_kg": 16500,
+      "value_inr": 304113
+    },
+    {
+      "id": "c55",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 5,
+      "dest_city_id": 10,
+      "weight_kg": 6500,
+      "value_inr": 186424
+    },
+    {
+      "id": "c56",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 5,
+      "dest_city_id": 8,
+      "weight_kg": 15000,
+      "value_inr": 1760936
+    },
+    {
+      "id": "c57",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 5,
+      "dest_city_id": 1,
+      "weight_kg": 7500,
+      "value_inr": 979092
+    },
+    {
+      "id": "c58",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 5,
+      "dest_city_id": 24,
+      "weight_kg": 14000,
+      "value_inr": 1135734
+    },
+    {
+      "id": "c59",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 5,
+      "dest_city_id": 19,
+      "weight_kg": 13000,
+      "value_inr": 559781
+    },
+    {
+      "id": "c60",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 5,
+      "dest_city_id": 2,
+      "weight_kg": 18000,
+      "value_inr": 408115
+    },
+    {
+      "id": "c61",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 6,
+      "dest_city_id": 8,
+      "weight_kg": 1500,
+      "value_inr": 26351
+    },
+    {
+      "id": "c62",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 6,
+      "dest_city_id": 29,
+      "weight_kg": 3000,
+      "value_inr": 98865
+    },
+    {
+      "id": "c63",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 6,
+      "dest_city_id": 2,
+      "weight_kg": 2500,
+      "value_inr": 44769
+    },
+    {
+      "id": "c64",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 6,
+      "dest_city_id": 11,
+      "weight_kg": 3500,
+      "value_inr": 110844
+    },
+    {
+      "id": "c65",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 6,
+      "dest_city_id": 0,
+      "weight_kg": 10000,
+      "value_inr": 1061711
+    },
+    {
+      "id": "c66",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 6,
+      "dest_city_id": 19,
+      "weight_kg": 8000,
+      "value_inr": 980438
+    },
+    {
+      "id": "c67",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 6,
+      "dest_city_id": 18,
+      "weight_kg": 16500,
+      "value_inr": 1015870
+    },
+    {
+      "id": "c68",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 6,
+      "dest_city_id": 28,
+      "weight_kg": 16500,
+      "value_inr": 812888
+    },
+    {
+      "id": "c69",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 6,
+      "dest_city_id": 24,
+      "weight_kg": 7500,
+      "value_inr": 146475
+    },
+    {
+      "id": "c70",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 6,
+      "dest_city_id": 22,
+      "weight_kg": 15000,
+      "value_inr": 416521
+    },
+    {
+      "id": "c71",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 7,
+      "dest_city_id": 14,
+      "weight_kg": 12000,
+      "value_inr": 491499
+    },
+    {
+      "id": "c72",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 7,
+      "dest_city_id": 15,
+      "weight_kg": 4500,
+      "value_inr": 64088
+    },
+    {
+      "id": "c73",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 7,
+      "dest_city_id": 24,
+      "weight_kg": 7500,
+      "value_inr": 239515
+    },
+    {
+      "id": "c74",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 7,
+      "dest_city_id": 1,
+      "weight_kg": 5500,
+      "value_inr": 532298
+    },
+    {
+      "id": "c75",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 7,
+      "dest_city_id": 22,
+      "weight_kg": 10000,
+      "value_inr": 1190308
+    },
+    {
+      "id": "c76",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 7,
+      "dest_city_id": 21,
+      "weight_kg": 3500,
+      "value_inr": 233699
+    },
+    {
+      "id": "c77",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 7,
+      "dest_city_id": 27,
+      "weight_kg": 4500,
+      "value_inr": 164474
+    },
+    {
+      "id": "c78",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 7,
+      "dest_city_id": 3,
+      "weight_kg": 1500,
+      "value_inr": 40840
+    },
+    {
+      "id": "c79",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 7,
+      "dest_city_id": 26,
+      "weight_kg": 9000,
+      "value_inr": 230964
+    },
+    {
+      "id": "c80",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 7,
+      "dest_city_id": 13,
+      "weight_kg": 17000,
+      "value_inr": 354464
+    },
+    {
+      "id": "c81",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 8,
+      "dest_city_id": 28,
+      "weight_kg": 15000,
+      "value_inr": 253943
+    },
+    {
+      "id": "c82",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 8,
+      "dest_city_id": 13,
+      "weight_kg": 17000,
+      "value_inr": 465078
+    },
+    {
+      "id": "c83",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 8,
+      "dest_city_id": 1,
+      "weight_kg": 10500,
+      "value_inr": 934737
+    },
+    {
+      "id": "c84",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 8,
+      "dest_city_id": 5,
+      "weight_kg": 3000,
+      "value_inr": 373176
+    },
+    {
+      "id": "c85",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 8,
+      "dest_city_id": 29,
+      "weight_kg": 3000,
+      "value_inr": 224092
+    },
+    {
+      "id": "c86",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 8,
+      "dest_city_id": 0,
+      "weight_kg": 3000,
+      "value_inr": 109627
+    },
+    {
+      "id": "c87",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 8,
+      "dest_city_id": 25,
+      "weight_kg": 16500,
+      "value_inr": 381563
+    },
+    {
+      "id": "c88",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 8,
+      "dest_city_id": 9,
+      "weight_kg": 18000,
+      "value_inr": 460138
+    },
+    {
+      "id": "c89",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 8,
+      "dest_city_id": 15,
+      "weight_kg": 17500,
+      "value_inr": 308715
+    },
+    {
+      "id": "c90",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 8,
+      "dest_city_id": 10,
+      "weight_kg": 7000,
+      "value_inr": 214965
+    },
+    {
+      "id": "c91",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 9,
+      "dest_city_id": 2,
+      "weight_kg": 4000,
+      "value_inr": 122122
+    },
+    {
+      "id": "c92",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 9,
+      "dest_city_id": 22,
+      "weight_kg": 18000,
+      "value_inr": 1669896
+    },
+    {
+      "id": "c93",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 9,
+      "dest_city_id": 7,
+      "weight_kg": 9500,
+      "value_inr": 1017886
+    },
+    {
+      "id": "c94",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 9,
+      "dest_city_id": 13,
+      "weight_kg": 11500,
+      "value_inr": 706742
+    },
+    {
+      "id": "c95",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 9,
+      "dest_city_id": 3,
+      "weight_kg": 14000,
+      "value_inr": 530582
+    },
+    {
+      "id": "c96",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 9,
+      "dest_city_id": 19,
+      "weight_kg": 11000,
+      "value_inr": 249959
+    },
+    {
+      "id": "c97",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 9,
+      "dest_city_id": 27,
+      "weight_kg": 3500,
+      "value_inr": 83665
+    },
+    {
+      "id": "c98",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 9,
+      "dest_city_id": 24,
+      "weight_kg": 4500,
+      "value_inr": 79137
+    },
+    {
+      "id": "c99",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 9,
+      "dest_city_id": 20,
+      "weight_kg": 8000,
+      "value_inr": 294659
+    },
+    {
+      "id": "c100",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 9,
+      "dest_city_id": 1,
+      "weight_kg": 5500,
+      "value_inr": 100922
+    },
+    {
+      "id": "c101",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 10,
+      "dest_city_id": 29,
+      "weight_kg": 18000,
+      "value_inr": 1458851
+    },
+    {
+      "id": "c102",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 10,
+      "dest_city_id": 2,
+      "weight_kg": 11000,
+      "value_inr": 1546718
+    },
+    {
+      "id": "c103",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 10,
+      "dest_city_id": 7,
+      "weight_kg": 4500,
+      "value_inr": 358479
+    },
+    {
+      "id": "c104",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 10,
+      "dest_city_id": 12,
+      "weight_kg": 5500,
+      "value_inr": 220786
+    },
+    {
+      "id": "c105",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 10,
+      "dest_city_id": 9,
+      "weight_kg": 4500,
+      "value_inr": 113549
+    },
+    {
+      "id": "c106",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 10,
+      "dest_city_id": 5,
+      "weight_kg": 6000,
+      "value_inr": 161101
+    },
+    {
+      "id": "c107",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 10,
+      "dest_city_id": 15,
+      "weight_kg": 8000,
+      "value_inr": 181927
+    },
+    {
+      "id": "c108",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 10,
+      "dest_city_id": 18,
+      "weight_kg": 8000,
+      "value_inr": 314999
+    },
+    {
+      "id": "c109",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 10,
+      "dest_city_id": 25,
+      "weight_kg": 9500,
+      "value_inr": 149933
+    },
+    {
+      "id": "c110",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 10,
+      "dest_city_id": 20,
+      "weight_kg": 9500,
+      "value_inr": 345458
+    },
+    {
+      "id": "c111",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 11,
+      "dest_city_id": 28,
+      "weight_kg": 9500,
+      "value_inr": 999236
+    },
+    {
+      "id": "c112",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 11,
+      "dest_city_id": 1,
+      "weight_kg": 15500,
+      "value_inr": 1078702
+    },
+    {
+      "id": "c113",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 11,
+      "dest_city_id": 2,
+      "weight_kg": 15000,
+      "value_inr": 676848
+    },
+    {
+      "id": "c114",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 11,
+      "dest_city_id": 21,
+      "weight_kg": 5000,
+      "value_inr": 96810
+    },
+    {
+      "id": "c115",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 11,
+      "dest_city_id": 14,
+      "weight_kg": 6000,
+      "value_inr": 179463
+    },
+    {
+      "id": "c116",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 11,
+      "dest_city_id": 8,
+      "weight_kg": 13000,
+      "value_inr": 281580
+    },
+    {
+      "id": "c117",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 11,
+      "dest_city_id": 29,
+      "weight_kg": 6000,
+      "value_inr": 214602
+    },
+    {
+      "id": "c118",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 11,
+      "dest_city_id": 0,
+      "weight_kg": 2500,
+      "value_inr": 36498
+    },
+    {
+      "id": "c119",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 11,
+      "dest_city_id": 10,
+      "weight_kg": 2500,
+      "value_inr": 90717
+    },
+    {
+      "id": "c120",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 11,
+      "dest_city_id": 4,
+      "weight_kg": 8000,
+      "value_inr": 853348
+    },
+    {
+      "id": "c121",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 12,
+      "dest_city_id": 22,
+      "weight_kg": 7000,
+      "value_inr": 547167
+    },
+    {
+      "id": "c122",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 12,
+      "dest_city_id": 3,
+      "weight_kg": 2000,
+      "value_inr": 77426
+    },
+    {
+      "id": "c123",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 12,
+      "dest_city_id": 11,
+      "weight_kg": 12000,
+      "value_inr": 307020
+    },
+    {
+      "id": "c124",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 12,
+      "dest_city_id": 25,
+      "weight_kg": 14500,
+      "value_inr": 475382
+    },
+    {
+      "id": "c125",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 12,
+      "dest_city_id": 18,
+      "weight_kg": 9000,
+      "value_inr": 172210
+    },
+    {
+      "id": "c126",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 12,
+      "dest_city_id": 14,
+      "weight_kg": 4500,
+      "value_inr": 157975
+    },
+    {
+      "id": "c127",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 12,
+      "dest_city_id": 20,
+      "weight_kg": 2500,
+      "value_inr": 44753
+    },
+    {
+      "id": "c128",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 12,
+      "dest_city_id": 4,
+      "weight_kg": 8500,
+      "value_inr": 237106
+    },
+    {
+      "id": "c129",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 12,
+      "dest_city_id": 7,
+      "weight_kg": 16000,
+      "value_inr": 1504592
+    },
+    {
+      "id": "c130",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 12,
+      "dest_city_id": 5,
+      "weight_kg": 8500,
+      "value_inr": 918038
+    },
+    {
+      "id": "c131",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 13,
+      "dest_city_id": 22,
+      "weight_kg": 14000,
+      "value_inr": 659622
+    },
+    {
+      "id": "c132",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 13,
+      "dest_city_id": 6,
+      "weight_kg": 12000,
+      "value_inr": 323583
+    },
+    {
+      "id": "c133",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 13,
+      "dest_city_id": 12,
+      "weight_kg": 5000,
+      "value_inr": 168114
+    },
+    {
+      "id": "c134",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 13,
+      "dest_city_id": 10,
+      "weight_kg": 9500,
+      "value_inr": 175071
+    },
+    {
+      "id": "c135",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 13,
+      "dest_city_id": 8,
+      "weight_kg": 9500,
+      "value_inr": 287713
+    },
+    {
+      "id": "c136",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 13,
+      "dest_city_id": 2,
+      "weight_kg": 15000,
+      "value_inr": 222361
+    },
+    {
+      "id": "c137",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 13,
+      "dest_city_id": 25,
+      "weight_kg": 11500,
+      "value_inr": 353472
+    },
+    {
+      "id": "c138",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 13,
+      "dest_city_id": 11,
+      "weight_kg": 17500,
+      "value_inr": 1490029
+    },
+    {
+      "id": "c139",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 13,
+      "dest_city_id": 21,
+      "weight_kg": 7500,
+      "value_inr": 821004
+    },
+    {
+      "id": "c140",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 13,
+      "dest_city_id": 17,
+      "weight_kg": 15000,
+      "value_inr": 829409
+    },
+    {
+      "id": "c141",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 14,
+      "dest_city_id": 26,
+      "weight_kg": 3500,
+      "value_inr": 94675
+    },
+    {
+      "id": "c142",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 14,
+      "dest_city_id": 18,
+      "weight_kg": 12000,
+      "value_inr": 369352
+    },
+    {
+      "id": "c143",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 14,
+      "dest_city_id": 22,
+      "weight_kg": 5000,
+      "value_inr": 113790
+    },
+    {
+      "id": "c144",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 14,
+      "dest_city_id": 24,
+      "weight_kg": 11000,
+      "value_inr": 405346
+    },
+    {
+      "id": "c145",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 14,
+      "dest_city_id": 29,
+      "weight_kg": 14500,
+      "value_inr": 213252
+    },
+    {
+      "id": "c146",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 14,
+      "dest_city_id": 25,
+      "weight_kg": 10500,
+      "value_inr": 337605
+    },
+    {
+      "id": "c147",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 14,
+      "dest_city_id": 27,
+      "weight_kg": 7500,
+      "value_inr": 725452
+    },
+    {
+      "id": "c148",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 14,
+      "dest_city_id": 6,
+      "weight_kg": 13500,
+      "value_inr": 1740239
+    },
+    {
+      "id": "c149",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 14,
+      "dest_city_id": 11,
+      "weight_kg": 7000,
+      "value_inr": 498773
+    },
+    {
+      "id": "c150",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 14,
+      "dest_city_id": 13,
+      "weight_kg": 11000,
+      "value_inr": 467742
+    },
+    {
+      "id": "c151",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 15,
+      "dest_city_id": 27,
+      "weight_kg": 16000,
+      "value_inr": 459968
+    },
+    {
+      "id": "c152",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 15,
+      "dest_city_id": 0,
+      "weight_kg": 8000,
+      "value_inr": 168715
+    },
+    {
+      "id": "c153",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 15,
+      "dest_city_id": 9,
+      "weight_kg": 6500,
+      "value_inr": 253330
+    },
+    {
+      "id": "c154",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 15,
+      "dest_city_id": 29,
+      "weight_kg": 10500,
+      "value_inr": 166348
+    },
+    {
+      "id": "c155",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 15,
+      "dest_city_id": 6,
+      "weight_kg": 12000,
+      "value_inr": 319447
+    },
+    {
+      "id": "c156",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 15,
+      "dest_city_id": 13,
+      "weight_kg": 9000,
+      "value_inr": 956846
+    },
+    {
+      "id": "c157",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 15,
+      "dest_city_id": 19,
+      "weight_kg": 8500,
+      "value_inr": 1146241
+    },
+    {
+      "id": "c158",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 15,
+      "dest_city_id": 20,
+      "weight_kg": 6000,
+      "value_inr": 335310
+    },
+    {
+      "id": "c159",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 15,
+      "dest_city_id": 21,
+      "weight_kg": 9000,
+      "value_inr": 470071
+    },
+    {
+      "id": "c160",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 15,
+      "dest_city_id": 10,
+      "weight_kg": 3500,
+      "value_inr": 79476
+    },
+    {
+      "id": "c161",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 16,
+      "dest_city_id": 29,
+      "weight_kg": 6000,
+      "value_inr": 133490
+    },
+    {
+      "id": "c162",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 16,
+      "dest_city_id": 21,
+      "weight_kg": 1500,
+      "value_inr": 63370
+    },
+    {
+      "id": "c163",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 16,
+      "dest_city_id": 19,
+      "weight_kg": 4500,
+      "value_inr": 78392
+    },
+    {
+      "id": "c164",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 16,
+      "dest_city_id": 6,
+      "weight_kg": 8500,
+      "value_inr": 234690
+    },
+    {
+      "id": "c165",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 16,
+      "dest_city_id": 23,
+      "weight_kg": 18000,
+      "value_inr": 1771252
+    },
+    {
+      "id": "c166",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 16,
+      "dest_city_id": 25,
+      "weight_kg": 9000,
+      "value_inr": 1259582
+    },
+    {
+      "id": "c167",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 16,
+      "dest_city_id": 12,
+      "weight_kg": 5000,
+      "value_inr": 335590
+    },
+    {
+      "id": "c168",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 16,
+      "dest_city_id": 15,
+      "weight_kg": 16000,
+      "value_inr": 750644
+    },
+    {
+      "id": "c169",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 16,
+      "dest_city_id": 24,
+      "weight_kg": 11500,
+      "value_inr": 311194
+    },
+    {
+      "id": "c170",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 16,
+      "dest_city_id": 7,
+      "weight_kg": 15500,
+      "value_inr": 475256
+    },
+    {
+      "id": "c171",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 17,
+      "dest_city_id": 24,
+      "weight_kg": 10000,
+      "value_inr": 404713
+    },
+    {
+      "id": "c172",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 17,
+      "dest_city_id": 16,
+      "weight_kg": 18000,
+      "value_inr": 281836
+    },
+    {
+      "id": "c173",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 17,
+      "dest_city_id": 13,
+      "weight_kg": 9000,
+      "value_inr": 259156
+    },
+    {
+      "id": "c174",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 17,
+      "dest_city_id": 18,
+      "weight_kg": 3500,
+      "value_inr": 377526
+    },
+    {
+      "id": "c175",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 17,
+      "dest_city_id": 14,
+      "weight_kg": 9000,
+      "value_inr": 992240
+    },
+    {
+      "id": "c176",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 17,
+      "dest_city_id": 5,
+      "weight_kg": 11500,
+      "value_inr": 902390
+    },
+    {
+      "id": "c177",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 17,
+      "dest_city_id": 15,
+      "weight_kg": 4000,
+      "value_inr": 152098
+    },
+    {
+      "id": "c178",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 17,
+      "dest_city_id": 25,
+      "weight_kg": 8500,
+      "value_inr": 187601
+    },
+    {
+      "id": "c179",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 17,
+      "dest_city_id": 8,
+      "weight_kg": 6000,
+      "value_inr": 190271
+    },
+    {
+      "id": "c180",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 17,
+      "dest_city_id": 7,
+      "weight_kg": 3500,
+      "value_inr": 71116
+    },
+    {
+      "id": "c181",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 18,
+      "dest_city_id": 10,
+      "weight_kg": 13500,
+      "value_inr": 210760
+    },
+    {
+      "id": "c182",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 18,
+      "dest_city_id": 17,
+      "weight_kg": 12500,
+      "value_inr": 363541
+    },
+    {
+      "id": "c183",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 18,
+      "dest_city_id": 14,
+      "weight_kg": 13500,
+      "value_inr": 1527943
+    },
+    {
+      "id": "c184",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 18,
+      "dest_city_id": 13,
+      "weight_kg": 14500,
+      "value_inr": 1776368
+    },
+    {
+      "id": "c185",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 18,
+      "dest_city_id": 1,
+      "weight_kg": 8500,
+      "value_inr": 577523
+    },
+    {
+      "id": "c186",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 18,
+      "dest_city_id": 6,
+      "weight_kg": 10000,
+      "value_inr": 430220
+    },
+    {
+      "id": "c187",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 18,
+      "dest_city_id": 26,
+      "weight_kg": 2000,
+      "value_inr": 44243
+    },
+    {
+      "id": "c188",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 18,
+      "dest_city_id": 12,
+      "weight_kg": 14000,
+      "value_inr": 446751
+    },
+    {
+      "id": "c189",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 18,
+      "dest_city_id": 19,
+      "weight_kg": 16000,
+      "value_inr": 389701
+    },
+    {
+      "id": "c190",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 18,
+      "dest_city_id": 0,
+      "weight_kg": 2000,
+      "value_inr": 84894
+    },
+    {
+      "id": "c191",
+      "type": "Agriculture",
+      "name": "Edible Oil Tins",
+      "src_city_id": 19,
+      "dest_city_id": 18,
+      "weight_kg": 3000,
+      "value_inr": 85865
+    },
+    {
+      "id": "c192",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 19,
+      "dest_city_id": 29,
+      "weight_kg": 11500,
+      "value_inr": 1021120
+    },
+    {
+      "id": "c193",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 19,
+      "dest_city_id": 22,
+      "weight_kg": 11500,
+      "value_inr": 1302662
+    },
+    {
+      "id": "c194",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 19,
+      "dest_city_id": 0,
+      "weight_kg": 13500,
+      "value_inr": 843543
+    },
+    {
+      "id": "c195",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 19,
+      "dest_city_id": 2,
+      "weight_kg": 14500,
+      "value_inr": 579103
+    },
+    {
+      "id": "c196",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 19,
+      "dest_city_id": 21,
+      "weight_kg": 4000,
+      "value_inr": 91354
+    },
+    {
+      "id": "c197",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 19,
+      "dest_city_id": 13,
+      "weight_kg": 3000,
+      "value_inr": 104996
+    },
+    {
+      "id": "c198",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 19,
+      "dest_city_id": 4,
+      "weight_kg": 12500,
+      "value_inr": 234922
+    },
+    {
+      "id": "c199",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 19,
+      "dest_city_id": 14,
+      "weight_kg": 3500,
+      "value_inr": 142405
+    },
+    {
+      "id": "c200",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 19,
+      "dest_city_id": 5,
+      "weight_kg": 2500,
+      "value_inr": 43188
+    },
+    {
+      "id": "c201",
+      "type": "Electronics",
+      "name": "Semiconductors & PCBs",
+      "src_city_id": 20,
+      "dest_city_id": 7,
+      "weight_kg": 8000,
+      "value_inr": 787370
+    },
+    {
+      "id": "c202",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 20,
+      "dest_city_id": 6,
+      "weight_kg": 9500,
+      "value_inr": 1263759
+    },
+    {
+      "id": "c203",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 20,
+      "dest_city_id": 27,
+      "weight_kg": 6500,
+      "value_inr": 461520
+    },
+    {
+      "id": "c204",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 20,
+      "dest_city_id": 0,
+      "weight_kg": 5000,
+      "value_inr": 243834
+    },
+    {
+      "id": "c205",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 20,
+      "dest_city_id": 19,
+      "weight_kg": 6500,
+      "value_inr": 176732
+    },
+    {
+      "id": "c206",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 20,
+      "dest_city_id": 4,
+      "weight_kg": 4500,
+      "value_inr": 136265
+    },
+    {
+      "id": "c207",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 20,
+      "dest_city_id": 29,
+      "weight_kg": 11000,
+      "value_inr": 237670
+    },
+    {
+      "id": "c208",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 20,
+      "dest_city_id": 24,
+      "weight_kg": 13500,
+      "value_inr": 476592
+    },
+    {
+      "id": "c209",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 20,
+      "dest_city_id": 15,
+      "weight_kg": 7500,
+      "value_inr": 99044
+    },
+    {
+      "id": "c210",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 20,
+      "dest_city_id": 3,
+      "weight_kg": 9000,
+      "value_inr": 240505
+    },
+    {
+      "id": "c211",
+      "type": "Pharma",
+      "name": "Generic APIs",
+      "src_city_id": 21,
+      "dest_city_id": 25,
+      "weight_kg": 13000,
+      "value_inr": 1311986
+    },
+    {
+      "id": "c212",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 21,
+      "dest_city_id": 9,
+      "weight_kg": 12000,
+      "value_inr": 666947
+    },
+    {
+      "id": "c213",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 21,
+      "dest_city_id": 22,
+      "weight_kg": 14500,
+      "value_inr": 717969
+    },
+    {
+      "id": "c214",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 21,
+      "dest_city_id": 19,
+      "weight_kg": 4500,
+      "value_inr": 101317
+    },
+    {
+      "id": "c215",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 21,
+      "dest_city_id": 3,
+      "weight_kg": 13000,
+      "value_inr": 401941
+    },
+    {
+      "id": "c216",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 21,
+      "dest_city_id": 18,
+      "weight_kg": 16000,
+      "value_inr": 362535
+    },
+    {
+      "id": "c217",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 21,
+      "dest_city_id": 1,
+      "weight_kg": 15000,
+      "value_inr": 483238
+    },
+    {
+      "id": "c218",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 21,
+      "dest_city_id": 11,
+      "weight_kg": 18000,
+      "value_inr": 333771
+    },
+    {
+      "id": "c219",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 21,
+      "dest_city_id": 17,
+      "weight_kg": 10000,
+      "value_inr": 328909
+    },
+    {
+      "id": "c220",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 21,
+      "dest_city_id": 13,
+      "weight_kg": 16500,
+      "value_inr": 1623850
+    },
+    {
+      "id": "c221",
+      "type": "Automotive",
+      "name": "Brake Assemblies",
+      "src_city_id": 22,
+      "dest_city_id": 27,
+      "weight_kg": 16000,
+      "value_inr": 1121057
+    },
+    {
+      "id": "c222",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 22,
+      "dest_city_id": 24,
+      "weight_kg": 13500,
+      "value_inr": 558244
+    },
+    {
+      "id": "c223",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 22,
+      "dest_city_id": 18,
+      "weight_kg": 17000,
+      "value_inr": 445202
+    },
+    {
+      "id": "c224",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 22,
+      "dest_city_id": 8,
+      "weight_kg": 7000,
+      "value_inr": 204823
+    },
+    {
+      "id": "c225",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 22,
+      "dest_city_id": 10,
+      "weight_kg": 12500,
+      "value_inr": 292283
+    },
+    {
+      "id": "c226",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 22,
+      "dest_city_id": 7,
+      "weight_kg": 12000,
+      "value_inr": 403982
+    },
+    {
+      "id": "c227",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 22,
+      "dest_city_id": 2,
+      "weight_kg": 10000,
+      "value_inr": 160847
+    },
+    {
+      "id": "c228",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 22,
+      "dest_city_id": 26,
+      "weight_kg": 18000,
+      "value_inr": 663781
+    },
+    {
+      "id": "c229",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 22,
+      "dest_city_id": 14,
+      "weight_kg": 4000,
+      "value_inr": 359686
+    },
+    {
+      "id": "c230",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 22,
+      "dest_city_id": 28,
+      "weight_kg": 14500,
+      "value_inr": 1743256
+    },
+    {
+      "id": "c231",
+      "type": "Machinery",
+      "name": "Solar Inverters",
+      "src_city_id": 23,
+      "dest_city_id": 25,
+      "weight_kg": 10500,
+      "value_inr": 413939
+    },
+    {
+      "id": "c232",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 23,
+      "dest_city_id": 7,
+      "weight_kg": 9000,
+      "value_inr": 192551
+    },
+    {
+      "id": "c233",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 23,
+      "dest_city_id": 22,
+      "weight_kg": 13000,
+      "value_inr": 378306
+    },
+    {
+      "id": "c234",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 23,
+      "dest_city_id": 15,
+      "weight_kg": 18000,
+      "value_inr": 355501
+    },
+    {
+      "id": "c235",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 23,
+      "dest_city_id": 20,
+      "weight_kg": 12000,
+      "value_inr": 416104
+    },
+    {
+      "id": "c236",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 23,
+      "dest_city_id": 27,
+      "weight_kg": 16000,
+      "value_inr": 230007
+    },
+    {
+      "id": "c237",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 23,
+      "dest_city_id": 26,
+      "weight_kg": 9500,
+      "value_inr": 268531
+    },
+    {
+      "id": "c238",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 23,
+      "dest_city_id": 14,
+      "weight_kg": 7500,
+      "value_inr": 695556
+    },
+    {
+      "id": "c239",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 23,
+      "dest_city_id": 0,
+      "weight_kg": 7000,
+      "value_inr": 745926
+    },
+    {
+      "id": "c240",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 23,
+      "dest_city_id": 2,
+      "weight_kg": 16500,
+      "value_inr": 1030243
+    },
+    {
+      "id": "c241",
+      "type": "Textiles",
+      "name": "Cotton Yarn Bales",
+      "src_city_id": 24,
+      "dest_city_id": 18,
+      "weight_kg": 7000,
+      "value_inr": 149519
+    },
+    {
+      "id": "c242",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 24,
+      "dest_city_id": 25,
+      "weight_kg": 5500,
+      "value_inr": 147797
+    },
+    {
+      "id": "c243",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 24,
+      "dest_city_id": 16,
+      "weight_kg": 3000,
+      "value_inr": 64280
+    },
+    {
+      "id": "c244",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 24,
+      "dest_city_id": 19,
+      "weight_kg": 5500,
+      "value_inr": 212740
+    },
+    {
+      "id": "c245",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 24,
+      "dest_city_id": 9,
+      "weight_kg": 17000,
+      "value_inr": 227213
+    },
+    {
+      "id": "c246",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 24,
+      "dest_city_id": 3,
+      "weight_kg": 1500,
+      "value_inr": 48583
+    },
+    {
+      "id": "c247",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 24,
+      "dest_city_id": 6,
+      "weight_kg": 16500,
+      "value_inr": 1632528
+    },
+    {
+      "id": "c248",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 24,
+      "dest_city_id": 28,
+      "weight_kg": 12000,
+      "value_inr": 1274768
+    },
+    {
+      "id": "c249",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 24,
+      "dest_city_id": 7,
+      "weight_kg": 3000,
+      "value_inr": 185443
+    },
+    {
+      "id": "c250",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 24,
+      "dest_city_id": 11,
+      "weight_kg": 16500,
+      "value_inr": 620674
+    },
+    {
+      "id": "c251",
+      "type": "Chemicals",
+      "name": "Specialty Resins",
+      "src_city_id": 25,
+      "dest_city_id": 2,
+      "weight_kg": 11000,
+      "value_inr": 272294
+    },
+    {
+      "id": "c252",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 25,
+      "dest_city_id": 12,
+      "weight_kg": 9000,
+      "value_inr": 161528
+    },
+    {
+      "id": "c253",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 25,
+      "dest_city_id": 15,
+      "weight_kg": 14500,
+      "value_inr": 554457
+    },
+    {
+      "id": "c254",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 25,
+      "dest_city_id": 29,
+      "weight_kg": 8500,
+      "value_inr": 147935
+    },
+    {
+      "id": "c255",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 25,
+      "dest_city_id": 18,
+      "weight_kg": 13500,
+      "value_inr": 417233
+    },
+    {
+      "id": "c256",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 25,
+      "dest_city_id": 20,
+      "weight_kg": 15500,
+      "value_inr": 1426765
+    },
+    {
+      "id": "c257",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 25,
+      "dest_city_id": 21,
+      "weight_kg": 15000,
+      "value_inr": 1676962
+    },
+    {
+      "id": "c258",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 25,
+      "dest_city_id": 1,
+      "weight_kg": 3000,
+      "value_inr": 213301
+    },
+    {
+      "id": "c259",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 25,
+      "dest_city_id": 4,
+      "weight_kg": 4500,
+      "value_inr": 232287
+    },
+    {
+      "id": "c260",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 25,
+      "dest_city_id": 23,
+      "weight_kg": 8000,
+      "value_inr": 193636
+    },
+    {
+      "id": "c261",
+      "type": "Metals",
+      "name": "Copper Wire Spools",
+      "src_city_id": 26,
+      "dest_city_id": 8,
+      "weight_kg": 14500,
+      "value_inr": 298758
+    },
+    {
+      "id": "c262",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 26,
+      "dest_city_id": 21,
+      "weight_kg": 16500,
+      "value_inr": 558155
+    },
+    {
+      "id": "c263",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 26,
+      "dest_city_id": 2,
+      "weight_kg": 8500,
+      "value_inr": 123068
+    },
+    {
+      "id": "c264",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 26,
+      "dest_city_id": 5,
+      "weight_kg": 10500,
+      "value_inr": 356326
+    },
+    {
+      "id": "c265",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 26,
+      "dest_city_id": 7,
+      "weight_kg": 16000,
+      "value_inr": 1335277
+    },
+    {
+      "id": "c266",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 26,
+      "dest_city_id": 25,
+      "weight_kg": 8500,
+      "value_inr": 1192124
+    },
+    {
+      "id": "c267",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 26,
+      "dest_city_id": 17,
+      "weight_kg": 7500,
+      "value_inr": 497277
+    },
+    {
+      "id": "c268",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 26,
+      "dest_city_id": 27,
+      "weight_kg": 8500,
+      "value_inr": 395932
+    },
+    {
+      "id": "c269",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 26,
+      "dest_city_id": 23,
+      "weight_kg": 10000,
+      "value_inr": 259743
+    },
+    {
+      "id": "c270",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 26,
+      "dest_city_id": 0,
+      "weight_kg": 3500,
+      "value_inr": 85637
+    },
+    {
+      "id": "c271",
+      "type": "Consumer Goods",
+      "name": "E-Commerce Parcels",
+      "src_city_id": 27,
+      "dest_city_id": 25,
+      "weight_kg": 14000,
+      "value_inr": 601264
+    },
+    {
+      "id": "c272",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 27,
+      "dest_city_id": 9,
+      "weight_kg": 17500,
+      "value_inr": 279823
+    },
+    {
+      "id": "c273",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 27,
+      "dest_city_id": 19,
+      "weight_kg": 15500,
+      "value_inr": 410212
+    },
+    {
+      "id": "c274",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 27,
+      "dest_city_id": 23,
+      "weight_kg": 2500,
+      "value_inr": 286370
+    },
+    {
+      "id": "c275",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 27,
+      "dest_city_id": 18,
+      "weight_kg": 11500,
+      "value_inr": 1443489
+    },
+    {
+      "id": "c276",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 27,
+      "dest_city_id": 28,
+      "weight_kg": 2000,
+      "value_inr": 115248
+    },
+    {
+      "id": "c277",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 27,
+      "dest_city_id": 14,
+      "weight_kg": 2000,
+      "value_inr": 104985
+    },
+    {
+      "id": "c278",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 27,
+      "dest_city_id": 3,
+      "weight_kg": 10000,
+      "value_inr": 237709
+    },
+    {
+      "id": "c279",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 27,
+      "dest_city_id": 22,
+      "weight_kg": 7000,
+      "value_inr": 203487
+    },
+    {
+      "id": "c280",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 27,
+      "dest_city_id": 29,
+      "weight_kg": 15500,
+      "value_inr": 377093
+    },
+    {
+      "id": "c281",
+      "type": "Construction",
+      "name": "Marble & Granite Slabs",
+      "src_city_id": 28,
+      "dest_city_id": 5,
+      "weight_kg": 11500,
+      "value_inr": 192864
+    },
+    {
+      "id": "c282",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 28,
+      "dest_city_id": 18,
+      "weight_kg": 6500,
+      "value_inr": 191474
+    },
+    {
+      "id": "c283",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 28,
+      "dest_city_id": 13,
+      "weight_kg": 17000,
+      "value_inr": 1558938
+    },
+    {
+      "id": "c284",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 28,
+      "dest_city_id": 20,
+      "weight_kg": 14000,
+      "value_inr": 1892436
+    },
+    {
+      "id": "c285",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 28,
+      "dest_city_id": 15,
+      "weight_kg": 2500,
+      "value_inr": 167688
+    },
+    {
+      "id": "c286",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 28,
+      "dest_city_id": 2,
+      "weight_kg": 11500,
+      "value_inr": 459313
+    },
+    {
+      "id": "c287",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 28,
+      "dest_city_id": 24,
+      "weight_kg": 5000,
+      "value_inr": 136188
+    },
+    {
+      "id": "c288",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 28,
+      "dest_city_id": 11,
+      "weight_kg": 14000,
+      "value_inr": 468817
+    },
+    {
+      "id": "c289",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 28,
+      "dest_city_id": 26,
+      "weight_kg": 1500,
+      "value_inr": 33391
+    },
+    {
+      "id": "c290",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 28,
+      "dest_city_id": 10,
+      "weight_kg": 16000,
+      "value_inr": 568567
+    },
+    {
+      "id": "c291",
+      "type": "Agriculture",
+      "name": "Spices & Coffee Crates",
+      "src_city_id": 29,
+      "dest_city_id": 6,
+      "weight_kg": 10000,
+      "value_inr": 320906
+    },
+    {
+      "id": "c292",
+      "type": "Electronics",
+      "name": "LED Display Panels",
+      "src_city_id": 29,
+      "dest_city_id": 16,
+      "weight_kg": 10500,
+      "value_inr": 1022683
+    },
+    {
+      "id": "c293",
+      "type": "Pharma",
+      "name": "Diagnostic Kits",
+      "src_city_id": 29,
+      "dest_city_id": 11,
+      "weight_kg": 17000,
+      "value_inr": 1756705
+    },
+    {
+      "id": "c294",
+      "type": "Automotive",
+      "name": "EV Battery Packs",
+      "src_city_id": 29,
+      "dest_city_id": 19,
+      "weight_kg": 9000,
+      "value_inr": 663339
+    },
+    {
+      "id": "c295",
+      "type": "Machinery",
+      "name": "Hydraulic Pumps",
+      "src_city_id": 29,
+      "dest_city_id": 24,
+      "weight_kg": 11000,
+      "value_inr": 494495
+    },
+    {
+      "id": "c296",
+      "type": "Textiles",
+      "name": "Jute Sacks",
+      "src_city_id": 29,
+      "dest_city_id": 15,
+      "weight_kg": 14500,
+      "value_inr": 283043
+    },
+    {
+      "id": "c297",
+      "type": "Chemicals",
+      "name": "Paint Solvents",
+      "src_city_id": 29,
+      "dest_city_id": 20,
+      "weight_kg": 5000,
+      "value_inr": 144841
+    },
+    {
+      "id": "c298",
+      "type": "Metals",
+      "name": "Cold-Rolled Steel Coils",
+      "src_city_id": 29,
+      "dest_city_id": 14,
+      "weight_kg": 5000,
+      "value_inr": 110908
+    },
+    {
+      "id": "c299",
+      "type": "Consumer Goods",
+      "name": "Beverage Crates",
+      "src_city_id": 29,
+      "dest_city_id": 1,
+      "weight_kg": 6000,
+      "value_inr": 220363
+    },
+    {
+      "id": "c300",
+      "type": "Construction",
+      "name": "Cement Additives",
+      "src_city_id": 29,
+      "dest_city_id": 28,
+      "weight_kg": 10500,
+      "value_inr": 165933
+    }
+  ]
+}

@@ -44,10 +44,29 @@ window.ItineraryPanel = (() => {
               leg.wait_hours > 0.05
                 ? ` <span style="color:var(--warning)">(Waited ${leg.wait_hours.toFixed(1)}h for open window)</span>`
                 : '';
+            const breakNote =
+              leg.break_hours > 0
+                ? ` <span style="color:var(--success)">(+${leg.break_hours}h ${leg.break_type})</span>`
+                : '';
+            const f = leg.facilities || {};
+            const facBits = [];
+            if ((f.parking || []).length) facBits.push(`Parking: ${f.parking[0].name}`);
+            if ((f.rest_food || []).length) facBits.push(`Food/Rest: ${f.rest_food[0].name}`);
+            if ((f.repair || []).length) facBits.push(`Repair: ${f.repair[0].name}`);
+            const cf = leg.corridor_facilities || {};
+            const hwyBits = [];
+            if ((cf.parking || []).length) hwyBits.push(`Hwy Parking: ${cf.parking[0].name}`);
+            if ((cf.rest_food || []).length) hwyBits.push(`Hwy Rest/Food: ${cf.rest_food[0].name}`);
+            if ((cf.repair || []).length) hwyBits.push(`Hwy Repair: ${cf.repair[0].name}`);
+            const facHtml = [
+              hwyBits.length ? `<div class="hint">On ${leg.via_highway}: ${hwyBits.join(' · ')}</div>` : '',
+              facBits.length ? `<div class="hint">At ${leg.name}: ${facBits.join(' · ')}</div>` : '',
+            ].join('');
             return `
             <div class="timeline-row">
               <b>${i + 1}. ${leg.name}</b> — ${fmtHour(leg.arrival_hour)}
-              <span class="hint">(${leg.via_highway})</span>${waitNote}
+              <span class="hint">(${leg.via_highway})</span>${waitNote}${breakNote}
+              ${facHtml}
             </div>`;
           })
           .join('');

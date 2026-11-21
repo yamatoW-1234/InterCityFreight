@@ -5,26 +5,17 @@ const cBridge = require('../services/cBridge');
 
 const router = express.Router();
 const DATA_DIR = path.join(__dirname, '..', '..', 'data');
-const CARGO_FILE = path.join(DATA_DIR, 'cargo.json');
-
-const DEFAULT_CARGO = [
-  { id: 'c1', type: 'Electronics', name: 'Semiconductors & PCBs', src_city_id: 0, dest_city_id: 22, weight_kg: 4500, value_inr: 450000 },
-  { id: 'c2', type: 'Construction', name: 'Marble & Granite Slabs', src_city_id: 3, dest_city_id: 14, weight_kg: 12000, value_inr: 180000 },
-  { id: 'c3', type: 'Pharma', name: 'Cold-Pack Vaccines', src_city_id: 11, dest_city_id: 20, weight_kg: 3200, value_inr: 384000 },
-  { id: 'c4', type: 'Automotive', name: 'EV Battery Packs', src_city_id: 23, dest_city_id: 15, weight_kg: 7500, value_inr: 525000 },
-  { id: 'c5', type: 'Machinery', name: 'CNC Lathe Parts', src_city_id: 1, dest_city_id: 14, weight_kg: 11000, value_inr: 330000 },
-  { id: 'c6', type: 'Textiles', name: 'Jute & Cotton Bales', src_city_id: 9, dest_city_id: 0, weight_kg: 8000, value_inr: 120000 },
-];
+const CARGOS_FILE = path.join(DATA_DIR, 'cargos.json');
 
 function readCargoStore() {
-  if (!fs.existsSync(CARGO_FILE)) {
-    fs.writeFileSync(CARGO_FILE, JSON.stringify({ cargo_items: DEFAULT_CARGO }, null, 2) + '\n', 'utf8');
+  if (!fs.existsSync(CARGOS_FILE)) {
+    return { cargo_items: [] };
   }
-  return JSON.parse(fs.readFileSync(CARGO_FILE, 'utf8'));
+  return JSON.parse(fs.readFileSync(CARGOS_FILE, 'utf8'));
 }
 
 function writeCargoStore(data) {
-  fs.writeFileSync(CARGO_FILE, JSON.stringify(data, null, 2) + '\n', 'utf8');
+  fs.writeFileSync(CARGOS_FILE, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
 // GET /api/cargo - list all warehouse cargos (optionally filter by ?src_city_id=X)
@@ -37,7 +28,7 @@ router.get('/', (req, res) => {
     }
     res.json(data);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to load cargo.json', details: err.message });
+    res.status(500).json({ error: 'Failed to load cargos.json', details: err.message });
   }
 });
 

@@ -4,8 +4,8 @@
 #include "algorithms.h"
 
 #define MAX_STOPS 12
-#define MAX_CARGO_ITEMS 64
-#define MAX_CARGO_EVENTS 128
+#define MAX_CARGO_ITEMS 512
+#define MAX_CARGO_EVENTS 256
 
 typedef struct {
     int city_id;      /* legacy/fallback */

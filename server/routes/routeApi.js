@@ -5,6 +5,7 @@ const path = require('path');
 const cBridge = require('../services/cBridge');
 const trafficSim = require('../services/trafficSim');
 const planStore = require('../services/planStore');
+const stoppagePlanner = require('../services/stoppagePlanner');
 
 const router = express.Router();
 const DATA_DIR = path.join(__dirname, '..', '..', 'data');
@@ -70,12 +71,15 @@ router.post('/optimize', async (req, res) => {
       dynamic_cargo: body.dynamic_cargo ? 1 : 0,
       cargo_items: Array.isArray(body.cargo_items)
         ? body.cargo_items
-        : body.dynamic_cargo && fs.existsSync(path.join(DATA_DIR, "cargo.json"))
-          ? readJson("cargo.json").cargo_items || []
+        : body.dynamic_cargo && fs.existsSync(path.join(DATA_DIR, "cargos.json"))
+          ? readJson("cargos.json").cargo_items || []
           : [],
     };
 
-    const result = await cBridge.runEngine(enginePayload);
+    let result = await cBridge.runEngine(enginePayload);
+    if (body.include_stoppages !== false) {
+      result = stoppagePlanner.enrichItinerary(result, body);
+    }
     res.json(result);
   } catch (err) {
     res.status(500).json({ error: 'Optimization failed', details: err.message });

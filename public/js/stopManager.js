@@ -87,6 +87,7 @@ window.StopManager = (() => {
       fuel_price_inr: Number(document.getElementById('fuelPrice').value),
       respect_time_windows: document.getElementById('respectWindows').checked,
       dynamic_cargo: document.getElementById('dynamicCargoToggle').checked,
+      include_stoppages: document.getElementById('includeStoppages').checked,
       stops: [...stops],
       avoid_cities: [...avoidCities],
       hubs: [...hubs],
@@ -110,6 +111,8 @@ window.StopManager = (() => {
       document.getElementById('respectWindows').checked = Boolean(req.respect_time_windows);
     if (req.dynamic_cargo !== undefined)
       document.getElementById('dynamicCargoToggle').checked = Boolean(req.dynamic_cargo);
+    if (req.include_stoppages !== undefined)
+      document.getElementById('includeStoppages').checked = Boolean(req.include_stoppages);
 
     stops = Array.isArray(req.stops) ? [...req.stops] : [];
     avoidCities = Array.isArray(req.avoid_cities) ? [...req.avoid_cities] : [];
