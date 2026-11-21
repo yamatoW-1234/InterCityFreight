@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CargoCompass — Inter-City Freight Logistics &amp; Route Optimizer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <div>
+        <h1>CargoCompass</h1>
+        <p class="subtitle">Inter-City Freight &amp; DAA Route Engine</p>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <div class="traffic-pill" id="trafficStatusPill">
+        <span class="pulse-dot"></span>
+        <span id="trafficSummaryText">Traffic: Syncing...</span>
+      </div>
+      <button class="btn btn-ghost" id="btnTickTraffic" title="Simulate traffic update">Refresh Traffic</button>
+      <button class="btn btn-ghost" id="btnResetTraffic" title="Clear roadblocks & congestion">Reset Roads</button>
+      <button class="btn btn-ghost" id="btnThemeToggle" title="Toggle Dark/Light UI">Light Mode</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <!-- Left Sidebar Controls -->
+    <aside class="sidebar">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="route">Route &amp; Stops</button>
+        <button class="tab-btn" data-tab="vehicle">Truck</button>
+        <button class="tab-btn" data-tab="cargo">Cargo</button>
+        <button class="tab-btn" data-tab="history">Saved</button>
+      </div>
+
+      <!-- TAB 1: Route & Stops -->
+      <section class="tab-panel active" id="tab-route">
+        <div class="card">
+          <h3>Optimization Goal</h3>
+          <div class="mode-grid">
+            <label class="radio-card"><input type="radio" name="optimize_for" value="fastest" checked /><span>Fastest (A*)</span></label>
+            <label class="radio-card"><input type="radio" name="optimize_for" value="cheapest" /><span>Cheapest (Bellman-Ford)</span></label>
+            <label class="radio-card"><input type="radio" name="optimize_for" value="shortest" /><span>Shortest (Dijkstra)</span></label>
+            <label class="radio-card"><input type="radio" name="optimize_for" value="mst" /><span>Hub Network (Prim's MST)</span></label>
+          </div>
+        </div>
+
+        <div class="card" id="pointToPointCard">
+          <h3>Origin &amp; Destination</h3>
+          <div class="form-row">
+            <label>Origin City <select id="originSelect"></select></label>
+            <label>Destination City <select id="destSelect"></select></label>
+          </div>
+          <div class="form-row">
+            <label>Departure Hour (0–23)
+              <input type="number" id="departureHour" min="0" max="23" step="0.5" value="8" />
+            </label>
+            <label>Diesel Price (₹/L)
+              <input type="number" id="fuelPrice" min="60" max="150" step="0.5" value="95" />
+            </label>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" id="respectWindows" checked />
+            Respect highway open/close time windows
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox" id="dynamicCargoToggle" />
+            Enable Dynamic Cargo Pickup &amp; Reroute (Partial Knapsack + DP)
+          </label>
+        </div>
+
+        <div class="card" id="stopsCard">
+          <h3>Mandatory Stops &amp; Restrictions</h3>
+          <div class="inline-add">
+            <select id="stopAddSelect"></select>
+            <button class="btn btn-sm" id="btnAddStop">+ Stop</button>
+          </div>
+          <div class="chip-list" id="stopsChipList"></div>
+
+          <label class="sub-label">Avoid Cities (Restrictions)</label>
+          <div class="inline-add">
+            <select id="avoidAddSelect"></select>
+            <button class="btn btn-sm btn-danger-outline" id="btnAddAvoid">+ Avoid</button>
+          </div>
+          <div class="chip-list" id="avoidChipList"></div>
+        </div>
+
+        <div class="card hidden" id="mstHubsCard">
+          <h3>Select Regional Hubs for Prim's MST</h3>
+          <div class="inline-add">
+            <select id="hubAddSelect"></select>
+            <button class="btn btn-sm" id="btnAddHub">+ Hub</button>
+          </div>
+          <div class="chip-list" id="hubsChipList"></div>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="btnOptimize">Run CargoCompass Engine</button>
+      </section>
+
+      <!-- TAB 2: Vehicle Selector & Smart Custom Truck Maker -->
+      <section class="tab-panel" id="tab-vehicle">
+        <div class="card">
+          <h3>Select Fleet Truck</h3>
+          <select id="vehicleSelect" class="full-select"></select>
+          <div class="spec-grid" id="vehicleSpecPreview"></div>
+        </div>
+
+        <div class="card">
+          <h3>Custom Truck Builder</h3>
+          <p class="hint">Enter main specs—axle class, toll multiplier, horsepower &amp; mileage are auto-calculated.</p>
+          <div class="form-stack">
+            <label>Truck Name <input type="text" id="customTruckName" placeholder="e.g., Fleet Heavy 35T" /></label>
+            <div class="form-row">
+              <label>Engine Size (cc) <input type="number" id="customEngineCc" value="5600" min="2000" max="12000" /></label>
+              <label>Cargo Capacity (kg) <input type="number" id="customCargoKg" value="28000" min="3000" max="50000" /></label>
+            </div>
+            <label>Fuel Tank (Litres, optional) <input type="number" id="customFuelL" placeholder="Auto" /></label>
+            <button class="btn btn-primary" id="btnCreateTruck">Save Custom Truck</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: Warehouse Cargo & Partial Knapsack -->
+      <section class="tab-panel" id="tab-cargo">
+        <div class="card">
+          <h3>Add Warehouse Cargo</h3>
+          <div class="form-stack">
+            <div class="form-row">
+              <label>Cargo Name <input type="text" id="cargoName" placeholder="e.g., Solar Inverters" /></label>
+              <label>Type <input type="text" id="cargoType" placeholder="Electronics" /></label>
+            </div>
+            <div class="form-row">
+              <label>Pickup City <select id="cargoSrcSelect"></select></label>
+              <label>Dropoff City <select id="cargoDestSelect"></select></label>
+            </div>
+            <div class="form-row">
+              <label>Weight (kg) <input type="number" id="cargoWeight" value="6000" min="100" /></label>
+              <label>Value (₹) <input type="number" id="cargoValue" value="240000" min="100" /></label>
+            </div>
+            <button class="btn btn-primary" id="btnAddCargo">Add Cargo to Warehouse</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Warehouse Inventory</h3>
+          <p class="hint">Enable Dynamic Cargo on the Route tab to let the truck discover &amp; pick these up stop-by-stop.</p>
+          <div class="cargo-list" id="cargoList"></div>
+        </div>
+      </section>
+
+      <!-- TAB 4: Saved Routes & Hub Plans -->
+      <section class="tab-panel" id="tab-history">
+        <div class="card">
+          <h3>Save Current Plan</h3>
+          <div class="inline-add">
+            <input type="text" id="planTitleInput" placeholder="e.g., Delhi-Mumbai Express" />
+            <button class="btn btn-sm" id="btnSavePlan">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Past Routes &amp; Hub Plans</h3>
+          <div class="plan-list" id="savedPlansList"></div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Center Map + Bottom Analytics / Itinerary -->
+    <section class="main-stage">
+      <div class="map-wrap">
+        <div id="map"></div>
+        <div class="map-legend">
+          <span><i class="dot free"></i> Free Flow</span>
+          <span><i class="dot busy"></i> Moderate/Heavy Traffic</span>
+          <span><i class="dot blocked"></i> Roadblock (click road to toggle)</span>
+          <span><i class="dot active-route"></i> Optimal Route / MST</span>
+        </div>
+      </div>
+
+      <div class="results-drawer">
+        <div class="metrics-bar" id="metricsBar">
+          <div class="metric"><span class="m-label">Algorithm</span><strong id="mAlgo">—</strong></div>
+          <div class="metric"><span class="m-label">Distance</span><strong id="mDist">—</strong></div>
+          <div class="metric"><span class="m-label">Est. Time</span><strong id="mTime">—</strong></div>
+          <div class="metric"><span class="m-label">Toll + Fuel</span><strong id="mCost">—</strong></div>
+          <div class="metric"><span class="m-label">Engine Time</span><strong id="mRuntime">—</strong></div>
+        </div>
+
+        <div class="results-columns">
+          <div class="panel-box">
+            <h4>Time-Windowed Itinerary</h4>
+            <div id="itineraryList" class="timeline-list">
+              <p class="empty-state">Select cities and click <strong>Run CargoCompass Engine</strong>.</p>
+            </div>
+          </div>
+          <div class="panel-box">
+            <h4>Cargo &amp; Knapsack Log</h4>
+            <div id="cargoEventsList" class="timeline-list">
+              <p class="empty-state">Enable Dynamic Cargo to view per-stop pickups &amp; dropoffs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/mapView.js"></script>
+  <script src="js/stopManager.js"></script>
+  <script src="js/vehiclePanel.js"></script>
+  <script src="js/cargoPanel.js"></script>
+  <script src="js/itineraryPanel.js"></script>
+  <script src="js/historyMenu.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
