@@ -38,8 +38,17 @@
   padding: 0;
 }
 
+
+h1, h2, h3, h4 {
+  font-family: "Roboto Slab", Georgia, serif;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
 body {
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Google Sans Flex", system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   height: 100vh;
@@ -125,14 +134,7 @@ body {
   background: var(--surface-2);
 }
 
-/* Monochrome map tile filters */
-[data-theme="dark"] .leaflet-tile-pane {
-  filter: grayscale(100%) invert(100%) contrast(105%) brightness(88%);
-}
 
-[data-theme="light"] .leaflet-tile-pane {
-  filter: grayscale(100%) contrast(102%) brightness(102%);
-}
 
 .results-drawer {
   height: 255px;

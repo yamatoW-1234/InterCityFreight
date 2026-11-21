@@ -64,11 +64,16 @@
   }
 
   function setupThemeToggle() {
+    const root = document.documentElement;
     const btn = document.getElementById('btnThemeToggle');
+    const saved = localStorage.getItem('cargocompass_theme') || 'dark';
+    root.setAttribute('data-theme', saved);
+    btn.textContent = saved === 'dark' ? 'Light Mode' : 'Dark Mode';
+
     btn.addEventListener('click', () => {
-      const root = document.documentElement;
       const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
+      localStorage.setItem('cargocompass_theme', next);
       btn.textContent = next === 'dark' ? 'Light Mode' : 'Dark Mode';
       MapView.setTheme(next);
     });
