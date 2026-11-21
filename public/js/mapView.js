@@ -10,7 +10,7 @@ window.MapView = (() => {
     onRoadClickCb = onRoadClick;
     map = L.map('map').setView([22.5, 79.0], 5);
 
-    baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    baseLayer = L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_5as5_1_bb5778b8399d0de4953e96c3', {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
       maxZoom: 18,
     }).addTo(map);
