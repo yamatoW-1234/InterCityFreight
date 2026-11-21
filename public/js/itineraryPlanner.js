@@ -1,4 +1,4 @@
-window.ItineraryPanel = (() => {
+window.ItineraryPanel = window.ItineraryPlanner = (() => {
   function fmtHour(hr) {
     const day = Math.floor(hr / 24);
     const h = Math.floor(hr % 24);
@@ -101,5 +101,15 @@ window.ItineraryPanel = (() => {
     }
   }
 
-  return { render };
+  function clear() {
+    ['mAlgo', 'mDist', 'mTime', 'mCost', 'mRuntime'].forEach((id) => {
+      document.getElementById(id).textContent = '—';
+    });
+    document.getElementById('itineraryList').innerHTML =
+      '<p class="empty-state">Select cities and click <strong>Run Engine</strong>.</p>';
+    document.getElementById('cargoEventsList').innerHTML =
+      '<p class="empty-state">Enable Dynamic Cargo to view per-stop pickups &amp; dropoffs.</p>';
+  }
+
+  return { render, clear };
 })();

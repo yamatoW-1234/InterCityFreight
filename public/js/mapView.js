@@ -6,6 +6,7 @@ window.MapView = (() => {
   let activeLayer;
   let onRoadClickCb = null;
   let savedKey = '';
+  let cachedRoads = [];
 
   function tileUrl(theme) {
     const style = theme === 'light' ? 'light_all' : 'dark_all';
@@ -17,6 +18,10 @@ window.MapView = (() => {
     onRoadClickCb = onRoadClick;
     savedKey = cartoApiKey;
     map = L.map('map').setView([22.5, 79.0], 5);
+
+    // Dedicated high-zIndex pane so active green route/MST always stays above network roads
+    map.createPane('activeRoutePane');
+    map.getPane('activeRoutePane').style.zIndex = 450;
 
     const initialTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     baseLayer = L.tileLayer(tileUrl(initialTheme), {
@@ -39,14 +44,28 @@ window.MapView = (() => {
     baseLayer.bringToBack();
   }
 
+  function buildRoadTooltip(c1, c2, r) {
+    const hw = r ? r.highway : 'Highway';
+    const dist = r ? `${r.distance_km} km` : '';
+    const spd = r ? `${r.speed_limit_kmh} km/h` : '';
+    const traf = r ? `Traffic: ${r.traffic_multiplier || 1}x` : '';
+    const status = r && r.is_blocked ? 'BLOCKED (Click to unblock)' : 'Click to simulate roadblock';
+    return `${c1.name} ↔ ${c2.name} (${hw})<br>${[dist, spd, traf].filter(Boolean).join(' | ')}<br><b>${status}</b>`;
+  }
+
+  function findRoad(u, v) {
+    return cachedRoads.find((r) => (r.from === u && r.to === v) || (r.from === v && r.to === u));
+  }
+
   function renderNetwork(cities, roads) {
+    cachedRoads = roads || [];
     roadsLayer.clearLayers();
     citiesLayer.clearLayers();
 
     const cityMap = new Map(cities.map((c) => [c.id, c]));
     const drawnPairs = new Set();
 
-    for (const r of roads) {
+    for (const r of cachedRoads) {
       const key = r.from < r.to ? `${r.from}-${r.to}` : `${r.to}-${r.from}`;
       if (drawnPairs.has(key)) continue;
       drawnPairs.add(key);
@@ -79,12 +98,7 @@ window.MapView = (() => {
         { color, weight, opacity, dashArray }
       );
 
-      line.bindTooltip(
-        `${c1.name} ↔ ${c2.name} (${r.highway})<br>` +
-          `${r.distance_km} km | ${r.speed_limit_kmh} km/h | Traffic: ${r.traffic_multiplier || 1}x<br>` +
-          `<b>${r.is_blocked ? 'BLOCKED (Click to unblock)' : 'Click to simulate roadblock'}</b>`
-      );
-
+      line.bindTooltip(buildRoadTooltip(c1, c2, r));
       line.on('click', () => {
         if (onRoadClickCb) onRoadClickCb(r.from, r.to, !r.is_blocked);
       });
@@ -121,9 +135,9 @@ window.MapView = (() => {
             [c1.lat, c1.lon],
             [c2.lat, c2.lon],
           ],
-          { color: '#22c55e', weight: 4.5, opacity: 0.95 }
+          { color: '#22c55e', weight: 4.5, opacity: 0.95, pane: 'activeRoutePane' }
         )
-          .bindTooltip(`${e.from_name} ↔ ${e.to_name} (${e.distance_km} km)`)
+          .bindTooltip(`${e.from_name} ↔ ${e.to_name} (${e.highway || 'MST'} | ${e.distance_km} km)`)
           .addTo(activeLayer);
       }
       return;
@@ -131,7 +145,26 @@ window.MapView = (() => {
 
     if (Array.isArray(result.itinerary) && result.itinerary.length > 1) {
       const coords = result.itinerary.map((step) => [step.lat, step.lon]);
-      L.polyline(coords, { color: '#22c55e', weight: 5, opacity: 0.95 }).addTo(activeLayer);
+
+      for (let i = 1; i < result.itinerary.length; i++) {
+        const prev = result.itinerary[i - 1];
+        const curr = result.itinerary[i];
+        const r = findRoad(prev.city_id, curr.city_id);
+        const line = L.polyline(
+          [
+            [prev.lat, prev.lon],
+            [curr.lat, curr.lon],
+          ],
+          { color: '#22c55e', weight: 5, opacity: 0.95, pane: 'activeRoutePane' }
+        );
+        line.bindTooltip(buildRoadTooltip(prev, curr, r || { highway: curr.via_highway }));
+        if (r) {
+          line.on('click', () => {
+            if (onRoadClickCb) onRoadClickCb(r.from, r.to, !r.is_blocked);
+          });
+        }
+        line.addTo(activeLayer);
+      }
 
       result.itinerary.forEach((step, idx) => {
         const isEnd = idx === 0 || idx === result.itinerary.length - 1;
@@ -141,6 +174,7 @@ window.MapView = (() => {
           color: '#ffffff',
           weight: 2,
           fillOpacity: 1,
+          pane: 'activeRoutePane',
         })
           .bindTooltip(`${idx + 1}. ${step.name}`)
           .addTo(activeLayer);

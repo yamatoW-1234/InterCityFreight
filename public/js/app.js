@@ -43,7 +43,7 @@
 
       lastRun = { request: payload, result };
       MapView.renderResult(result, cities);
-      ItineraryPanel.render(result);
+      (window.ItineraryPanel || window.ItineraryPlanner).render(result);
     } catch (err) {
       alert(err.message);
     } finally {
@@ -116,7 +116,7 @@
         StopManager.applyState(plan.request);
         lastRun = { request: plan.request, result: plan.result };
         MapView.renderResult(plan.result, cities);
-        ItineraryPanel.render(plan.result);
+        (window.ItineraryPanel || window.ItineraryPlanner).render(plan.result);
       }
     );
 
@@ -125,9 +125,53 @@
       await fetch('/api/traffic/tick', { method: 'POST' });
       await refreshNetwork();
     });
-    document.getElementById('btnResetTraffic').addEventListener('click', async () => {
+    const resetModal = document.getElementById('resetConfirmModal');
+    const performFullReset = async () => {
+      lastRun = null;
+      MapView.renderResult(null, cities);
+      (window.ItineraryPanel || window.ItineraryPlanner).clear();
       await fetch('/api/traffic/reset', { method: 'POST' });
       await refreshNetwork();
+    };
+
+    document.getElementById('btnResetTraffic').addEventListener('click', async () => {
+      if (!lastRun) {
+        await performFullReset();
+        return;
+      }
+      document.getElementById('resetPlanTitleInput').value = '';
+      resetModal.classList.remove('hidden');
+    });
+
+    document.getElementById('btnModalSaveReset').addEventListener('click', async () => {
+      if (lastRun) {
+        const title =
+          document.getElementById('resetPlanTitleInput').value.trim() ||
+          `Plan (${new Date().toLocaleTimeString()})`;
+        await fetch('/api/plans', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            title,
+            mode: lastRun.result.mode || 'route',
+            algorithm_used: lastRun.result.algorithm_used,
+            request: lastRun.request,
+            result: lastRun.result,
+          }),
+        });
+        await HistoryMenu.refresh();
+      }
+      resetModal.classList.add('hidden');
+      await performFullReset();
+    });
+
+    document.getElementById('btnModalDiscardReset').addEventListener('click', async () => {
+      resetModal.classList.add('hidden');
+      await performFullReset();
+    });
+
+    document.getElementById('btnModalCancelReset').addEventListener('click', () => {
+      resetModal.classList.add('hidden');
     });
   }
 

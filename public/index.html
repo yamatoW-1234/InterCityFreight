@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CargoCompass — Inter-City Freight Logistics &amp; Route Optimizer</title>
+  <title>Cargo-Compass — Inter-City Freight Logistics &amp; Route Optimizer</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -13,8 +13,8 @@
     <div class="brand">
       <span class="brand-dot"></span>
       <div>
-        <h1>Cargo Compass</h1>
-        <p class="subtitle">Inter-City Routing Engine</p>
+        <h1>Cargo-Compass</h1>
+        <p class="subtitle">Inter-City Freight Routing Engine</p>
       </div>
     </div>
 
@@ -213,6 +213,22 @@
       </div>
     </section>
   </main>
+
+
+  <div id="resetConfirmModal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <h3>Reset Roads &amp; Clear Route?</h3>
+      <p class="hint">You currently have a generated route/MST on the map. Would you like to save it before clearing?</p>
+      <label>Plan Title (if saving)
+        <input type="text" id="resetPlanTitleInput" placeholder="e.g., Delhi-Mumbai Freight Plan" />
+      </label>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="btnModalSaveReset">Save &amp; Reset</button>
+        <button class="btn btn-danger-outline" id="btnModalDiscardReset">Discard &amp; Reset</button>
+        <button class="btn btn-ghost" id="btnModalCancelReset">Cancel</button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/mapView.js"></script>
