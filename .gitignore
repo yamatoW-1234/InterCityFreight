@@ -1,6 +1,21 @@
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+
+# Compiled C binaries & object files
 bin/
 *.o
+*.out
 *.exe
-.DS_Store
+
+# Local data-fetcher script (contains API keys)
+data/fetch_data.py
 tree.txt
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
