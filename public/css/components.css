@@ -1,5 +1,5 @@
 .btn {
-  border: 1px solid transparent;
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 7px 12px;
   font-size: 0.82rem;
@@ -7,17 +7,23 @@
   cursor: pointer;
   transition: 0.15s ease;
   color: var(--text);
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+.btn:hover {
   background: var(--surface-2);
 }
 
 .btn-primary {
   background: var(--accent);
-  color: #06131f;
+  color: var(--accent-text);
+  border-color: var(--accent);
 }
 
 .btn-primary:hover {
   background: var(--accent-hover);
-  color: #fff;
+  border-color: var(--accent-hover);
 }
 
 .btn-ghost {
@@ -67,8 +73,9 @@
 
 .tabs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .tab-btn {
@@ -83,7 +90,7 @@
 }
 
 .tab-btn.active {
-  color: var(--accent);
+  color: var(--text);
   border-bottom-color: var(--accent);
 }
 
@@ -91,6 +98,7 @@
   display: none;
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 12px;
   gap: 12px;
   flex-direction: column;
@@ -108,6 +116,7 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
+  min-width: 0;
 }
 
 .card h3 {
@@ -122,7 +131,7 @@
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 8px;
 }
 
@@ -130,6 +139,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
 }
 
 label {
@@ -138,15 +148,20 @@ label {
   gap: 4px;
   font-size: 0.75rem;
   color: var(--muted);
+  min-width: 0;
 }
 
 input, select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 6px 8px;
   font-size: 0.8rem;
+  text-overflow: ellipsis;
 }
 
 .checkbox-row {
@@ -158,9 +173,14 @@ input, select {
   cursor: pointer;
 }
 
+.checkbox-row input {
+  width: auto;
+  flex-shrink: 0;
+}
+
 .mode-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 6px;
 }
 
@@ -173,17 +193,25 @@ input, select {
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   cursor: pointer;
+  min-width: 0;
+}
+
+.radio-card input {
+  width: auto;
+  flex-shrink: 0;
 }
 
 .inline-add {
   display: flex;
   gap: 6px;
+  min-width: 0;
 }
 
 .inline-add select, .inline-add input {
   flex: 1;
+  min-width: 0;
 }
 
 .chip-list {
@@ -213,7 +241,7 @@ input, select {
 
 .spec-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 6px;
   font-size: 0.76rem;
 }
@@ -223,6 +251,7 @@ input, select {
   padding: 6px 8px;
   border-radius: 6px;
   border: 1px solid var(--border);
+  min-width: 0;
 }
 
 .spec-item span {
@@ -286,7 +315,7 @@ input, select {
 
 .metrics-bar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -295,6 +324,7 @@ input, select {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 6px 10px;
+  min-width: 0;
 }
 
 .m-label {
@@ -310,7 +340,7 @@ input, select {
 .results-columns {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 10px;
   min-height: 0;
 }
@@ -323,6 +353,7 @@ input, select {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  min-width: 0;
 }
 
 .panel-box h4 {
@@ -352,4 +383,21 @@ input, select {
 .empty-state {
   color: var(--muted);
   font-size: 0.76rem;
+}
+
+.map-fullscreen-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 900;
+  box-shadow: var(--shadow);
+}
+
+.workspace.map-fullscreen {
+  grid-template-columns: 1fr;
+}
+
+.workspace.map-fullscreen .sidebar,
+.workspace.map-fullscreen .results-drawer {
+  display: none;
 }

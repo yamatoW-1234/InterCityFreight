@@ -5,12 +5,21 @@ window.MapView = (() => {
   let citiesLayer;
   let activeLayer;
   let onRoadClickCb = null;
+  let savedKey = '';
 
-  function init(onRoadClick) {
+  function tileUrl(theme) {
+    const style = theme === 'light' ? 'light_all' : 'dark_all';
+    const qs = savedKey ? `?key=${encodeURIComponent(savedKey)}` : '';
+    return `https://basemaps.cartocdn.com/rastertiles/${style}/{z}/{x}/{y}.png${qs}`;
+  }
+
+  function init(onRoadClick, cartoApiKey = '') {
     onRoadClickCb = onRoadClick;
+    savedKey = cartoApiKey;
     map = L.map('map').setView([22.5, 79.0], 5);
 
-    baseLayer = L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_5as5_1_bb5778b8399d0de4953e96c3', {
+    const initialTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    baseLayer = L.tileLayer(tileUrl(initialTheme), {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
       maxZoom: 18,
     }).addTo(map);
@@ -23,11 +32,7 @@ window.MapView = (() => {
   function setTheme(theme) {
     if (!map || !baseLayer) return;
     map.removeLayer(baseLayer);
-    const url =
-      theme === 'light'
-        ? 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
-        : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
-    baseLayer = L.tileLayer(url, {
+    baseLayer = L.tileLayer(tileUrl(theme), {
       attribution: '&copy; OpenStreetMap &copy; CARTO',
       maxZoom: 18,
     }).addTo(map);
@@ -53,7 +58,7 @@ window.MapView = (() => {
       let color = '#3b82f6';
       let dashArray = null;
       let weight = 2.5;
-      let opacity = 0.5;
+      let opacity = 0.55;
 
       if (r.is_blocked) {
         color = '#ef4444';
@@ -63,7 +68,7 @@ window.MapView = (() => {
       } else if ((r.traffic_multiplier || 1) >= 1.45) {
         color = '#f59e0b';
         weight = 3;
-        opacity = 0.75;
+        opacity = 0.8;
       }
 
       const line = L.polyline(
@@ -145,5 +150,9 @@ window.MapView = (() => {
     }
   }
 
-  return { init, setTheme, renderNetwork, renderResult };
+  function invalidateSize() {
+    if (map) setTimeout(() => map.invalidateSize(), 50);
+  }
+
+  return { init, setTheme, renderNetwork, renderResult, invalidateSize };
 })();

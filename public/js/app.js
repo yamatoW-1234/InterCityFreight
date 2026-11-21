@@ -48,7 +48,7 @@
       alert(err.message);
     } finally {
       btn.disabled = false;
-      btn.textContent = 'Run CargoCompass Engine';
+      btn.textContent = 'Run Engine';
     }
   }
 
@@ -78,6 +78,25 @@
     setupTabs();
     setupThemeToggle();
 
+    const workspaceEl = document.querySelector('.workspace');
+    const fsBtn = document.getElementById('btnMapFullscreen');
+    if (fsBtn && workspaceEl) {
+      const toggleFullscreen = (forceState) => {
+        const next = forceState !== undefined ? forceState : !workspaceEl.classList.contains('map-fullscreen');
+        workspaceEl.classList.toggle('map-fullscreen', next);
+        fsBtn.textContent = next ? 'Exit Fullscreen' : 'Fullscreen';
+        MapView.invalidateSize();
+      };
+      fsBtn.addEventListener('click', () => toggleFullscreen());
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && workspaceEl.classList.contains('map-fullscreen')) {
+          toggleFullscreen(false);
+        }
+      });
+    }
+
+    const cfg = await fetch('/api/config').then((r) => r.json()).catch(() => ({}));
+
     MapView.init(async (from, to, blocked) => {
       await fetch('/api/traffic/roadblock', {
         method: 'POST',
@@ -85,7 +104,7 @@
         body: JSON.stringify({ from, to, blocked, bidirectional: true }),
       });
       await refreshNetwork();
-    });
+    }, cfg.cartoApiKey || '');
 
     await refreshNetwork();
     StopManager.init(cities);

@@ -1,31 +1,35 @@
 :root {
-  --bg: #0f141c;
-  --surface: #171e29;
-  --surface-2: #1f2836;
-  --border: #2c384b;
-  --text: #e6edf5;
-  --muted: #8b9bb4;
-  --accent: #38bdf8;
-  --accent-hover: #0ea5e9;
+  /* Midnight Monochrome (Dark Mode) */
+  --bg: #090a0d;
+  --surface: #111318;
+  --surface-2: #181b22;
+  --border: #2a2f3a;
+  --text: #f1f3f6;
+  --muted: #8e96a4;
+  --accent: #f1f3f6;
+  --accent-text: #090a0d;
+  --accent-hover: #d4d8e0;
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="light"] {
-  --bg: #f3f6fa;
+  /* Afternoon Monochrome (Light Mode) */
+  --bg: #f3f3f0;
   --surface: #ffffff;
-  --surface-2: #eef2f7;
-  --border: #d5dee9;
-  --text: #182230;
-  --muted: #5a6b82;
-  --accent: #0284c7;
-  --accent-hover: #0369a1;
+  --surface-2: #eaeae5;
+  --border: #d2d2cb;
+  --text: #141413;
+  --muted: #62625c;
+  --accent: #18181b;
+  --accent-text: #ffffff;
+  --accent-hover: #323238;
   --success: #16a34a;
   --warning: #d97706;
   --danger: #dc2626;
-  --shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -62,11 +66,11 @@ body {
 }
 
 .brand-dot {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 12px var(--accent);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 .brand h1 {
@@ -89,7 +93,7 @@ body {
 .workspace {
   flex: 1;
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 380px minmax(0, 1fr);
   min-height: 0;
 }
 
@@ -99,12 +103,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  overflow: hidden;
 }
 
 .main-stage {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  min-width: 0;
 }
 
 .map-wrap {
@@ -117,6 +123,15 @@ body {
   width: 100%;
   height: 100%;
   background: var(--surface-2);
+}
+
+/* Monochrome map tile filters */
+[data-theme="dark"] .leaflet-tile-pane {
+  filter: grayscale(100%) invert(100%) contrast(105%) brightness(88%);
+}
+
+[data-theme="light"] .leaflet-tile-pane {
+  filter: grayscale(100%) contrast(102%) brightness(102%);
 }
 
 .results-drawer {

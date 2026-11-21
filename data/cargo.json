@@ -53,6 +53,15 @@
       "dest_city_id": 0,
       "weight_kg": 8000,
       "value_inr": 120000
+    },
+    {
+      "id": "cargo_1795258561531",
+      "type": "Toys",
+      "name": "Plastic Toys",
+      "src_city_id": 5,
+      "dest_city_id": 1,
+      "weight_kg": 6000,
+      "value_inr": 240000
     }
   ]
 }

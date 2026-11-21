@@ -1,7 +1,7 @@
-try { process.loadEnvFile(); } catch (_) {}
+const path = require('path');
+try { process.loadEnvFile(path.join(__dirname, '..', '.env')); } catch (_) {}
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 
 const routeApi = require('./routes/routeApi');
 const trafficApi = require('./routes/trafficApi');
@@ -20,6 +20,10 @@ const publicDir = path.join(__dirname, '..', 'public');
 app.use(express.static(publicDir));
 
 // API routes
+app.get('/api/config', (_req, res) => {
+  res.json({ cartoApiKey: process.env.CARTO_API_KEY || '' });
+});
+
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', app: 'CargoCompass', timestamp: new Date().toISOString() });
 });
@@ -35,6 +39,6 @@ app.use((_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`CargoCompass server running at http://localhost:${PORT}`);
+  console.log(`CargoCompass server running at http://localhost:${PORT} (CARTO key: ${process.env.CARTO_API_KEY ? 'loaded' : 'missing'})`);
   trafficSim.startSimulation();
 });
