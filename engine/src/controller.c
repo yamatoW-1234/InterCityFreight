@@ -191,7 +191,13 @@ static int parse_cargo_array(const char *arr_start, const char *arr_end, CargoIt
             CargoItem *it = &items[count++];
             memset(it, 0, sizeof(CargoItem));
             it->city_id = parse_int_val(find_key_in_range(p, obj_end, "city_id"), 0);
+            it->src_city_id = parse_int_val(find_key_in_range(p, obj_end, "src_city_id"), it->city_id);
+            it->dest_city_id = parse_int_val(find_key_in_range(p, obj_end, "dest_city_id"), it->city_id);
+            parse_str_val(find_key_in_range(p, obj_end, "type"), it->type, sizeof(it->type));
             parse_str_val(find_key_in_range(p, obj_end, "item_name"), it->item_name, sizeof(it->item_name));
+            if (it->item_name[0] == '\0') {
+                parse_str_val(find_key_in_range(p, obj_end, "name"), it->item_name, sizeof(it->item_name));
+            }
             parse_str_val(find_key_in_range(p, obj_end, "action"), it->action, sizeof(it->action));
             if (it->action[0] == '\0') strcpy(it->action, "pickup");
             it->weight_kg = parse_double_val(find_key_in_range(p, obj_end, "weight_kg"), 0.0);
@@ -272,6 +278,7 @@ int run_decision_controller(void) {
     double departure_hr = parse_double_val(find_key_in_range(root_start, root_end, "departure_hour"), 8.0);
     double fuel_price = parse_double_val(find_key_in_range(root_start, root_end, "fuel_price_inr"), 95.0);
     int respect_windows = parse_int_val(find_key_in_range(root_start, root_end, "respect_time_windows"), 1);
+    int dynamic_cargo = parse_int_val(find_key_in_range(root_start, root_end, "dynamic_cargo"), 0);
 
     char optimize_for[32] = "fastest";
     const char *opt_val = find_key_in_range(root_start, root_end, "optimize_for");
@@ -304,10 +311,17 @@ int run_decision_controller(void) {
     memset(&mst_res, 0, sizeof(MSTResult));
     path_result_init(&path_res);
 
+    DynamicCargoLog cargo_log;
+    memset(&cargo_log, 0, sizeof(DynamicCargoLog));
     int is_mst_mode = (strcmp(optimize_for, "mst") == 0 && num_hubs >= 2);
     if (is_mst_mode) {
         algo_used = "Prim's MST (AVL Priority Queue)";
         mst_res = run_prims_mst(&g, hubs, num_hubs);
+    } else if (dynamic_cargo && cargo_count > 0) {
+        algo_used = "Dynamic Cargo (Partial Knapsack + Held-Karp DP)";
+        path_res = run_dynamic_cargo_route(&g, &veh, origin, destination, stops, num_stops,
+                                           cargo_items, cargo_count, departure_hr, fuel_price,
+                                           optimize_for, respect_windows, &cargo_log);
     } else if (num_stops > 0) {
         if (strcmp(optimize_for, "cheapest") == 0) {
             algo_used = "Held-Karp Bitmask DP + Bellman-Ford";
@@ -381,6 +395,22 @@ int run_decision_controller(void) {
         printf("  ],\n");
     }
 
+    printf("  \"cargo_events\": [\n");
+    for (int i = 0; i < cargo_log.event_count; i++) {
+        const CargoEvent *ev = &cargo_log.events[i];
+        City *c = btree_search(&city_index, ev->city_id);
+        City *dc = btree_search(&city_index, ev->dest_city_id);
+        printf("    {\"city_id\": %d, \"city_name\": ", ev->city_id);
+        print_json_escaped(c ? c->name : "");
+        printf(", \"action\": "); print_json_escaped(ev->action);
+        printf(", \"item_name\": "); print_json_escaped(ev->item_name);
+        printf(", \"dest_city_id\": %d, \"dest_city_name\": ", ev->dest_city_id);
+        print_json_escaped(dc ? dc->name : "");
+        printf(", \"weight_kg\": %.1f, \"fraction\": %.3f, \"value_inr\": %.2f}%s\n",
+               ev->weight_kg, ev->fraction, ev->value_inr,
+               (i + 1 < cargo_log.event_count) ? "," : "");
+    }
+    printf("  ],\n");
     printf("  \"knapsack\": {\n");
     printf("    \"capacity_kg\": %.1f,\n", knap_res.capacity_kg);
     printf("    \"used_kg\": %.1f,\n", knap_res.used_kg);

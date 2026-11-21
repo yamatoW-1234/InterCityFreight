@@ -38,7 +38,6 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
     }
     if (num_stops > MAX_STOPS) num_stops = MAX_STOPS;
 
-    /* Node list: 0 = origin, 1..K = stops, K+1 = destination */
     int k = num_stops;
     int nodes[MAX_STOPS + 2];
     nodes[0] = origin;
@@ -46,7 +45,6 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
     nodes[k + 1] = destination;
     int total_pts = k + 2;
 
-    /* Precompute pairwise leg costs */
     double cost_mat[MAX_STOPS + 2][MAX_STOPS + 2];
     for (int i = 0; i < total_pts; i++) {
         for (int j = 0; j < total_pts; j++) {
@@ -75,12 +73,10 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
         }
     }
 
-    /* Base cases: origin -> stop i */
     for (int i = 0; i < k; i++) {
         dp[(1 << i) * k + i] = cost_mat[0][i + 1];
     }
 
-    /* DP transitions */
     for (int mask = 1; mask < full_mask; mask++) {
         for (int last = 0; last < k; last++) {
             if (!(mask & (1 << last))) continue;
@@ -99,7 +95,6 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
         }
     }
 
-    /* Pick best last stop -> destination */
     int last_best = -1;
     double best_total = INF_COST;
     int all_visited = full_mask - 1;
@@ -117,7 +112,6 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
         return final_res;
     }
 
-    /* Reconstruct stop order */
     int stop_order[MAX_STOPS];
     int cur_mask = all_visited;
     int cur_stop = last_best;
@@ -131,7 +125,6 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
     free(dp);
     free(parent);
 
-    /* Stitch exact legs sequentially while tracking live arrival & wait times */
     int seq[MAX_STOPS + 2];
     seq[0] = origin;
     for (int i = 0; i < k; i++) seq[i + 1] = stop_order[i];
@@ -145,6 +138,7 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
     final_res.path_len = 1;
 
     for (int s = 0; s < k + 1; s++) {
+        if (seq[s] == seq[s + 1]) continue;
         PathResult seg = solve_leg(g, v, seq[s], seq[s + 1], cur_hr, fuel_price_inr, optimize_for, respect_windows);
         if (!seg.found) {
             final_res.found = 0;
@@ -168,4 +162,187 @@ PathResult run_dp_stop_planner(const Graph *g, const Vehicle *v,
     }
     final_res.net_cost_inr = final_res.total_fuel_inr + final_res.total_toll_inr - final_res.total_subsidy_inr;
     return final_res;
+}
+
+static void add_stop_unique(int *stops, int *count, int city_id, int final_dest) {
+    if (city_id == final_dest || *count >= MAX_STOPS) return;
+    for (int i = 0; i < *count; i++) {
+        if (stops[i] == city_id) return;
+    }
+    stops[(*count)++] = city_id;
+}
+
+static void remove_stop(int *stops, int *count, int city_id) {
+    for (int i = 0; i < *count; i++) {
+        if (stops[i] == city_id) {
+            for (int j = i; j < *count - 1; j++) stops[j] = stops[j + 1];
+            (*count)--;
+            return;
+        }
+    }
+}
+
+static void append_cargo_event(DynamicCargoLog *log, int city_id, const char *action,
+                               const char *item_name, int dest_city_id,
+                               double weight_kg, double fraction, double value_inr) {
+    if (!log || log->event_count >= MAX_CARGO_EVENTS) return;
+    CargoEvent *ev = &log->events[log->event_count++];
+    ev->city_id = city_id;
+    strncpy(ev->action, action, sizeof(ev->action) - 1);
+    strncpy(ev->item_name, item_name, sizeof(ev->item_name) - 1);
+    ev->dest_city_id = dest_city_id;
+    ev->weight_kg = weight_kg;
+    ev->fraction = fraction;
+    ev->value_inr = value_inr;
+}
+
+PathResult run_dynamic_cargo_route(const Graph *g, const Vehicle *v,
+                                   int origin, int destination,
+                                   const int *initial_stops, int num_initial_stops,
+                                   CargoItem *warehouse_items, int num_items,
+                                   double departure_hr, double fuel_price_inr,
+                                   const char *optimize_for, int respect_windows,
+                                   DynamicCargoLog *log_out) {
+    PathResult res;
+    path_result_init(&res);
+    if (log_out) memset(log_out, 0, sizeof(DynamicCargoLog));
+
+    int active_stops[MAX_STOPS];
+    int active_count = 0;
+    for (int i = 0; i < num_initial_stops && i < MAX_STOPS; i++) {
+        add_stop_unique(active_stops, &active_count, initial_stops[i], destination);
+    }
+
+    int picked_flag[MAX_CARGO_ITEMS] = {0};
+    CargoItem onboard[MAX_CARGO_ITEMS];
+    int onboard_count = 0;
+
+    double max_cap = (v && v->cargo_capacity_kg > 0.0) ? v->cargo_capacity_kg : 25000.0;
+    double current_load = 0.0;
+    int cur_city = origin;
+    double cur_hr = departure_hr;
+
+    res.found = 1;
+    res.path[0] = origin;
+    res.leg_arrival_hr[0] = cur_hr;
+    res.leg_wait_hr[0] = 0.0;
+    res.path_len = 1;
+
+    double mileage = (v && v->mileage_kmpl > 0.1) ? v->mileage_kmpl : 3.5;
+    double toll_mult = (v && v->toll_multiplier > 0.1) ? v->toll_multiplier : 1.0;
+
+    for (int step = 0; step < MAX_CITIES - 1; step++) {
+        /* 1. Drop off any onboard cargo destined for cur_city */
+        for (int i = 0; i < onboard_count; ) {
+            if (onboard[i].dest_city_id == cur_city) {
+                current_load -= onboard[i].taken_kg;
+                if (current_load < 0.0) current_load = 0.0;
+                append_cargo_event(log_out, cur_city, "dropoff", onboard[i].item_name,
+                                   onboard[i].dest_city_id, onboard[i].taken_kg,
+                                   onboard[i].fraction, onboard[i].allocated_value_inr);
+                for (int j = i; j < onboard_count - 1; j++) onboard[j] = onboard[j + 1];
+                onboard_count--;
+            } else {
+                i++;
+            }
+        }
+        remove_stop(active_stops, &active_count, cur_city);
+
+        /* 2. Inspect ONLY warehouse cargos located at cur_city */
+        CargoItem local_items[MAX_CARGO_ITEMS];
+        int local_indices[MAX_CARGO_ITEMS];
+        int local_count = 0;
+        for (int i = 0; i < num_items && i < MAX_CARGO_ITEMS; i++) {
+            if (picked_flag[i]) continue;
+            if (warehouse_items[i].src_city_id != cur_city) continue;
+            if (g->avoid_city[warehouse_items[i].dest_city_id]) continue;
+            local_items[local_count] = warehouse_items[i];
+            local_indices[local_count] = i;
+            local_count++;
+        }
+
+        double free_cap = max_cap - current_load;
+        if (local_count > 0 && free_cap > 1.0) {
+            KnapsackResult k_res = run_partial_knapsack(local_items, local_count, free_cap);
+            for (int i = 0; i < k_res.item_count; i++) {
+                CargoItem *chosen = &k_res.items[i];
+                if (chosen->taken_kg <= 0.0) continue;
+
+                /* Mark original warehouse item picked */
+                for (int m = 0; m < local_count; m++) {
+                    int orig_idx = local_indices[m];
+                    if (!picked_flag[orig_idx] &&
+                        strcmp(warehouse_items[orig_idx].item_name, chosen->item_name) == 0 &&
+                        warehouse_items[orig_idx].dest_city_id == chosen->dest_city_id) {
+                        picked_flag[orig_idx] = 1;
+                        break;
+                    }
+                }
+
+                current_load += chosen->taken_kg;
+                if (log_out) {
+                    if (current_load > log_out->peak_load_kg) log_out->peak_load_kg = current_load;
+                    log_out->total_cargo_value_inr += chosen->allocated_value_inr;
+                }
+                if (onboard_count < MAX_CARGO_ITEMS) {
+                    onboard[onboard_count++] = *chosen;
+                }
+                append_cargo_event(log_out, cur_city, "pickup", chosen->item_name,
+                                   chosen->dest_city_id, chosen->taken_kg,
+                                   chosen->fraction, chosen->allocated_value_inr);
+                add_stop_unique(active_stops, &active_count, chosen->dest_city_id, destination);
+            }
+        }
+
+        /* 3. Done if we are at destination with no pending dropoffs/stops */
+        if (cur_city == destination && active_count == 0) {
+            break;
+        }
+
+        /* 4. Replan remaining route via Held-Karp DP + A-star/Bellman-Ford/Dijkstra */
+        PathResult plan = run_dp_stop_planner(g, v, cur_city, destination,
+                                              active_stops, active_count,
+                                              cur_hr, fuel_price_inr,
+                                              optimize_for, respect_windows);
+        if (!plan.found || plan.path_len < 2) {
+            res.found = 0;
+            return res;
+        }
+
+        /* Advance one hop along the replanned route */
+        int nxt = plan.path[1];
+        const Edge *chosen_edge = NULL;
+        for (const Edge *e = g->adj[cur_city]; e != NULL; e = e->next) {
+            if (!e->is_blocked && e->to == nxt) {
+                chosen_edge = e;
+                break;
+            }
+        }
+
+        if (chosen_edge) {
+            double wait_h = 0.0;
+            if (respect_windows) edge_is_open_at(chosen_edge, cur_hr, &wait_h);
+            double trav_h = edge_travel_hours(chosen_edge, v);
+            cur_hr += wait_h + trav_h;
+
+            res.path[res.path_len] = nxt;
+            res.leg_arrival_hr[res.path_len] = cur_hr;
+            res.leg_wait_hr[res.path_len] = wait_h;
+            strncpy(res.highways[res.path_len - 1], chosen_edge->highway, MAX_HIGHWAY_LEN - 1);
+            res.path_len++;
+
+            res.total_distance_km += chosen_edge->distance_km;
+            res.total_time_hr += wait_h + trav_h;
+            res.total_toll_inr += chosen_edge->toll_inr * toll_mult;
+            res.total_fuel_inr += (chosen_edge->distance_km / mileage) * fuel_price_inr;
+            res.total_subsidy_inr += chosen_edge->subsidy_inr;
+        } else {
+            res.found = 0;
+            return res;
+        }
+        cur_city = nxt;
+    }
+
+    res.net_cost_inr = res.total_fuel_inr + res.total_toll_inr - res.total_subsidy_inr;
+    return res;
 }
